@@ -1,0 +1,5 @@
+'.source.julia':
+  'editor':
+    'commentStart': '# '
+    'increaseIndentPattern': '(^\\s*(if|while|for|function|macro|immutable|type|let|else|elseif|quote|try|catch|finally)\\b.*\\s*$)|(^.*\\b(do|begin)\\b\\s*$)'
+    'decreaseIndentPattern': '^\\s*((end|else|elseif|catch|finally)\\b)'

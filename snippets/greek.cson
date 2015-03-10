@@ -1,0 +1,143 @@
+# Greek letters
+
+## Lowercase
+'.source.julia':
+   'alpha':
+      'prefix': 'alpha'
+      'body': 'α$1'
+   'beta':
+      'prefix': 'beta'
+      'body': 'β$1'
+   'gamma':
+      'prefix': 'gamma'
+      'body': 'γ$1'
+   'delta':
+      'prefix': 'delta'
+      'body': 'δ$1'
+   'epsilon':
+      'prefix': 'epsilon'
+      'body': 'ε$1'
+   'zeta':
+      'prefix': 'zeta'
+      'body': 'ζ$1'
+   'eta':
+      'prefix': 'eta'
+      'body': 'η$1'
+   'theta':
+      'prefix': 'theta'
+      'body': 'θ$1'
+   'iota':
+      'prefix': 'iota'
+      'body': 'ι$1'
+   'kappa':
+      'prefix': 'kappa'
+      'body': 'κ$1'
+   'lambda':
+      'prefix': 'lambda'
+      'body': 'λ$1'
+   'mu':
+      'prefix': 'mu'
+      'body': 'μ$1'
+   'nu':
+      'prefix': 'nu'
+      'body': 'ν$1'
+   'xi':
+      'prefix': 'xi'
+      'body': 'ξ$1'
+   'pi':
+      'prefix': 'pi'
+      'body': 'π$1'
+   'rho':
+      'prefix': 'rho'
+      'body': 'ρ$1'
+   'sigma':
+      'prefix': 'sigma'
+      'body': 'σ$1'
+   'tau':
+      'prefix': 'tau'
+      'body': 'τ$1'
+   'upsilon':
+      'prefix': 'upsilon'
+      'body': 'υ$1'
+   'phi':
+      'prefix': 'phi'
+      'body': 'ϕ$1'
+   'khi':
+      'prefix': 'khi'
+      'body': 'χ$1'
+   'psi':
+      'prefix': 'psi'
+      'body': 'ψ$1'
+   'omega':
+      'prefix': 'omega'
+      'body': 'ω$1'
+   ## Uppercase
+   'Alpha':
+      'prefix': 'Alpha'
+      'body': 'Α$1'
+   'Beta':
+      'prefix': 'Beta'
+      'body': 'Β$1'
+   'Gamma':
+      'prefix': 'Gamma'
+      'body': 'Γ$1'
+   'Delta':
+      'prefix': 'Delta'
+      'body': 'Δ$1'
+   'Epsilon':
+      'prefix': 'Epsilon'
+      'body': 'Ε$1'
+   'Zeta':
+      'prefix': 'Zeta'
+      'body': 'Ζ$1'
+   'Eta':
+      'prefix': 'Eta'
+      'body': 'Η$1'
+   'Theta':
+      'prefix': 'Theta'
+      'body': 'Θ$1'
+   'Iota':
+      'prefix': 'Iota'
+      'body': 'Ι$1'
+   'Kappa':
+      'prefix': 'Kappa'
+      'body': 'Κ$1'
+   'Lambda':
+      'prefix': 'Lambda'
+      'body': 'Λ$1'
+   'Mu':
+      'prefix': 'Mu'
+      'body': 'Μ$1'
+   'Nu':
+      'prefix': 'Nu'
+      'body': 'Ν$1'
+   'Xi':
+      'prefix': 'Xi'
+      'body': 'Ξ$1'
+   'Pi':
+      'prefix': 'Pi'
+      'body': 'Π$1'
+   'Rho':
+      'prefix': 'Rho'
+      'body': 'Ρ$1'
+   'Sigma':
+      'prefix': 'Sigma'
+      'body': 'Σ$1'
+   'Tau':
+      'prefix': 'Tau'
+      'body': 'Τ$1'
+   'Upsilon':
+      'prefix': 'Upsilon'
+      'body': 'Υ$1'
+   'Phi':
+      'prefix': 'Phi'
+      'body': 'Φ$1'
+   'Khi':
+      'prefix': 'Khi'
+      'body': 'Χ$1'
+   'Psi':
+      'prefix': 'Psi'
+      'body': 'Ψ$1'
+   'Omega':
+      'prefix': 'Omega'
+      'body': 'Ω$1'

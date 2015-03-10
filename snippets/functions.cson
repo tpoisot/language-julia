@@ -1,0 +1,9 @@
+'.source.julia':
+  'Function':
+    'prefix': 'fun'
+    'body': """function ${1:name}(${2:params})
+      $3
+    end"""
+   'Return':
+      'prefix': 'ret'
+      'body': 'return $1'
