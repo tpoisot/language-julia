@@ -1,0 +1,31 @@
+# Symbols
+# See http://docs.julialang.org/en/release-0.3/manual/unicode-input/
+
+'.source.julia':
+   'dot':
+      'prefix': 'dot'
+      'body': '⋅$1'
+    'times':
+      'prefix': 'times'
+      'body': '×$1'
+    'pm':
+      'prefix': 'pm'
+      'body': '±$1'
+    'div':
+      'prefix': 'div'
+      'body': '÷$1'
+    'prod':
+      'prefix': 'prod'
+      'body': '∏$1'
+    'sum':
+      'prefix': 'prod'
+      'body': '∑$1'
+    'sqrt':
+      'prefix': 'sqrt'
+      'body': '√$1'
+    'le':
+      'prefix': 'le'
+      'body': '≤$1'
+    'ge':
+      'prefix': 'ge'
+      'body': '≥$1'
