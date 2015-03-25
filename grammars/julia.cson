@@ -87,7 +87,7 @@
   'function_call':
     'patterns': [
       {
-        'begin': '([a-zA-Z0-9_]+!?)\\w*\\('
+        'begin': '([a-zA-Z0-9_äöüÄÖÜß]+!?)\\w*\\('
         'beginCaptures':
           '1':
             'name': 'support.function.julia'
@@ -105,13 +105,13 @@
   'function_decl':
     'patterns': [
       {
-        'match': '^\\s*([a-zA-Z0-9\\._]+!?)(?=.*\\)\\s*=(?!=))'
+        'match': '^\\s*([a-zA-Z0-9\\._äöüÄÖÜß]+!?)(?=.*\\)\\s*=(?!=))'
         'captures':
           '1':
             'name': 'entity.name.function.julia'
       }
       {
-        'match': '\\b(function|macro)\\s+([a-zA-Z0-9_\\.]+!?)\\b'
+        'match': '\\b(function|macro)\\s+([a-zA-Z0-9_\\.äöüÄÖÜß]+!?)\\b'
         'captures':
           '1':
             'name': 'keyword.other.julia'
