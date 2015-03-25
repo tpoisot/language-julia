@@ -18,7 +18,7 @@
       'prefix': 'prod'
       'body': '∏$1'
     'sum':
-      'prefix': 'prod'
+      'prefix': 'sum'
       'body': '∑$1'
     'sqrt':
       'prefix': 'sqrt'
