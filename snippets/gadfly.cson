@@ -1,0 +1,13 @@
+# Gadfly
+# Shortcuts to draw graphs
+
+# Documentation
+# In the format used by Docile.jl and Lexicon.jl
+
+'.source.julia':
+   'Draw to PDF':
+      'prefix': 'gfpdf'
+      'body': 'draw(PDF("$1.pdf", $2cm, $3cm), $4)'
+    'Draw to PNG':
+      'prefix': 'gfpdf'
+      'body': 'draw(PDF("$1.png", $2cm, $3cm), $4)'

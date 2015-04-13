@@ -1,6 +1,5 @@
 # Greek letters
 
-## Lowercase
 '.source.julia':
    'alpha':
       'prefix': 'alpha'

@@ -1,0 +1,10 @@
+# Documentation
+# In the format used by Docile.jl and Lexicon.jl
+
+'.source.julia':
+   'Docstring':
+      'prefix': '@doc'
+      'body': '@doc """
+      $1
+      """ ->
+      '
