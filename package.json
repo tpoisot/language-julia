@@ -9,7 +9,7 @@
     "type": "git",
     "url": "https://github.com/tpoisot/language-julia"
   },
-  "version": "0.7.1",
+  "version": "0.7.2",
   "readme": "# atom-julia\n\nJulia language support and snippets for Atom, forked from the (unmaintained?)\n[`atom-language-julia`](https://github.com/jonathanmarvens/atom-language-julia)\npackage.\n\n## Greek letters\n\nTyping the name of a greek letter will replace it by its unicode symbol. *E.g.*\n`alpha` will become `α`. In the current release, only lowercase greek letters\nare available.\n\n## Contributors\n\nMaintained by [Timothée Poisot](mailto:tim@poisotlab.io \"tim@poisotlab.io\")\n\nOriginal code from\n[`atom-language-julia`](https://github.com/jonathanmarvens/atom-language-julia)\nCopyright (c) 2014 [Jonathan Barronville](mailto:jonathan@belairlabs.com\n\"jonathan@belairlabs.com\")\n",
   "readmeFilename": "README.md",
   "bugs": {
