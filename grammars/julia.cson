@@ -300,6 +300,28 @@
           }
         ]
       }
+      {
+        'begin': '(@doc) (""")'
+        'beginCaptures':
+          '1':
+            'name': 'support.function.macro.julia'
+          '2':
+            'name': 'punctuation.definition.string.begin.julia'
+        'end': '(""") (->)'
+        'endCaptures':
+          '1':
+            'name': 'punctuation.definition.string.end.julia'
+          '2':
+            'name': 'keyword.operator.arrow.julia'
+        'name': 'string.docstring.julia'
+        'contentName' : 'source.gfm'
+        'patterns': [
+          {
+            'include': '#string_escaped_char'
+            'include': 'source.gfm'
+          }
+        ]
+      }
     ]
   'string_custom_escaped_char':
     'patterns': [
