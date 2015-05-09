@@ -71,7 +71,7 @@
     'patterns': [
       {
          'begin': '#='
-         'beginCaptures': '0': 'name': 'punctuation.definition.comment.begin.julia'
+         'beginCaptures': '0': 'name': 'punctuation.definition.comment.julia'
          'end': '=#'
          'endCaptures': '0': 'name': 'punctuation.definition.comment.julia'
          'name': 'comment.block.julia'
@@ -81,13 +81,13 @@
           '1':
             'name': 'punctuation.definition.comment.julia'
         'match': '(?<!\\$)(#)(?!\\{).*$\\n?'
-        'name': 'comment.line.number-sign.julia'
+        'name': 'comment.block.julia'
       }
     ]
   'function_call':
     'patterns': [
       {
-        'begin': '([a-zA-Z0-9_äöüÄÖÜß]+!?)\\w*\\('
+        'begin': '([a-zA-Z0-9_\u0021-\uFFFF]+!?)\\w*\\('
         'beginCaptures':
           '1':
             'name': 'support.function.julia'
