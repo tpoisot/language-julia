@@ -1,142 +1,7393 @@
-# Greek letters
+#### The content of this file was generated using the code below
+# const latex_symbols = Base.REPLCompletions.latex_symbols
+
+# function write_symbol(buf::IOBuffer, k, v)
+#     write(buf, "'$k':\n    ")
+#     write(buf, "'prefix': '$k'\n    ")
+#     write(buf, "'body': '$v'")
+# end
+
+# function write_symbolln(buf::IOBuffer, k, v)
+#     write_symbol(buf, k, v)
+#     write(buf, "\n  ")
+# end
+
+# const buf = IOBuffer()
+# write(buf, "'.source.julia':\n  ")
+
+# for k in keys(latex_symbols)
+#     k1 = strip(k, '\\')
+#     v = latex_symbols[k]
+#     write_symbolln(buf, k1, v)
+# end
+
+# open("greek.cson", "w") do f
+#     write(f, bytestring(buf))
+# end
 
 '.source.julia':
-   'alpha':
-      'prefix': 'alpha'
-      'body': 'α$1'
-   'beta':
-      'prefix': 'beta'
-      'body': 'β$1'
-   'gamma':
-      'prefix': 'gamma'
-      'body': 'γ$1'
-   'delta':
-      'prefix': 'delta'
-      'body': 'δ$1'
-   'epsilon':
-      'prefix': 'epsilon'
-      'body': 'ε$1'
-   'zeta':
-      'prefix': 'zeta'
-      'body': 'ζ$1'
-   'eta':
-      'prefix': 'eta'
-      'body': 'η$1'
-   'theta':
-      'prefix': 'theta'
-      'body': 'θ$1'
-   'iota':
-      'prefix': 'iota'
-      'body': 'ι$1'
-   'kappa':
-      'prefix': 'kappa'
-      'body': 'κ$1'
-   'lambda':
-      'prefix': 'lambda'
-      'body': 'λ$1'
-   'mu':
-      'prefix': 'mu'
-      'body': 'μ$1'
-   'nu':
-      'prefix': 'nu'
-      'body': 'ν$1'
-   'xi':
-      'prefix': 'xi'
-      'body': 'ξ$1'
-   'pi':
-      'prefix': 'pi'
-      'body': 'π$1'
-   'rho':
-      'prefix': 'rho'
-      'body': 'ρ$1'
-   'sigma':
-      'prefix': 'sigma'
-      'body': 'σ$1'
-   'tau':
-      'prefix': 'tau'
-      'body': 'τ$1'
-   'upsilon':
-      'prefix': 'upsilon'
-      'body': 'υ$1'
-   'phi':
-      'prefix': 'phi'
-      'body': 'ϕ$1'
-   'khi':
-      'prefix': 'khi'
-      'body': 'χ$1'
-   'psi':
-      'prefix': 'psi'
-      'body': 'ψ$1'
-   'omega':
-      'prefix': 'omega'
-      'body': 'ω$1'
-   ## Uppercase
-   'Alpha':
-      'prefix': 'Alpha'
-      'body': 'Α$1'
-   'Beta':
-      'prefix': 'Beta'
-      'body': 'Β$1'
-   'Gamma':
-      'prefix': 'Gamma'
-      'body': 'Γ$1'
-   'Delta':
-      'prefix': 'Delta'
-      'body': 'Δ$1'
-   'Epsilon':
-      'prefix': 'Epsilon'
-      'body': 'Ε$1'
-   'Zeta':
-      'prefix': 'Zeta'
-      'body': 'Ζ$1'
-   'Eta':
-      'prefix': 'Eta'
-      'body': 'Η$1'
-   'Theta':
-      'prefix': 'Theta'
-      'body': 'Θ$1'
-   'Iota':
-      'prefix': 'Iota'
-      'body': 'Ι$1'
-   'Kappa':
-      'prefix': 'Kappa'
-      'body': 'Κ$1'
-   'Lambda':
-      'prefix': 'Lambda'
-      'body': 'Λ$1'
-   'Mu':
-      'prefix': 'Mu'
-      'body': 'Μ$1'
-   'Nu':
-      'prefix': 'Nu'
-      'body': 'Ν$1'
-   'Xi':
-      'prefix': 'Xi'
-      'body': 'Ξ$1'
-   'Pi':
-      'prefix': 'Pi'
-      'body': 'Π$1'
-   'Rho':
-      'prefix': 'Rho'
-      'body': 'Ρ$1'
-   'Sigma':
-      'prefix': 'Sigma'
-      'body': 'Σ$1'
-   'Tau':
-      'prefix': 'Tau'
-      'body': 'Τ$1'
-   'Upsilon':
-      'prefix': 'Upsilon'
-      'body': 'Υ$1'
-   'Phi':
-      'prefix': 'Phi'
-      'body': 'Φ$1'
-   'Khi':
-      'prefix': 'Khi'
-      'body': 'Χ$1'
-   'Psi':
-      'prefix': 'Psi'
-      'body': 'Ψ$1'
-   'Omega':
-      'prefix': 'Omega'
-      'body': 'Ω$1'
+  'guilsinglright':
+    'prefix': 'guilsinglright'
+    'body': '›$1'
+  'blacktriangleright':
+    'prefix': 'blacktriangleright'
+    'body': '▶$1'
+  'mitOmicron':
+    'prefix': 'mitOmicron'
+    'body': '𝛰$1'
+  '^4':
+    'prefix': '^4'
+    'body': '⁴$1'
+  'Re':
+    'prefix': 'Re'
+    'body': 'ℜ$1'
+  'pitchfork':
+    'prefix': 'pitchfork'
+    'body': '⋔$1'
+  'mitsansD':
+    'prefix': 'mitsansD'
+    'body': '𝘋$1'
+  'Elzinglst':
+    'prefix': 'Elzinglst'
+    'body': 'ʖ$1'
+  'blockqtrshaded':
+    'prefix': 'blockqtrshaded'
+    'body': '░$1'
+  'urcorner':
+    'prefix': 'urcorner'
+    'body': '⌝$1'
+  '^2':
+    'prefix': '^2'
+    'body': '²$1'
+  'pi':
+    'prefix': 'pi'
+    'body': 'π$1'
+  'nless':
+    'prefix': 'nless'
+    'body': '≮$1'
+  'sqsubseteq':
+    'prefix': 'sqsubseteq'
+    'body': '⊑$1'
+  'Updownarrow':
+    'prefix': 'Updownarrow'
+    'body': '⇕$1'
+  'leftarrowbsimilar':
+    'prefix': 'leftarrowbsimilar'
+    'body': '⭋$1'
+  'mbfiti':
+    'prefix': 'mbfiti'
+    'body': '𝒊$1'
+  'nrightarrow':
+    'prefix': 'nrightarrow'
+    'body': '↛$1'
+  'mbfL':
+    'prefix': 'mbfL'
+    'body': '𝐋$1'
+  'Theta':
+    'prefix': 'Theta'
+    'body': 'Θ$1'
+  'mbffrakI':
+    'prefix': 'mbffrakI'
+    'body': '𝕴$1'
+  'rightmoon':
+    'prefix': 'rightmoon'
+    'body': '☽$1'
+  'mbff':
+    'prefix': 'mbff'
+    'body': '𝐟$1'
+  'mbfitgamma':
+    'prefix': 'mbfitgamma'
+    'body': '𝜸$1'
+  'mbfitsansh':
+    'prefix': 'mbfitsansh'
+    'body': '𝙝$1'
+  'upsilon':
+    'prefix': 'upsilon'
+    'body': 'υ$1'
+  'mbfY':
+    'prefix': 'mbfY'
+    'body': '𝐘$1'
+  'copyright':
+    'prefix': 'copyright'
+    'body': '©$1'
+  'npreccurlyeq':
+    'prefix': 'npreccurlyeq'
+    'body': '⋠$1'
+  'mbfh':
+    'prefix': 'mbfh'
+    'body': '𝐡$1'
+  'mbfitp':
+    'prefix': 'mbfitp'
+    'body': '𝒑$1'
+  'mttP':
+    'prefix': 'mttP'
+    'body': '𝙿$1'
+  'fltns':
+    'prefix': 'fltns'
+    'body': '⏥$1'
+  'mbffrakN':
+    'prefix': 'mbffrakN'
+    'body': '𝕹$1'
+  'smile':
+    'prefix': 'smile'
+    'body': '⌣$1'
+  'mscrU':
+    'prefix': 'mscrU'
+    'body': '𝒰$1'
+  'backsimeq':
+    'prefix': 'backsimeq'
+    'body': '⋍$1'
+  'mbfitsansvarrho':
+    'prefix': 'mbfitsansvarrho'
+    'body': '𝟈$1'
+  'BbbPi':
+    'prefix': 'BbbPi'
+    'body': 'ℿ$1'
+  'msansQ':
+    'prefix': 'msansQ'
+    'body': '𝖰$1'
+  'lq':
+    'prefix': 'lq'
+    'body': '‘$1'
+  'mapsfrom':
+    'prefix': 'mapsfrom'
+    'body': '↤$1'
+  'blockrighthalf':
+    'prefix': 'blockrighthalf'
+    'body': '▐$1'
+  'perp':
+    'prefix': 'perp'
+    'body': '⟂$1'
+  'mite':
+    'prefix': 'mite'
+    'body': '𝑒$1'
+  'textnrleg':
+    'prefix': 'textnrleg'
+    'body': 'ƞ$1'
+  'mbffrakC':
+    'prefix': 'mbffrakC'
+    'body': '𝕮$1'
+  'timesbar':
+    'prefix': 'timesbar'
+    'body': '⨱$1'
+  'mbfsanskappa':
+    'prefix': 'mbfsanskappa'
+    'body': '𝝹$1'
+  'mbftheta':
+    'prefix': 'mbftheta'
+    'body': '𝛉$1'
+  'llcorner':
+    'prefix': 'llcorner'
+    'body': '⌞$1'
+  'bigtimes':
+    'prefix': 'bigtimes'
+    'body': '⨉$1'
+  'circleddash':
+    'prefix': 'circleddash'
+    'body': '⊝$1'
+  'leftharpoondown':
+    'prefix': 'leftharpoondown'
+    'body': '↽$1'
+  'alpha':
+    'prefix': 'alpha'
+    'body': 'α$1'
+  'between':
+    'prefix': 'between'
+    'body': '≬$1'
+  '^l':
+    'prefix': '^l'
+    'body': 'ˡ$1'
+  'frown':
+    'prefix': 'frown'
+    'body': '⌢$1'
+  'RoundImplies':
+    'prefix': 'RoundImplies'
+    'body': '⥰$1'
+  'blockthreeqtrshaded':
+    'prefix': 'blockthreeqtrshaded'
+    'body': '▓$1'
+  'precneqq':
+    'prefix': 'precneqq'
+    'body': '⪵$1'
+  'urblacktriangle':
+    'prefix': 'urblacktriangle'
+    'body': '◥$1'
+  'succeqq':
+    'prefix': 'succeqq'
+    'body': '⪴$1'
+  'nsupseteq':
+    'prefix': 'nsupseteq'
+    'body': '⊉$1'
+  'mscru':
+    'prefix': 'mscru'
+    'body': '𝓊$1'
+  'mbfsansT':
+    'prefix': 'mbfsansT'
+    'body': '𝗧$1'
+  'mbfsanstwo':
+    'prefix': 'mbfsanstwo'
+    'body': '𝟮$1'
+  'iota':
+    'prefix': 'iota'
+    'body': 'ι$1'
+  'mbfa':
+    'prefix': 'mbfa'
+    'body': '𝐚$1'
+  'msansone':
+    'prefix': 'msansone'
+    'body': '𝟣$1'
+  'overbrace':
+    'prefix': 'overbrace'
+    'body': '⏞$1'
+  'mttD':
+    'prefix': 'mttD'
+    'body': '𝙳$1'
+  'danger':
+    'prefix': 'danger'
+    'body': '☡$1'
+  'rightharpoondown':
+    'prefix': 'rightharpoondown'
+    'body': '⇁$1'
+  'tilde':
+    'prefix': 'tilde'
+    'body': '̃$1'
+  'upNu':
+    'prefix': 'upNu'
+    'body': 'Ν$1'
+  'APLboxquestion':
+    'prefix': 'APLboxquestion'
+    'body': '⍰$1'
+  'RRightarrow':
+    'prefix': 'RRightarrow'
+    'body': '⭆$1'
+  'mbfitDelta':
+    'prefix': 'mbfitDelta'
+    'body': '𝜟$1'
+  'mitsansX':
+    'prefix': 'mitsansX'
+    'body': '𝘟$1'
+  'rightleftarrows':
+    'prefix': 'rightleftarrows'
+    'body': '⇄$1'
+  'succapprox':
+    'prefix': 'succapprox'
+    'body': '⪸$1'
+  'Rsh':
+    'prefix': 'Rsh'
+    'body': '↱$1'
+  'sumint':
+    'prefix': 'sumint'
+    'body': '⨋$1'
+  'mbfitV':
+    'prefix': 'mbfitV'
+    'body': '𝑽$1'
+  'pointint':
+    'prefix': 'pointint'
+    'body': '⨕$1'
+  'fdiagovnearrow':
+    'prefix': 'fdiagovnearrow'
+    'body': '⤯$1'
+  'plussubtwo':
+    'prefix': 'plussubtwo'
+    'body': '⨧$1'
+  'original':
+    'prefix': 'original'
+    'body': '⊶$1'
+  'nvtwoheadleftarrow':
+    'prefix': 'nvtwoheadleftarrow'
+    'body': '⬴$1'
+  'mbfe':
+    'prefix': 'mbfe'
+    'body': '𝐞$1'
+  'mitsanss':
+    'prefix': 'mitsanss'
+    'body': '𝘴$1'
+  'mitn':
+    'prefix': 'mitn'
+    'body': '𝑛$1'
+  'nBumpeq':
+    'prefix': 'nBumpeq'
+    'body': '≎̸$1'
+  'mittheta':
+    'prefix': 'mittheta'
+    'body': '𝜃$1'
+  'mfrakC':
+    'prefix': 'mfrakC'
+    'body': 'ℭ$1'
+  'nleftrightarrow':
+    'prefix': 'nleftrightarrow'
+    'body': '↮$1'
+  'mitvartheta':
+    'prefix': 'mitvartheta'
+    'body': '𝜗$1'
+  'clockoint':
+    'prefix': 'clockoint'
+    'body': '⨏$1'
+  'mitK':
+    'prefix': 'mitK'
+    'body': '𝐾$1'
+  'Im':
+    'prefix': 'Im'
+    'body': 'ℑ$1'
+  'Elzrarrx':
+    'prefix': 'Elzrarrx'
+    'body': '⥇$1'
+  'whtvertoval':
+    'prefix': 'whtvertoval'
+    'body': '⬯$1'
+  'msansB':
+    'prefix': 'msansB'
+    'body': '𝖡$1'
+  'mbfitsansphi':
+    'prefix': 'mbfitsansphi'
+    'body': '𝞿$1'
+  'smallin':
+    'prefix': 'smallin'
+    'body': '∊$1'
+  'mitsansn':
+    'prefix': 'mitsansn'
+    'body': '𝘯$1'
+  'underleftarrow':
+    'prefix': 'underleftarrow'
+    'body': '⃮$1'
+  'mbfitsansXi':
+    'prefix': 'mbfitsansXi'
+    'body': '𝞝$1'
+  'measangledltosw':
+    'prefix': 'measangledltosw'
+    'body': '⦯$1'
+  'eqqsim':
+    'prefix': 'eqqsim'
+    'body': '⩳$1'
+  'mbfitl':
+    'prefix': 'mbfitl'
+    'body': '𝒍$1'
+  'mfrakB':
+    'prefix': 'mfrakB'
+    'body': '𝔅$1'
+  'mbfO':
+    'prefix': 'mbfO'
+    'body': '𝐎$1'
+  'mbfitsansvarkappa':
+    'prefix': 'mbfitsansvarkappa'
+    'body': '𝟆$1'
+  'mbfEta':
+    'prefix': 'mbfEta'
+    'body': '𝚮$1'
+  'leo':
+    'prefix': 'leo'
+    'body': '♌$1'
+  'BbbO':
+    'prefix': 'BbbO'
+    'body': '𝕆$1'
+  'DownArrowBar':
+    'prefix': 'DownArrowBar'
+    'body': '⤓$1'
+  'surd':
+    'prefix': 'surd'
+    'body': '√$1'
+  'leftwhitearrow':
+    'prefix': 'leftwhitearrow'
+    'body': '⇦$1'
+  'BbbP':
+    'prefix': 'BbbP'
+    'body': 'ℙ$1'
+  'ge':
+    'prefix': 'ge'
+    'body': '≥$1'
+  'mbfsansfive':
+    'prefix': 'mbfsansfive'
+    'body': '𝟱$1'
+  'twoheaddownarrow':
+    'prefix': 'twoheaddownarrow'
+    'body': '↡$1'
+  'ointctrclockwise':
+    'prefix': 'ointctrclockwise'
+    'body': '∳$1'
+  'squareulquad':
+    'prefix': 'squareulquad'
+    'body': '◰$1'
+  'amalg':
+    'prefix': 'amalg'
+    'body': '⨿$1'
+  'bagmember':
+    'prefix': 'bagmember'
+    'body': '⋿$1'
+  'mbffrakW':
+    'prefix': 'mbffrakW'
+    'body': '𝖂$1'
+  'ElOr':
+    'prefix': 'ElOr'
+    'body': '⩖$1'
+  'mbfsansX':
+    'prefix': 'mbfsansX'
+    'body': '𝗫$1'
+  'turnangle':
+    'prefix': 'turnangle'
+    'body': '⦢$1'
+  'Otimes':
+    'prefix': 'Otimes'
+    'body': '⨷$1'
+  'mbfitsansr':
+    'prefix': 'mbfitsansr'
+    'body': '𝙧$1'
+  'mttz':
+    'prefix': 'mttz'
+    'body': '𝚣$1'
+  'wideutilde':
+    'prefix': 'wideutilde'
+    'body': '̰$1'
+  'mbfitsansUpsilon':
+    'prefix': 'mbfitsansUpsilon'
+    'body': '𝞤$1'
+  'trianglerightblack':
+    'prefix': 'trianglerightblack'
+    'body': '◮$1'
+  'mscrn':
+    'prefix': 'mscrn'
+    'body': '𝓃$1'
+  'mscrr':
+    'prefix': 'mscrr'
+    'body': '𝓇$1'
+  'mitsansp':
+    'prefix': 'mitsansp'
+    'body': '𝘱$1'
+  'uparrow':
+    'prefix': 'uparrow'
+    'body': '↑$1'
+  'nvleftarrowtail':
+    'prefix': 'nvleftarrowtail'
+    'body': '⬹$1'
+  'Bbbd':
+    'prefix': 'Bbbd'
+    'body': '𝕕$1'
+  '_4':
+    'prefix': '_4'
+    'body': '₄$1'
+  'measangledrtose':
+    'prefix': 'measangledrtose'
+    'body': '⦮$1'
+  'mbfitsansrho':
+    'prefix': 'mbfitsansrho'
+    'body': '𝞺$1'
+  'mbfsanspi':
+    'prefix': 'mbfsanspi'
+    'body': '𝝿$1'
+  'doubleplus':
+    'prefix': 'doubleplus'
+    'body': '⧺$1'
+  'plussim':
+    'prefix': 'plussim'
+    'body': '⨦$1'
+  'rvboxline':
+    'prefix': 'rvboxline'
+    'body': '⎹$1'
+  'Game':
+    'prefix': 'Game'
+    'body': '⅁$1'
+  'sterling':
+    'prefix': 'sterling'
+    'body': '£$1'
+  'mbfitpartial':
+    'prefix': 'mbfitpartial'
+    'body': '𝝏$1'
+  '_x':
+    'prefix': '_x'
+    'body': 'ₓ$1'
+  'NestedGreaterGreater':
+    'prefix': 'NestedGreaterGreater'
+    'body': '⪢$1'
+  'pentagon':
+    'prefix': 'pentagon'
+    'body': '⬠$1'
+  'supmult':
+    'prefix': 'supmult'
+    'body': '⫂$1'
+  'mbfscrw':
+    'prefix': 'mbfscrw'
+    'body': '𝔀$1'
+  'sansLturned':
+    'prefix': 'sansLturned'
+    'body': '⅂$1'
+  'mbfitsansTau':
+    'prefix': 'mbfitsansTau'
+    'body': '𝞣$1'
+  'bumpeqq':
+    'prefix': 'bumpeqq'
+    'body': '⪮$1'
+  'nVDash':
+    'prefix': 'nVDash'
+    'body': '⊯$1'
+  'mitz':
+    'prefix': 'mitz'
+    'body': '𝑧$1'
+  'mfrakK':
+    'prefix': 'mfrakK'
+    'body': '𝔎$1'
+  'leftarrowtriangle':
+    'prefix': 'leftarrowtriangle'
+    'body': '⇽$1'
+  'msansE':
+    'prefix': 'msansE'
+    'body': '𝖤$1'
+  'nvRightarrow':
+    'prefix': 'nvRightarrow'
+    'body': '⤃$1'
+  'lnsim':
+    'prefix': 'lnsim'
+    'body': '⋦$1'
+  'downharpoonsleftright':
+    'prefix': 'downharpoonsleftright'
+    'body': '⥥$1'
+  'mbfB':
+    'prefix': 'mbfB'
+    'body': '𝐁$1'
+  'yen':
+    'prefix': 'yen'
+    'body': '¥$1'
+  'theta':
+    'prefix': 'theta'
+    'body': 'θ$1'
+  'gnapprox':
+    'prefix': 'gnapprox'
+    'body': '⪊$1'
+  'mbfsansseven':
+    'prefix': 'mbfsansseven'
+    'body': '𝟳$1'
+  'twoheaduparrowcircle':
+    'prefix': 'twoheaduparrowcircle'
+    'body': '⥉$1'
+  'mbfscrO':
+    'prefix': 'mbfscrO'
+    'body': '𝓞$1'
+  'male':
+    'prefix': 'male'
+    'body': '♂$1'
+  'LeftUpVectorBar':
+    'prefix': 'LeftUpVectorBar'
+    'body': '⥘$1'
+  'mtteight':
+    'prefix': 'mtteight'
+    'body': '𝟾$1'
+  'NotLeftTriangleBar':
+    'prefix': 'NotLeftTriangleBar'
+    'body': '⧏̸$1'
+  'mitsansG':
+    'prefix': 'mitsansG'
+    'body': '𝘎$1'
+  'nRightarrow':
+    'prefix': 'nRightarrow'
+    'body': '⇏$1'
+  'Elzsqspne':
+    'prefix': 'Elzsqspne'
+    'body': '⋥$1'
+  'bigslopedvee':
+    'prefix': 'bigslopedvee'
+    'body': '⩗$1'
+  'blocklowhalf':
+    'prefix': 'blocklowhalf'
+    'body': '▄$1'
+  'mbfitpi':
+    'prefix': 'mbfitpi'
+    'body': '𝝅$1'
+  'veedoublebar':
+    'prefix': 'veedoublebar'
+    'body': '⩣$1'
+  'forks':
+    'prefix': 'forks'
+    'body': '⫝̸$1'
+  'Alpha':
+    'prefix': 'Alpha'
+    'body': 'Α$1'
+  'mbfitsansIota':
+    'prefix': 'mbfitsansIota'
+    'body': '𝞘$1'
+  'backepsilon':
+    'prefix': 'backepsilon'
+    'body': '϶$1'
+  'nsucccurlyeq':
+    'prefix': 'nsucccurlyeq'
+    'body': '⋡$1'
+  'mbfscrF':
+    'prefix': 'mbfscrF'
+    'body': '𝓕$1'
+  'psi':
+    'prefix': 'psi'
+    'body': 'ψ$1'
+  'mfrake':
+    'prefix': 'mfrake'
+    'body': '𝔢$1'
+  'ng':
+    'prefix': 'ng'
+    'body': 'ŋ$1'
+  'eqdef':
+    'prefix': 'eqdef'
+    'body': '≝$1'
+  'gesdotol':
+    'prefix': 'gesdotol'
+    'body': '⪄$1'
+  'botsemicircle':
+    'prefix': 'botsemicircle'
+    'body': '◡$1'
+  'eqqslantless':
+    'prefix': 'eqqslantless'
+    'body': '⪛$1'
+  'mbfitupsilon':
+    'prefix': 'mbfitupsilon'
+    'body': '𝝊$1'
+  'updownharpoonrightleft':
+    'prefix': 'updownharpoonrightleft'
+    'body': '⥌$1'
+  'mbfscrb':
+    'prefix': 'mbfscrb'
+    'body': '𝓫$1'
+  'Sampi':
+    'prefix': 'Sampi'
+    'body': 'Ϡ$1'
+  'Bbbgamma':
+    'prefix': 'Bbbgamma'
+    'body': 'ℽ$1'
+  'mitY':
+    'prefix': 'mitY'
+    'body': '𝑌$1'
+  'textperthousand':
+    'prefix': 'textperthousand'
+    'body': '‰$1'
+  'l':
+    'prefix': 'l'
+    'body': 'ł$1'
+  'mbfmu':
+    'prefix': 'mbfmu'
+    'body': '𝛍$1'
+  'Bbbtwo':
+    'prefix': 'Bbbtwo'
+    'body': '𝟚$1'
+  'olessthan':
+    'prefix': 'olessthan'
+    'body': '⧀$1'
+  'star':
+    'prefix': 'star'
+    'body': '⋆$1'
+  'Elzbtdl':
+    'prefix': 'Elzbtdl'
+    'body': 'ɬ$1'
+  'overleftarrow':
+    'prefix': 'overleftarrow'
+    'body': '⃖$1'
+  'mitrho':
+    'prefix': 'mitrho'
+    'body': '𝜌$1'
+  'Downarrow':
+    'prefix': 'Downarrow'
+    'body': '⇓$1'
+  'mbfitphi':
+    'prefix': 'mbfitphi'
+    'body': '𝝋$1'
+  'lvertneqq':
+    'prefix': 'lvertneqq'
+    'body': '≨︀$1'
+  'BbbZ':
+    'prefix': 'BbbZ'
+    'body': 'ℤ$1'
+  'mbfitKappa':
+    'prefix': 'mbfitKappa'
+    'body': '𝜥$1'
+  '^J':
+    'prefix': '^J'
+    'body': 'ᴶ$1'
+  'Longmapsto':
+    'prefix': 'Longmapsto'
+    'body': '⟾$1'
+  'S':
+    'prefix': 'S'
+    'body': '§$1'
+  'gesdot':
+    'prefix': 'gesdot'
+    'body': '⪀$1'
+  'mitNu':
+    'prefix': 'mitNu'
+    'body': '𝛮$1'
+  'NotLessLess':
+    'prefix': 'NotLessLess'
+    'body': '≪̸$1'
+  'msansfive':
+    'prefix': 'msansfive'
+    'body': '𝟧$1'
+  'backppprime':
+    'prefix': 'backppprime'
+    'body': '‷$1'
+  'leftdotarrow':
+    'prefix': 'leftdotarrow'
+    'body': '⬸$1'
+  'omega':
+    'prefix': 'omega'
+    'body': 'ω$1'
+  'mbfscrJ':
+    'prefix': 'mbfscrJ'
+    'body': '𝓙$1'
+  'fisheye':
+    'prefix': 'fisheye'
+    'body': '◉$1'
+  'NotSquareSubset':
+    'prefix': 'NotSquareSubset'
+    'body': '⊏̸$1'
+  'boxcircle':
+    'prefix': 'boxcircle'
+    'body': '⧇$1'
+  'mscrV':
+    'prefix': 'mscrV'
+    'body': '𝒱$1'
+  'mscrb':
+    'prefix': 'mscrb'
+    'body': '𝒷$1'
+  'mbfitsansy':
+    'prefix': 'mbfitsansy'
+    'body': '𝙮$1'
+  'mbfUpsilon':
+    'prefix': 'mbfUpsilon'
+    'body': '𝚼$1'
+  'mitvarpi':
+    'prefix': 'mitvarpi'
+    'body': '𝜛$1'
+  'mbfscrt':
+    'prefix': 'mbfscrt'
+    'body': '𝓽$1'
+  'glE':
+    'prefix': 'glE'
+    'body': '⪒$1'
+  'squarebotblack':
+    'prefix': 'squarebotblack'
+    'body': '⬓$1'
+  'mitBbbe':
+    'prefix': 'mitBbbe'
+    'body': 'ⅇ$1'
+  'Bumpeq':
+    'prefix': 'Bumpeq'
+    'body': '≎$1'
+  'gtreqless':
+    'prefix': 'gtreqless'
+    'body': '⋛$1'
+  'daleth':
+    'prefix': 'daleth'
+    'body': 'ℸ$1'
+  'dottimes':
+    'prefix': 'dottimes'
+    'body': '⨰$1'
+  'twocaps':
+    'prefix': 'twocaps'
+    'body': '⩋$1'
+  'csub':
+    'prefix': 'csub'
+    'body': '⫏$1'
+  'mbffrakE':
+    'prefix': 'mbffrakE'
+    'body': '𝕰$1'
+  'recorder':
+    'prefix': 'recorder'
+    'body': '⌕$1'
+  'cupvee':
+    'prefix': 'cupvee'
+    'body': '⩅$1'
+  'mitsansi':
+    'prefix': 'mitsansi'
+    'body': '𝘪$1'
+  'mttZ':
+    'prefix': 'mttZ'
+    'body': '𝚉$1'
+  'mttw':
+    'prefix': 'mttw'
+    'body': '𝚠$1'
+  'Elroang':
+    'prefix': 'Elroang'
+    'body': '⦆$1'
+  'forksnot':
+    'prefix': 'forksnot'
+    'body': '⫝$1'
+  'asteraccent':
+    'prefix': 'asteraccent'
+    'body': '⃰$1'
+  'leftharpoonupdash':
+    'prefix': 'leftharpoonupdash'
+    'body': '⥪$1'
+  'BbbM':
+    'prefix': 'BbbM'
+    'body': '𝕄$1'
+  'mbffrakn':
+    'prefix': 'mbffrakn'
+    'body': '𝖓$1'
+  '^D':
+    'prefix': '^D'
+    'body': 'ᴰ$1'
+  'Angle':
+    'prefix': 'Angle'
+    'body': '⦜$1'
+  'mbfitSigma':
+    'prefix': 'mbfitSigma'
+    'body': '𝜮$1'
+  'shuffle':
+    'prefix': 'shuffle'
+    'body': '⧢$1'
+  'wedgemidvert':
+    'prefix': 'wedgemidvert'
+    'body': '⩚$1'
+  'dicev':
+    'prefix': 'dicev'
+    'body': '⚄$1'
+  'ReverseUpEquilibrium':
+    'prefix': 'ReverseUpEquilibrium'
+    'body': '⥯$1'
+  'mbfscrY':
+    'prefix': 'mbfscrY'
+    'body': '𝓨$1'
+  '_3':
+    'prefix': '_3'
+    'body': '₃$1'
+  'mitI':
+    'prefix': 'mitI'
+    'body': '𝐼$1'
+  'Elzxrat':
+    'prefix': 'Elzxrat'
+    'body': '℞$1'
+  'mbfitsanspartial':
+    'prefix': 'mbfitsanspartial'
+    'body': '𝟃$1'
+  '_phi':
+    'prefix': '_phi'
+    'body': 'ᵩ$1'
+  'varisins':
+    'prefix': 'varisins'
+    'body': '⋳$1'
+  '^)':
+    'prefix': '^)'
+    'body': '⁾$1'
+  'Elztesh':
+    'prefix': 'Elztesh'
+    'body': 'ʧ$1'
+  'Elzsbrhr':
+    'prefix': 'Elzsbrhr'
+    'body': '˒$1'
+  'rightleftharpoons':
+    'prefix': 'rightleftharpoons'
+    'body': '⇌$1'
+  'blacksmiley':
+    'prefix': 'blacksmiley'
+    'body': '☻$1'
+  'bigwhitestar':
+    'prefix': 'bigwhitestar'
+    'body': '☆$1'
+  'bigblacktriangleup':
+    'prefix': 'bigblacktriangleup'
+    'body': '▲$1'
+  'circlevertfill':
+    'prefix': 'circlevertfill'
+    'body': '◍$1'
+  'nVtwoheadleftarrow':
+    'prefix': 'nVtwoheadleftarrow'
+    'body': '⬵$1'
+  'Elzrtln':
+    'prefix': 'Elzrtln'
+    'body': 'ɳ$1'
+  'checkmark':
+    'prefix': 'checkmark'
+    'body': '✓$1'
+  'mbfsansgamma':
+    'prefix': 'mbfsansgamma'
+    'body': '𝝲$1'
+  'BbbE':
+    'prefix': 'BbbE'
+    'body': '𝔼$1'
+  'mscrk':
+    'prefix': 'mscrk'
+    'body': '𝓀$1'
+  'mtts':
+    'prefix': 'mtts'
+    'body': '𝚜$1'
+  'mitH':
+    'prefix': 'mitH'
+    'body': '𝐻$1'
+  'APLnotslash':
+    'prefix': 'APLnotslash'
+    'body': '⌿$1'
+  'Elzsqfnw':
+    'prefix': 'Elzsqfnw'
+    'body': '┙$1'
+  'leftarrowplus':
+    'prefix': 'leftarrowplus'
+    'body': '⥆$1'
+  'Elzxh':
+    'prefix': 'Elzxh'
+    'body': 'ħ$1'
+  'nsubseteqq':
+    'prefix': 'nsubseteqq'
+    'body': '⫅̸$1'
+  'mars':
+    'prefix': 'mars'
+    'body': '♂$1'
+  'ngtr':
+    'prefix': 'ngtr'
+    'body': '≯$1'
+  'mbfscrI':
+    'prefix': 'mbfscrI'
+    'body': '𝓘$1'
+  'mbffrakQ':
+    'prefix': 'mbffrakQ'
+    'body': '𝕼$1'
+  'mttV':
+    'prefix': 'mttV'
+    'body': '𝚅$1'
+  'hksearow':
+    'prefix': 'hksearow'
+    'body': '⤥$1'
+  'acidfree':
+    'prefix': 'acidfree'
+    'body': '♾$1'
+  'mttp':
+    'prefix': 'mttp'
+    'body': '𝚙$1'
+  'lesssim':
+    'prefix': 'lesssim'
+    'body': '≲$1'
+  'parallelogramblack':
+    'prefix': 'parallelogramblack'
+    'body': '▰$1'
+  'mbfw':
+    'prefix': 'mbfw'
+    'body': '𝐰$1'
+  'angles':
+    'prefix': 'angles'
+    'body': '⦞$1'
+  'mbfitsansK':
+    'prefix': 'mbfitsansK'
+    'body': '𝙆$1'
+  'mbffrakl':
+    'prefix': 'mbffrakl'
+    'body': '𝖑$1'
+  'Sqcap':
+    'prefix': 'Sqcap'
+    'body': '⩎$1'
+  'obar':
+    'prefix': 'obar'
+    'body': '⌽$1'
+  'mbfnu':
+    'prefix': 'mbfnu'
+    'body': '𝛎$1'
+  '^W':
+    'prefix': '^W'
+    'body': 'ᵂ$1'
+  'mbffrakZ':
+    'prefix': 'mbffrakZ'
+    'body': '𝖅$1'
+  'miteta':
+    'prefix': 'miteta'
+    'body': '𝜂$1'
+  'Colon':
+    'prefix': 'Colon'
+    'body': '∷$1'
+  'mitsansj':
+    'prefix': 'mitsansj'
+    'body': '𝘫$1'
+  'mbffrakm':
+    'prefix': 'mbffrakm'
+    'body': '𝖒$1'
+  'mitsansT':
+    'prefix': 'mitsansT'
+    'body': '𝘛$1'
+  'mttc':
+    'prefix': 'mttc'
+    'body': '𝚌$1'
+  'mscrg':
+    'prefix': 'mscrg'
+    'body': 'ℊ$1'
+  'mitGamma':
+    'prefix': 'mitGamma'
+    'body': '𝛤$1'
+  'sagittarius':
+    'prefix': 'sagittarius'
+    'body': '♐$1'
+  'prurel':
+    'prefix': 'prurel'
+    'body': '⊰$1'
+  'mbfitsansomicron':
+    'prefix': 'mbfitsansomicron'
+    'body': '𝞸$1'
+  'dot':
+    'prefix': 'dot'
+    'body': '̇$1'
+  'Omega':
+    'prefix': 'Omega'
+    'body': 'Ω$1'
+  'upoldKoppa':
+    'prefix': 'upoldKoppa'
+    'body': 'Ϙ$1'
+  'mfraku':
+    'prefix': 'mfraku'
+    'body': '𝔲$1'
+  'mtte':
+    'prefix': 'mtte'
+    'body': '𝚎$1'
+  'msanstwo':
+    'prefix': 'msanstwo'
+    'body': '𝟤$1'
+  'mfrakS':
+    'prefix': 'mfrakS'
+    'body': '𝔖$1'
+  'mbfsansxi':
+    'prefix': 'mbfsansxi'
+    'body': '𝝽$1'
+  'looparrowright':
+    'prefix': 'looparrowright'
+    'body': '↬$1'
+  'Vert':
+    'prefix': 'Vert'
+    'body': '‖$1'
+  'fdiagovrdiag':
+    'prefix': 'fdiagovrdiag'
+    'body': '⤬$1'
+  'ngeqslant':
+    'prefix': 'ngeqslant'
+    'body': '⩾̸$1'
+  '^1':
+    'prefix': '^1'
+    'body': '¹$1'
+  'Bbbe':
+    'prefix': 'Bbbe'
+    'body': '𝕖$1'
+  'mbfsansh':
+    'prefix': 'mbfsansh'
+    'body': '𝗵$1'
+  'mbfsansiota':
+    'prefix': 'mbfsansiota'
+    'body': '𝝸$1'
+  'ocommatopright':
+    'prefix': 'ocommatopright'
+    'body': '̕$1'
+  '_k':
+    'prefix': '_k'
+    'body': 'ₖ$1'
+  'perspcorrespond':
+    'prefix': 'perspcorrespond'
+    'body': '⩞$1'
+  'twoheadrightarrow':
+    'prefix': 'twoheadrightarrow'
+    'body': '↠$1'
+  'mttN':
+    'prefix': 'mttN'
+    'body': '𝙽$1'
+  'mbfsansK':
+    'prefix': 'mbfsansK'
+    'body': '𝗞$1'
+  'mttzero':
+    'prefix': 'mttzero'
+    'body': '𝟶$1'
+  'plustrif':
+    'prefix': 'plustrif'
+    'body': '⨨$1'
+  'mbfsansTheta':
+    'prefix': 'mbfsansTheta'
+    'body': '𝝝$1'
+  'mbfitsansBeta':
+    'prefix': 'mbfitsansBeta'
+    'body': '𝞑$1'
+  'pluseqq':
+    'prefix': 'pluseqq'
+    'body': '⩲$1'
+  'beta':
+    'prefix': 'beta'
+    'body': 'β$1'
+  'blkhorzoval':
+    'prefix': 'blkhorzoval'
+    'body': '⬬$1'
+  'c':
+    'prefix': 'c'
+    'body': '̧$1'
+  'mitp':
+    'prefix': 'mitp'
+    'body': '𝑝$1'
+  'blackpointerleft':
+    'prefix': 'blackpointerleft'
+    'body': '◄$1'
+  'twonotes':
+    'prefix': 'twonotes'
+    'body': '♫$1'
+  'mbfscrq':
+    'prefix': 'mbfscrq'
+    'body': '𝓺$1'
+  'mdblkdiamond':
+    'prefix': 'mdblkdiamond'
+    'body': '⬥$1'
+  'mfrakc':
+    'prefix': 'mfrakc'
+    'body': '𝔠$1'
+  'upwhitearrow':
+    'prefix': 'upwhitearrow'
+    'body': '⇧$1'
+  'Elzrtlr':
+    'prefix': 'Elzrtlr'
+    'body': 'ɽ$1'
+  'mbfsansChi':
+    'prefix': 'mbfsansChi'
+    'body': '𝝬$1'
+  'approxnotequal':
+    'prefix': 'approxnotequal'
+    'body': '≆$1'
+  'sqrt':
+    'prefix': 'sqrt'
+    'body': '√$1'
+  'plusdot':
+    'prefix': 'plusdot'
+    'body': '⨥$1'
+  'bigodot':
+    'prefix': 'bigodot'
+    'body': '⨀$1'
+  'subsetneqq':
+    'prefix': 'subsetneqq'
+    'body': '⫋$1'
+  'bsimilarleftarrow':
+    'prefix': 'bsimilarleftarrow'
+    'body': '⭁$1'
+  'nvtwoheadrightarrowtail':
+    'prefix': 'nvtwoheadrightarrowtail'
+    'body': '⤗$1'
+  'neg':
+    'prefix': 'neg'
+    'body': '¬$1'
+  'Elzreglst':
+    'prefix': 'Elzreglst'
+    'body': 'ʕ$1'
+  'mbffrakH':
+    'prefix': 'mbffrakH'
+    'body': '𝕳$1'
+  'barwedge':
+    'prefix': 'barwedge'
+    'body': '⊼$1'
+  'mbfsansPhi':
+    'prefix': 'mbfsansPhi'
+    'body': '𝝫$1'
+  '^m':
+    'prefix': '^m'
+    'body': 'ᵐ$1'
+  'Elzrvbull':
+    'prefix': 'Elzrvbull'
+    'body': '◘$1'
+  'ltcc':
+    'prefix': 'ltcc'
+    'body': '⪦$1'
+  'medblackstar':
+    'prefix': 'medblackstar'
+    'body': '⭑$1'
+  'mitDelta':
+    'prefix': 'mitDelta'
+    'body': '𝛥$1'
+  'Rightarrow':
+    'prefix': 'Rightarrow'
+    'body': '⇒$1'
+  'textasciicaron':
+    'prefix': 'textasciicaron'
+    'body': 'ˇ$1'
+  'leftbkarrow':
+    'prefix': 'leftbkarrow'
+    'body': '⤌$1'
+  'nvtwoheadleftarrowtail':
+    'prefix': 'nvtwoheadleftarrowtail'
+    'body': '⬼$1'
+  'mitO':
+    'prefix': 'mitO'
+    'body': '𝑂$1'
+  'mbfitsansv':
+    'prefix': 'mbfitsansv'
+    'body': '𝙫$1'
+  'Cap':
+    'prefix': 'Cap'
+    'body': '⋒$1'
+  'mbfsansDelta':
+    'prefix': 'mbfsansDelta'
+    'body': '𝝙$1'
+  '^I':
+    'prefix': '^I'
+    'body': 'ᴵ$1'
+  'aleph':
+    'prefix': 'aleph'
+    'body': 'ℵ$1'
+  'mbfsansTau':
+    'prefix': 'mbfsansTau'
+    'body': '𝝩$1'
+  'xi':
+    'prefix': 'xi'
+    'body': 'ξ$1'
+  'lessapprox':
+    'prefix': 'lessapprox'
+    'body': '⪅$1'
+  'ddddot':
+    'prefix': 'ddddot'
+    'body': '⃜$1'
+  '_j':
+    'prefix': '_j'
+    'body': 'ⱼ$1'
+  'longrightarrow':
+    'prefix': 'longrightarrow'
+    'body': '⟶$1'
+  'Elzrais':
+    'prefix': 'Elzrais'
+    'body': '˔$1'
+  'varcarriagereturn':
+    'prefix': 'varcarriagereturn'
+    'body': '⏎$1'
+  'dottedsquare':
+    'prefix': 'dottedsquare'
+    'body': '⬚$1'
+  'mfrakG':
+    'prefix': 'mfrakG'
+    'body': '𝔊$1'
+  'mbfitsanse':
+    'prefix': 'mbfitsanse'
+    'body': '𝙚$1'
+  'mbfsansv':
+    'prefix': 'mbfsansv'
+    'body': '𝘃$1'
+  '^o':
+    'prefix': '^o'
+    'body': 'ᵒ$1'
+  'mbfomega':
+    'prefix': 'mbfomega'
+    'body': '𝛚$1'
+  'lmoustache':
+    'prefix': 'lmoustache'
+    'body': '⎰$1'
+  '^h':
+    'prefix': '^h'
+    'body': 'ʰ$1'
+  'upoldkoppa':
+    'prefix': 'upoldkoppa'
+    'body': 'ϙ$1'
+  'Equiv':
+    'prefix': 'Equiv'
+    'body': '≣$1'
+  'pm':
+    'prefix': 'pm'
+    'body': '±$1'
+  'prec':
+    'prefix': 'prec'
+    'body': '≺$1'
+  'disjquant':
+    'prefix': 'disjquant'
+    'body': '⨈$1'
+  'capwedge':
+    'prefix': 'capwedge'
+    'body': '⩄$1'
+  'mscrl':
+    'prefix': 'mscrl'
+    'body': '𝓁$1'
+  'accurrent':
+    'prefix': 'accurrent'
+    'body': '⏦$1'
+  'draftingarrow':
+    'prefix': 'draftingarrow'
+    'body': '➛$1'
+  'measuredangleleft':
+    'prefix': 'measuredangleleft'
+    'body': '⦛$1'
+  'DH':
+    'prefix': 'DH'
+    'body': 'Ð$1'
+  'circleonleftarrow':
+    'prefix': 'circleonleftarrow'
+    'body': '⬰$1'
+  'mbfsansG':
+    'prefix': 'mbfsansG'
+    'body': '𝗚$1'
+  'egsdot':
+    'prefix': 'egsdot'
+    'body': '⪘$1'
+  'mbfitRho':
+    'prefix': 'mbfitRho'
+    'body': '𝜬$1'
+  'mbfnabla':
+    'prefix': 'mbfnabla'
+    'body': '𝛁$1'
+  'openbracketright':
+    'prefix': 'openbracketright'
+    'body': '⟧$1'
+  'mbffrakS':
+    'prefix': 'mbffrakS'
+    'body': '𝕾$1'
+  'vec':
+    'prefix': 'vec'
+    'body': '⃗$1'
+  'mbfitsansU':
+    'prefix': 'mbfitsansU'
+    'body': '𝙐$1'
+  'Elzsqfr':
+    'prefix': 'Elzsqfr'
+    'body': '◨$1'
+  'downharpoonleft':
+    'prefix': 'downharpoonleft'
+    'body': '⇃$1'
+  'phi':
+    'prefix': 'phi'
+    'body': 'ϕ$1'
+  'mbfsansm':
+    'prefix': 'mbfsansm'
+    'body': '𝗺$1'
+  'lozenge':
+    'prefix': 'lozenge'
+    'body': '◊$1'
+  'circledparallel':
+    'prefix': 'circledparallel'
+    'body': '⦷$1'
+  'L':
+    'prefix': 'L'
+    'body': 'Ł$1'
+  'ni':
+    'prefix': 'ni'
+    'body': '∋$1'
+  'BbbH':
+    'prefix': 'BbbH'
+    'body': 'ℍ$1'
+  'nvleftrightarrow':
+    'prefix': 'nvleftrightarrow'
+    'body': '⇹$1'
+  'mbfita':
+    'prefix': 'mbfita'
+    'body': '𝒂$1'
+  'vardiamondsuit':
+    'prefix': 'vardiamondsuit'
+    'body': '♦$1'
+  'leftrightharpoonsdown':
+    'prefix': 'leftrightharpoonsdown'
+    'body': '⥧$1'
+  'mbfscrB':
+    'prefix': 'mbfscrB'
+    'body': '𝓑$1'
+  'profsurf':
+    'prefix': 'profsurf'
+    'body': '⌓$1'
+  'subseteqq':
+    'prefix': 'subseteqq'
+    'body': '⫅$1'
+  'BbbN':
+    'prefix': 'BbbN'
+    'body': 'ℕ$1'
+  '_v':
+    'prefix': '_v'
+    'body': 'ᵥ$1'
+  'blockfull':
+    'prefix': 'blockfull'
+    'body': '█$1'
+  'Bbbthree':
+    'prefix': 'Bbbthree'
+    'body': '𝟛$1'
+  'texttildelow':
+    'prefix': 'texttildelow'
+    'body': '˜$1'
+  'widebridgeabove':
+    'prefix': 'widebridgeabove'
+    'body': '⃩$1'
+  'mbffrakb':
+    'prefix': 'mbffrakb'
+    'body': '𝖇$1'
+  'sphericalangleup':
+    'prefix': 'sphericalangleup'
+    'body': '⦡$1'
+  'mity':
+    'prefix': 'mity'
+    'body': '𝑦$1'
+  'mitchi':
+    'prefix': 'mitchi'
+    'body': '𝜒$1'
+  'mbffour':
+    'prefix': 'mbffour'
+    'body': '𝟒$1'
+  'mitpartial':
+    'prefix': 'mitpartial'
+    'body': '𝜕$1'
+  'heartsuit':
+    'prefix': 'heartsuit'
+    'body': '♡$1'
+  'Eulerconst':
+    'prefix': 'Eulerconst'
+    'body': 'ℇ$1'
+  'mscrN':
+    'prefix': 'mscrN'
+    'body': '𝒩$1'
+  'circledstar':
+    'prefix': 'circledstar'
+    'body': '✪$1'
+  'Elztrnsa':
+    'prefix': 'Elztrnsa'
+    'body': 'ɒ$1'
+  'subset':
+    'prefix': 'subset'
+    'body': '⊂$1'
+  'mbfitvartheta':
+    'prefix': 'mbfitvartheta'
+    'body': '𝝑$1'
+  'mbfsanseight':
+    'prefix': 'mbfsanseight'
+    'body': '𝟴$1'
+  'venus':
+    'prefix': 'venus'
+    'body': '♀$1'
+  'supsetplus':
+    'prefix': 'supsetplus'
+    'body': '⫀$1'
+  'mbffrakY':
+    'prefix': 'mbffrakY'
+    'body': '𝖄$1'
+  'thinspace':
+    'prefix': 'thinspace'
+    'body': ' $1'
+  'fallingdotseq':
+    'prefix': 'fallingdotseq'
+    'body': '≒$1'
+  'partialmeetcontraction':
+    'prefix': 'partialmeetcontraction'
+    'body': '⪣$1'
+  'msanse':
+    'prefix': 'msanse'
+    'body': '𝖾$1'
+  'NotNestedLessLess':
+    'prefix': 'NotNestedLessLess'
+    'body': '⪡̸$1'
+  'sqlozenge':
+    'prefix': 'sqlozenge'
+    'body': '⌑$1'
+  'squarecrossfill':
+    'prefix': 'squarecrossfill'
+    'body': '▩$1'
+  'mbfsansAlpha':
+    'prefix': 'mbfsansAlpha'
+    'body': '𝝖$1'
+  'mscrs':
+    'prefix': 'mscrs'
+    'body': '𝓈$1'
+  'Bbbeight':
+    'prefix': 'Bbbeight'
+    'body': '𝟠$1'
+  'approx':
+    'prefix': 'approx'
+    'body': '≈$1'
+  'gtrless':
+    'prefix': 'gtrless'
+    'body': '≷$1'
+  'ntriangleleft':
+    'prefix': 'ntriangleleft'
+    'body': '⋪$1'
+  'barvee':
+    'prefix': 'barvee'
+    'body': '⊽$1'
+  'invwhitelowerhalfcircle':
+    'prefix': 'invwhitelowerhalfcircle'
+    'body': '◛$1'
+  'partial':
+    'prefix': 'partial'
+    'body': '∂$1'
+  'pluto':
+    'prefix': 'pluto'
+    'body': '♇$1'
+  'wedgedoublebar':
+    'prefix': 'wedgedoublebar'
+    'body': '⩠$1'
+  'mbffrakL':
+    'prefix': 'mbffrakL'
+    'body': '𝕷$1'
+  'mbfscrK':
+    'prefix': 'mbfscrK'
+    'body': '𝓚$1'
+  'twoheadleftdbkarrow':
+    'prefix': 'twoheadleftdbkarrow'
+    'body': '⬷$1'
+  'mbfIota':
+    'prefix': 'mbfIota'
+    'body': '𝚰$1'
+  'mbfsansnabla':
+    'prefix': 'mbfsansnabla'
+    'body': '𝝯$1'
+  'eqqslantgtr':
+    'prefix': 'eqqslantgtr'
+    'body': '⪜$1'
+  'turnednot':
+    'prefix': 'turnednot'
+    'body': '⌙$1'
+  'mbfscrW':
+    'prefix': 'mbfscrW'
+    'body': '𝓦$1'
+  'mbffrakJ':
+    'prefix': 'mbffrakJ'
+    'body': '𝕵$1'
+  'mbfsanspsi':
+    'prefix': 'mbfsanspsi'
+    'body': '𝞇$1'
+  'wedgedot':
+    'prefix': 'wedgedot'
+    'body': '⟑$1'
+  'mttthree':
+    'prefix': 'mttthree'
+    'body': '𝟹$1'
+  'kappa':
+    'prefix': 'kappa'
+    'body': 'κ$1'
+  'similarleftarrow':
+    'prefix': 'similarleftarrow'
+    'body': '⭉$1'
+  'BbbF':
+    'prefix': 'BbbF'
+    'body': '𝔽$1'
+  'textTheta':
+    'prefix': 'textTheta'
+    'body': 'ϴ$1'
+  'mdsmwhtsquare':
+    'prefix': 'mdsmwhtsquare'
+    'body': '◽$1'
+  'lescc':
+    'prefix': 'lescc'
+    'body': '⪨$1'
+  'msansl':
+    'prefix': 'msansl'
+    'body': '𝗅$1'
+  'mbfitsansvarsigma':
+    'prefix': 'mbfitsansvarsigma'
+    'body': '𝞻$1'
+  'whthorzoval':
+    'prefix': 'whthorzoval'
+    'body': '⬭$1'
+  'blocklefthalf':
+    'prefix': 'blocklefthalf'
+    'body': '▌$1'
+  'vardoublebarwedge':
+    'prefix': 'vardoublebarwedge'
+    'body': '⌆$1'
+  'mbfitd':
+    'prefix': 'mbfitd'
+    'body': '𝒅$1'
+  'Vvdash':
+    'prefix': 'Vvdash'
+    'body': '⊪$1'
+  'invwhiteupperhalfcircle':
+    'prefix': 'invwhiteupperhalfcircle'
+    'body': '◚$1'
+  'hspace':
+    'prefix': 'hspace'
+    'body': ' $1'
+  'Bbbn':
+    'prefix': 'Bbbn'
+    'body': '𝕟$1'
+  'mitsansC':
+    'prefix': 'mitsansC'
+    'body': '𝘊$1'
+  'rightdotarrow':
+    'prefix': 'rightdotarrow'
+    'body': '⤑$1'
+  'mitsansm':
+    'prefix': 'mitsansm'
+    'body': '𝘮$1'
+  'mbfitXi':
+    'prefix': 'mbfitXi'
+    'body': '𝜩$1'
+  'leqslant':
+    'prefix': 'leqslant'
+    'body': '⩽$1'
+  'questeq':
+    'prefix': 'questeq'
+    'body': '≟$1'
+  'wp':
+    'prefix': 'wp'
+    'body': '℘$1'
+  'mscre':
+    'prefix': 'mscre'
+    'body': 'ℯ$1'
+  'msansx':
+    'prefix': 'msansx'
+    'body': '𝗑$1'
+  'wedgeonwedge':
+    'prefix': 'wedgeonwedge'
+    'body': '⩕$1'
+  'mfrakT':
+    'prefix': 'mfrakT'
+    'body': '𝔗$1'
+  'msansJ':
+    'prefix': 'msansJ'
+    'body': '𝖩$1'
+  'nHuparrow':
+    'prefix': 'nHuparrow'
+    'body': '⇞$1'
+  'gamma':
+    'prefix': 'gamma'
+    'body': 'γ$1'
+  'NotGreaterGreater':
+    'prefix': 'NotGreaterGreater'
+    'body': '≫̸$1'
+  'simgE':
+    'prefix': 'simgE'
+    'body': '⪠$1'
+  'mbfitS':
+    'prefix': 'mbfitS'
+    'body': '𝑺$1'
+  'varstar':
+    'prefix': 'varstar'
+    'body': '✶$1'
+  'Doteq':
+    'prefix': 'Doteq'
+    'body': '≑$1'
+  'Elzlmrk':
+    'prefix': 'Elzlmrk'
+    'body': 'ː$1'
+  'mbfb':
+    'prefix': 'mbfb'
+    'body': '𝐛$1'
+  'LLeftarrow':
+    'prefix': 'LLeftarrow'
+    'body': '⭅$1'
+  'mbfscrr':
+    'prefix': 'mbfscrr'
+    'body': '𝓻$1'
+  'Elzdlcorn':
+    'prefix': 'Elzdlcorn'
+    'body': '⎣$1'
+  'mitE':
+    'prefix': 'mitE'
+    'body': '𝐸$1'
+  'mscrc':
+    'prefix': 'mscrc'
+    'body': '𝒸$1'
+  'nsubset':
+    'prefix': 'nsubset'
+    'body': '⊄$1'
+  'Equal':
+    'prefix': 'Equal'
+    'body': '⩵$1'
+  'varhexagon':
+    'prefix': 'varhexagon'
+    'body': '⬡$1'
+  'mbfitj':
+    'prefix': 'mbfitj'
+    'body': '𝒋$1'
+  'bkarow':
+    'prefix': 'bkarow'
+    'body': '⤍$1'
+  'intcup':
+    'prefix': 'intcup'
+    'body': '⨚$1'
+  'P':
+    'prefix': 'P'
+    'body': '¶$1'
+  'mttH':
+    'prefix': 'mttH'
+    'body': '𝙷$1'
+  'lneq':
+    'prefix': 'lneq'
+    'body': '⪇$1'
+  'mbfscro':
+    'prefix': 'mbfscro'
+    'body': '𝓸$1'
+  'mbfsansV':
+    'prefix': 'mbfsansV'
+    'body': '𝗩$1'
+  '^e':
+    'prefix': '^e'
+    'body': 'ᵉ$1'
+  'napprox':
+    'prefix': 'napprox'
+    'body': '≉$1'
+  'mbfPhi':
+    'prefix': 'mbfPhi'
+    'body': '𝚽$1'
+  '^delta':
+    'prefix': '^delta'
+    'body': 'ᵟ$1'
+  'Elztrnm':
+    'prefix': 'Elztrnm'
+    'body': 'ɯ$1'
+  'varheartsuit':
+    'prefix': 'varheartsuit'
+    'body': '♥$1'
+  'ltquest':
+    'prefix': 'ltquest'
+    'body': '⩻$1'
+  'bigstar':
+    'prefix': 'bigstar'
+    'body': '★$1'
+  'mbfitsansG':
+    'prefix': 'mbfitsansG'
+    'body': '𝙂$1'
+  'mbfsansPi':
+    'prefix': 'mbfsansPi'
+    'body': '𝝥$1'
+  'mbfitsansdelta':
+    'prefix': 'mbfitsansdelta'
+    'body': '𝞭$1'
+  'mbfscrT':
+    'prefix': 'mbfscrT'
+    'body': '𝓣$1'
+  'lesseqgtr':
+    'prefix': 'lesseqgtr'
+    'body': '⋚$1'
+  'smeparsl':
+    'prefix': 'smeparsl'
+    'body': '⧤$1'
+  'smblkdiamond':
+    'prefix': 'smblkdiamond'
+    'body': '⬩$1'
+  'mbfseven':
+    'prefix': 'mbfseven'
+    'body': '𝟕$1'
+  'ngeq':
+    'prefix': 'ngeq'
+    'body': '≱$1'
+  'varnothing':
+    'prefix': 'varnothing'
+    'body': '∅$1'
+  'rppolint':
+    'prefix': 'rppolint'
+    'body': '⨒$1'
+  'supseteq':
+    'prefix': 'supseteq'
+    'body': '⊇$1'
+  'eta':
+    'prefix': 'eta'
+    'body': 'η$1'
+  'mbfPsi':
+    'prefix': 'mbfPsi'
+    'body': '𝚿$1'
+  'varrho':
+    'prefix': 'varrho'
+    'body': 'ϱ$1'
+  'mitA':
+    'prefix': 'mitA'
+    'body': '𝐴$1'
+  'neptune':
+    'prefix': 'neptune'
+    'body': '♆$1'
+  '^gamma':
+    'prefix': '^gamma'
+    'body': 'ᵞ$1'
+  'lgblkcircle':
+    'prefix': 'lgblkcircle'
+    'body': '⬤$1'
+  'mbfsanstau':
+    'prefix': 'mbfsanstau'
+    'body': '𝞃$1'
+  'Vdash':
+    'prefix': 'Vdash'
+    'body': '⊩$1'
+  'mbfitt':
+    'prefix': 'mbfitt'
+    'body': '𝒕$1'
+  'dots':
+    'prefix': 'dots'
+    'body': '…$1'
+  '^G':
+    'prefix': '^G'
+    'body': 'ᴳ$1'
+  'longleftrightarrow':
+    'prefix': 'longleftrightarrow'
+    'body': '⟷$1'
+  'mbfitU':
+    'prefix': 'mbfitU'
+    'body': '𝑼$1'
+  'mbfitTheta':
+    'prefix': 'mbfitTheta'
+    'body': '𝜣$1'
+  'mbfscrg':
+    'prefix': 'mbfscrg'
+    'body': '𝓰$1'
+  'gemini':
+    'prefix': 'gemini'
+    'body': '♊$1'
+  'mbfsansLambda':
+    'prefix': 'mbfsansLambda'
+    'body': '𝝠$1'
+  'mbfscru':
+    'prefix': 'mbfscru'
+    'body': '𝓾$1'
+  'mbfitvarkappa':
+    'prefix': 'mbfitvarkappa'
+    'body': '𝝒$1'
+  'isins':
+    'prefix': 'isins'
+    'body': '⋴$1'
+  'mbfpi':
+    'prefix': 'mbfpi'
+    'body': '𝛑$1'
+  'mbfitsansD':
+    'prefix': 'mbfitsansD'
+    'body': '𝘿$1'
+  '_1':
+    'prefix': '_1'
+    'body': '₁$1'
+  'nsupset':
+    'prefix': 'nsupset'
+    'body': '⊅$1'
+  'mbfitT':
+    'prefix': 'mbfitT'
+    'body': '𝑻$1'
+  'msansR':
+    'prefix': 'msansR'
+    'body': '𝖱$1'
+  'mbfitepsilon':
+    'prefix': 'mbfitepsilon'
+    'body': '𝜺$1'
+  'gescc':
+    'prefix': 'gescc'
+    'body': '⪩$1'
+  'supsetneqq':
+    'prefix': 'supsetneqq'
+    'body': '⫌$1'
+  'threedangle':
+    'prefix': 'threedangle'
+    'body': '⟀$1'
+  'lesdotor':
+    'prefix': 'lesdotor'
+    'body': '⪃$1'
+  'dotequiv':
+    'prefix': 'dotequiv'
+    'body': '⩧$1'
+  'mbfsansc':
+    'prefix': 'mbfsansc'
+    'body': '𝗰$1'
+  'mbfitsansI':
+    'prefix': 'mbfitsansI'
+    'body': '𝙄$1'
+  'mbfS':
+    'prefix': 'mbfS'
+    'body': '𝐒$1'
+  'mbffrakd':
+    'prefix': 'mbffrakd'
+    'body': '𝖉$1'
+  'mbfsansnine':
+    'prefix': 'mbfsansnine'
+    'body': '𝟵$1'
+  '_o':
+    'prefix': '_o'
+    'body': 'ₒ$1'
+  'mbfvarphi':
+    'prefix': 'mbfvarphi'
+    'body': '𝛗$1'
+  'bigtriangleup':
+    'prefix': 'bigtriangleup'
+    'body': '△$1'
+  'diagup':
+    'prefix': 'diagup'
+    'body': '╱$1'
+  'underbar':
+    'prefix': 'underbar'
+    'body': '̱$1'
+  'mscrQ':
+    'prefix': 'mscrQ'
+    'body': '𝒬$1'
+  'mitZeta':
+    'prefix': 'mitZeta'
+    'body': '𝛧$1'
+  'Bbbzero':
+    'prefix': 'Bbbzero'
+    'body': '𝟘$1'
+  'Bbbv':
+    'prefix': 'Bbbv'
+    'body': '𝕧$1'
+  'mitsansE':
+    'prefix': 'mitsansE'
+    'body': '𝘌$1'
+  'mbfitsansnabla':
+    'prefix': 'mbfitsansnabla'
+    'body': '𝞩$1'
+  'mbfitsansEta':
+    'prefix': 'mbfitsansEta'
+    'body': '𝞖$1'
+  'nexists':
+    'prefix': 'nexists'
+    'body': '∄$1'
+  'nVleftarrowtail':
+    'prefix': 'nVleftarrowtail'
+    'body': '⬺$1'
+  'image':
+    'prefix': 'image'
+    'body': '⊷$1'
+  'underbrace':
+    'prefix': 'underbrace'
+    'body': '⏟$1'
+  'circleurquadblack':
+    'prefix': 'circleurquadblack'
+    'body': '◔$1'
+  'supdsub':
+    'prefix': 'supdsub'
+    'body': '⫘$1'
+  'boxplus':
+    'prefix': 'boxplus'
+    'body': '⊞$1'
+  '^x':
+    'prefix': '^x'
+    'body': 'ˣ$1'
+  'mbfBeta':
+    'prefix': 'mbfBeta'
+    'body': '𝚩$1'
+  'mscrL':
+    'prefix': 'mscrL'
+    'body': 'ℒ$1'
+  'smashtimes':
+    'prefix': 'smashtimes'
+    'body': '⨳$1'
+  'mbfitsanskappa':
+    'prefix': 'mbfitsanskappa'
+    'body': '𝞳$1'
+  'Zeta':
+    'prefix': 'Zeta'
+    'body': 'Ζ$1'
+  'nisd':
+    'prefix': 'nisd'
+    'body': '⋺$1'
+  'BbbX':
+    'prefix': 'BbbX'
+    'body': '𝕏$1'
+  'DDownarrow':
+    'prefix': 'DDownarrow'
+    'body': '⟱$1'
+  'texthvlig':
+    'prefix': 'texthvlig'
+    'body': 'ƕ$1'
+  'oplusrhrim':
+    'prefix': 'oplusrhrim'
+    'body': '⨮$1'
+  'ultriangle':
+    'prefix': 'ultriangle'
+    'body': '◸$1'
+  'mbfitsansOmega':
+    'prefix': 'mbfitsansOmega'
+    'body': '𝞨$1'
+  'OE':
+    'prefix': 'OE'
+    'body': 'Œ$1'
+  'circledcirc':
+    'prefix': 'circledcirc'
+    'body': '⊚$1'
+  'capricornus':
+    'prefix': 'capricornus'
+    'body': '♑$1'
+  'diameter':
+    'prefix': 'diameter'
+    'body': '⌀$1'
+  'underbracket':
+    'prefix': 'underbracket'
+    'body': '⎵$1'
+  'subsim':
+    'prefix': 'subsim'
+    'body': '⫇$1'
+  'BbbG':
+    'prefix': 'BbbG'
+    'body': '𝔾$1'
+  'house':
+    'prefix': 'house'
+    'body': '⌂$1'
+  'mscri':
+    'prefix': 'mscri'
+    'body': '𝒾$1'
+  'mbfsansO':
+    'prefix': 'mbfsansO'
+    'body': '𝗢$1'
+  'mbfPi':
+    'prefix': 'mbfPi'
+    'body': '𝚷$1'
+  'towa':
+    'prefix': 'towa'
+    'body': '⤪$1'
+  'mbfsanschi':
+    'prefix': 'mbfsanschi'
+    'body': '𝞆$1'
+  'mttq':
+    'prefix': 'mttq'
+    'body': '𝚚$1'
+  'in':
+    'prefix': 'in'
+    'body': '∈$1'
+  'mbfscrV':
+    'prefix': 'mbfscrV'
+    'body': '𝓥$1'
+  '^0':
+    'prefix': '^0'
+    'body': '⁰$1'
+  'enclosecircle':
+    'prefix': 'enclosecircle'
+    'body': '⃝$1'
+  'mbfity':
+    'prefix': 'mbfity'
+    'body': '𝒚$1'
+  'modtwosum':
+    'prefix': 'modtwosum'
+    'body': '⨊$1'
+  'mitx':
+    'prefix': 'mitx'
+    'body': '𝑥$1'
+  'chi':
+    'prefix': 'chi'
+    'body': 'χ$1'
+  'mbfite':
+    'prefix': 'mbfite'
+    'body': '𝒆$1'
+  '^alpha':
+    'prefix': '^alpha'
+    'body': 'ᵅ$1'
+  'measanglerutone':
+    'prefix': 'measanglerutone'
+    'body': '⦨$1'
+  'mttr':
+    'prefix': 'mttr'
+    'body': '𝚛$1'
+  'sansLmirrored':
+    'prefix': 'sansLmirrored'
+    'body': '⅃$1'
+  'nvrightarrow':
+    'prefix': 'nvrightarrow'
+    'body': '⇸$1'
+  'mitsanso':
+    'prefix': 'mitsanso'
+    'body': '𝘰$1'
+  'mbfsansvarphi':
+    'prefix': 'mbfsansvarphi'
+    'body': '𝞍$1'
+  'mitq':
+    'prefix': 'mitq'
+    'body': '𝑞$1'
+  'mapsdown':
+    'prefix': 'mapsdown'
+    'body': '↧$1'
+  'imath':
+    'prefix': 'imath'
+    'body': '𝚤$1'
+  'squareurquad':
+    'prefix': 'squareurquad'
+    'body': '◳$1'
+  'mbfitchi':
+    'prefix': 'mbfitchi'
+    'body': '𝝌$1'
+  'smwhtlozenge':
+    'prefix': 'smwhtlozenge'
+    'body': '⬫$1'
+  '^V':
+    'prefix': '^V'
+    'body': 'ⱽ$1'
+  'rightthreearrows':
+    'prefix': 'rightthreearrows'
+    'body': '⇶$1'
+  'Bbbz':
+    'prefix': 'Bbbz'
+    'body': '𝕫$1'
+  'mbffrakX':
+    'prefix': 'mbffrakX'
+    'body': '𝖃$1'
+  'mbfsansw':
+    'prefix': 'mbfsansw'
+    'body': '𝘄$1'
+  'mbfsigma':
+    'prefix': 'mbfsigma'
+    'body': '𝛔$1'
+  'mitsansw':
+    'prefix': 'mitsansw'
+    'body': '𝘸$1'
+  'msanst':
+    'prefix': 'msanst'
+    'body': '𝗍$1'
+  'mbfvarkappa':
+    'prefix': 'mbfvarkappa'
+    'body': '𝛞$1'
+  'Bbbsix':
+    'prefix': 'Bbbsix'
+    'body': '𝟞$1'
+  'Elzcirfl':
+    'prefix': 'Elzcirfl'
+    'body': '◐$1'
+  'mbfvarepsilon':
+    'prefix': 'mbfvarepsilon'
+    'body': '𝛜$1'
+  'mbfitTau':
+    'prefix': 'mbfitTau'
+    'body': '𝜯$1'
+  'QED':
+    'prefix': 'QED'
+    'body': '∎$1'
+  'Bbbq':
+    'prefix': 'Bbbq'
+    'body': '𝕢$1'
+  '^b':
+    'prefix': '^b'
+    'body': 'ᵇ$1'
+  'mitBbbj':
+    'prefix': 'mitBbbj'
+    'body': 'ⅉ$1'
+  'boxbar':
+    'prefix': 'boxbar'
+    'body': '◫$1'
+  'Elzrttrnr':
+    'prefix': 'Elzrttrnr'
+    'body': 'ɻ$1'
+  'mbfitY':
+    'prefix': 'mbfitY'
+    'body': '𝒀$1'
+  'Ldsh':
+    'prefix': 'Ldsh'
+    'body': '↲$1'
+  'mbfitg':
+    'prefix': 'mbfitg'
+    'body': '𝒈$1'
+  'angdnr':
+    'prefix': 'angdnr'
+    'body': '⦟$1'
+  'mtta':
+    'prefix': 'mtta'
+    'body': '𝚊$1'
+  'mbfitPsi':
+    'prefix': 'mbfitPsi'
+    'body': '𝜳$1'
+  'mbfitsansmu':
+    'prefix': 'mbfitsansmu'
+    'body': '𝞵$1'
+  'msanszero':
+    'prefix': 'msanszero'
+    'body': '𝟢$1'
+  'Xi':
+    'prefix': 'Xi'
+    'body': 'Ξ$1'
+  'mbfitGamma':
+    'prefix': 'mbfitGamma'
+    'body': '𝜞$1'
+  'RightUpVectorBar':
+    'prefix': 'RightUpVectorBar'
+    'body': '⥔$1'
+  'veebar':
+    'prefix': 'veebar'
+    'body': '⊻$1'
+  'nsuccsim':
+    'prefix': 'nsuccsim'
+    'body': '≿̸$1'
+  'verymuchless':
+    'prefix': 'verymuchless'
+    'body': '⋘$1'
+  'mitsansM':
+    'prefix': 'mitsansM'
+    'body': '𝘔$1'
+  'mbfitsansZ':
+    'prefix': 'mbfitsansZ'
+    'body': '𝙕$1'
+  'leftdasharrow':
+    'prefix': 'leftdasharrow'
+    'body': '⇠$1'
+  'mttm':
+    'prefix': 'mttm'
+    'body': '𝚖$1'
+  'rrbracket':
+    'prefix': 'rrbracket'
+    'body': '⟧$1'
+  'textphi':
+    'prefix': 'textphi'
+    'body': 'ɸ$1'
+  'triangletimes':
+    'prefix': 'triangletimes'
+    'body': '⨻$1'
+  'mbfitsansf':
+    'prefix': 'mbfitsansf'
+    'body': '𝙛$1'
+  'dicei':
+    'prefix': 'dicei'
+    'body': '⚀$1'
+  'closedvarcup':
+    'prefix': 'closedvarcup'
+    'body': '⩌$1'
+  'Elztrnt':
+    'prefix': 'Elztrnt'
+    'body': 'ʇ$1'
+  'squarenwsefill':
+    'prefix': 'squarenwsefill'
+    'body': '▧$1'
+  'mscrW':
+    'prefix': 'mscrW'
+    'body': '𝒲$1'
+  '_gamma':
+    'prefix': '_gamma'
+    'body': 'ᵧ$1'
+  'triangleq':
+    'prefix': 'triangleq'
+    'body': '≜$1'
+  'lrtriangle':
+    'prefix': 'lrtriangle'
+    'body': '◿$1'
+  'mitc':
+    'prefix': 'mitc'
+    'body': '𝑐$1'
+  'mscrP':
+    'prefix': 'mscrP'
+    'body': '𝒫$1'
+  'ogreaterthan':
+    'prefix': 'ogreaterthan'
+    'body': '⧁$1'
+  'congdot':
+    'prefix': 'congdot'
+    'body': '⩭$1'
+  'mbfsansphi':
+    'prefix': 'mbfsansphi'
+    'body': '𝞅$1'
+  'mttfour':
+    'prefix': 'mttfour'
+    'body': '𝟺$1'
+  'Beta':
+    'prefix': 'Beta'
+    'body': 'Β$1'
+  'minusrdots':
+    'prefix': 'minusrdots'
+    'body': '⨬$1'
+  'mbffraku':
+    'prefix': 'mbffraku'
+    'body': '𝖚$1'
+  'ast':
+    'prefix': 'ast'
+    'body': '∗$1'
+  'mbfitLambda':
+    'prefix': 'mbfitLambda'
+    'body': '𝜦$1'
+  'bigsqcup':
+    'prefix': 'bigsqcup'
+    'body': '⨆$1'
+  'mitsansk':
+    'prefix': 'mitsansk'
+    'body': '𝘬$1'
+  'eqqplus':
+    'prefix': 'eqqplus'
+    'body': '⩱$1'
+  'msansI':
+    'prefix': 'msansI'
+    'body': '𝖨$1'
+  'enclosesquare':
+    'prefix': 'enclosesquare'
+    'body': '⃞$1'
+  'barleftarrow':
+    'prefix': 'barleftarrow'
+    'body': '⇤$1'
+  'mitlambda':
+    'prefix': 'mitlambda'
+    'body': '𝜆$1'
+  'mbfD':
+    'prefix': 'mbfD'
+    'body': '𝐃$1'
+  'Elzbar':
+    'prefix': 'Elzbar'
+    'body': '̶$1'
+  'nequiv':
+    'prefix': 'nequiv'
+    'body': '≢$1'
+  'equivDD':
+    'prefix': 'equivDD'
+    'body': '⩸$1'
+  'lat':
+    'prefix': 'lat'
+    'body': '⪫$1'
+  'ncong':
+    'prefix': 'ncong'
+    'body': '≇$1'
+  '^theta':
+    'prefix': '^theta'
+    'body': 'ᶿ$1'
+  'Elzrtls':
+    'prefix': 'Elzrtls'
+    'body': 'ʂ$1'
+  'Succ':
+    'prefix': 'Succ'
+    'body': '⪼$1'
+  '_schwa':
+    'prefix': '_schwa'
+    'body': 'ₔ$1'
+  'Finv':
+    'prefix': 'Finv'
+    'body': 'Ⅎ$1'
+  '_0':
+    'prefix': '_0'
+    'body': '₀$1'
+  'mbfitvarpi':
+    'prefix': 'mbfitvarpi'
+    'body': '𝝕$1'
+  'dddot':
+    'prefix': 'dddot'
+    'body': '⃛$1'
+  'mitB':
+    'prefix': 'mitB'
+    'body': '𝐵$1'
+  'mbfChi':
+    'prefix': 'mbfChi'
+    'body': '𝚾$1'
+  'mbfZ':
+    'prefix': 'mbfZ'
+    'body': '𝐙$1'
+  'msansf':
+    'prefix': 'msansf'
+    'body': '𝖿$1'
+  'mbfsansPsi':
+    'prefix': 'mbfsansPsi'
+    'body': '𝝭$1'
+  'dotminus':
+    'prefix': 'dotminus'
+    'body': '∸$1'
+  'mbfvartheta':
+    'prefix': 'mbfvartheta'
+    'body': '𝛝$1'
+  'oint':
+    'prefix': 'oint'
+    'body': '∮$1'
+  'mbfitsansGamma':
+    'prefix': 'mbfitsansGamma'
+    'body': '𝞒$1'
+  'circlearrowleft':
+    'prefix': 'circlearrowleft'
+    'body': '↺$1'
+  'mfrakz':
+    'prefix': 'mfrakz'
+    'body': '𝔷$1'
+  'mbfitB':
+    'prefix': 'mbfitB'
+    'body': '𝑩$1'
+  'mbfitsansKappa':
+    'prefix': 'mbfitsansKappa'
+    'body': '𝞙$1'
+  'mbfitsansRho':
+    'prefix': 'mbfitsansRho'
+    'body': '𝞠$1'
+  'blackinwhitediamond':
+    'prefix': 'blackinwhitediamond'
+    'body': '◈$1'
+  'diamondleftblack':
+    'prefix': 'diamondleftblack'
+    'body': '⬖$1'
+  'nHdownarrow':
+    'prefix': 'nHdownarrow'
+    'body': '⇟$1'
+  'mitomicron':
+    'prefix': 'mitomicron'
+    'body': '𝜊$1'
+  'mbfC':
+    'prefix': 'mbfC'
+    'body': '𝐂$1'
+  'diamondsuit':
+    'prefix': 'diamondsuit'
+    'body': '♢$1'
+  'mbffrakf':
+    'prefix': 'mbffrakf'
+    'body': '𝖋$1'
+  'mscrS':
+    'prefix': 'mscrS'
+    'body': '𝒮$1'
+  'nLeftarrow':
+    'prefix': 'nLeftarrow'
+    'body': '⇍$1'
+  'Elzpscrv':
+    'prefix': 'Elzpscrv'
+    'body': 'ʋ$1'
+  'Elzltlmr':
+    'prefix': 'Elzltlmr'
+    'body': 'ɱ$1'
+  'acute':
+    'prefix': 'acute'
+    'body': '́$1'
+  'llbracket':
+    'prefix': 'llbracket'
+    'body': '⟦$1'
+  'UUparrow':
+    'prefix': 'UUparrow'
+    'body': '⟰$1'
+  'Nearrow':
+    'prefix': 'Nearrow'
+    'body': '⇗$1'
+  'rightleftharpoonsdown':
+    'prefix': 'rightleftharpoonsdown'
+    'body': '⥩$1'
+  'Elzddfnc':
+    'prefix': 'Elzddfnc'
+    'body': '⦙$1'
+  'bigtriangledown':
+    'prefix': 'bigtriangledown'
+    'body': '▽$1'
+  'msansG':
+    'prefix': 'msansG'
+    'body': '𝖦$1'
+  'Longleftarrow':
+    'prefix': 'Longleftarrow'
+    'body': '⟸$1'
+  'mitiota':
+    'prefix': 'mitiota'
+    'body': '𝜄$1'
+  'nsucc':
+    'prefix': 'nsucc'
+    'body': '⊁$1'
+  'square':
+    'prefix': 'square'
+    'body': '□$1'
+  'succ':
+    'prefix': 'succ'
+    'body': '≻$1'
+  'circledrightdot':
+    'prefix': 'circledrightdot'
+    'body': '⚆$1'
+  'mfrakO':
+    'prefix': 'mfrakO'
+    'body': '𝔒$1'
+  'mbfg':
+    'prefix': 'mbfg'
+    'body': '𝐠$1'
+  'mfraks':
+    'prefix': 'mfraks'
+    'body': '𝔰$1'
+  'mbfsansg':
+    'prefix': 'mbfsansg'
+    'body': '𝗴$1'
+  'mitsansl':
+    'prefix': 'mitsansl'
+    'body': '𝘭$1'
+  'mttT':
+    'prefix': 'mttT'
+    'body': '𝚃$1'
+  'mitBbbD':
+    'prefix': 'mitBbbD'
+    'body': 'ⅅ$1'
+  'mbfitiota':
+    'prefix': 'mbfitiota'
+    'body': '𝜾$1'
+  'neovnwarrow':
+    'prefix': 'neovnwarrow'
+    'body': '⤱$1'
+  'Elzfhr':
+    'prefix': 'Elzfhr'
+    'body': 'ɾ$1'
+  'mbfitsanslambda':
+    'prefix': 'mbfitsanslambda'
+    'body': '𝞴$1'
+  'twoheadmapsto':
+    'prefix': 'twoheadmapsto'
+    'body': '⤅$1'
+  'langle':
+    'prefix': 'langle'
+    'body': '⟨$1'
+  'mitsansq':
+    'prefix': 'mitsansq'
+    'body': '𝘲$1'
+  'mbfitsansSigma':
+    'prefix': 'mbfitsansSigma'
+    'body': '𝞢$1'
+  'DownRightVectorBar':
+    'prefix': 'DownRightVectorBar'
+    'body': '⥗$1'
+  'Longmapsfrom':
+    'prefix': 'Longmapsfrom'
+    'body': '⟽$1'
+  'Yup':
+    'prefix': 'Yup'
+    'body': '⅄$1'
+  'mbfA':
+    'prefix': 'mbfA'
+    'body': '𝐀$1'
+  'clubsuit':
+    'prefix': 'clubsuit'
+    'body': '♣$1'
+  'elsdot':
+    'prefix': 'elsdot'
+    'body': '⪗$1'
+  'Stigma':
+    'prefix': 'Stigma'
+    'body': 'Ϛ$1'
+  'rightangle':
+    'prefix': 'rightangle'
+    'body': '∟$1'
+  'backsim':
+    'prefix': 'backsim'
+    'body': '∽$1'
+  'mitR':
+    'prefix': 'mitR'
+    'body': '𝑅$1'
+  'Elzsblhr':
+    'prefix': 'Elzsblhr'
+    'body': '˓$1'
+  'msansq':
+    'prefix': 'msansq'
+    'body': '𝗊$1'
+  'mitvarphi':
+    'prefix': 'mitvarphi'
+    'body': '𝜙$1'
+  'mitV':
+    'prefix': 'mitV'
+    'body': '𝑉$1'
+  'mfrakF':
+    'prefix': 'mfrakF'
+    'body': '𝔉$1'
+  'downdownarrows':
+    'prefix': 'downdownarrows'
+    'body': '⇊$1'
+  'measeq':
+    'prefix': 'measeq'
+    'body': '≞$1'
+  '^f':
+    'prefix': '^f'
+    'body': 'ᶠ$1'
+  'lowint':
+    'prefix': 'lowint'
+    'body': '⨜$1'
+  'mbfitsansomega':
+    'prefix': 'mbfitsansomega'
+    'body': '𝟂$1'
+  'emptyset':
+    'prefix': 'emptyset'
+    'body': '∅$1'
+  'BbbL':
+    'prefix': 'BbbL'
+    'body': '𝕃$1'
+  'Elzminhat':
+    'prefix': 'Elzminhat'
+    'body': '⩟$1'
+  'varphi':
+    'prefix': 'varphi'
+    'body': 'φ$1'
+  'mbfW':
+    'prefix': 'mbfW'
+    'body': '𝐖$1'
+  'mitmu':
+    'prefix': 'mitmu'
+    'body': '𝜇$1'
+  'blacklozenge':
+    'prefix': 'blacklozenge'
+    'body': '⧫$1'
+  'mttE':
+    'prefix': 'mttE'
+    'body': '𝙴$1'
+  'Tau':
+    'prefix': 'Tau'
+    'body': 'Τ$1'
+  'mbffrakK':
+    'prefix': 'mbffrakK'
+    'body': '𝕶$1'
+  'looparrowleft':
+    'prefix': 'looparrowleft'
+    'body': '↫$1'
+  'nVtwoheadrightarrow':
+    'prefix': 'nVtwoheadrightarrow'
+    'body': '⤁$1'
+  'Bbbu':
+    'prefix': 'Bbbu'
+    'body': '𝕦$1'
+  'beth':
+    'prefix': 'beth'
+    'body': 'ℶ$1'
+  'mitf':
+    'prefix': 'mitf'
+    'body': '𝑓$1'
+  'nsim':
+    'prefix': 'nsim'
+    'body': '≁$1'
+  'ocirc':
+    'prefix': 'ocirc'
+    'body': '̊$1'
+  'div':
+    'prefix': 'div'
+    'body': '÷$1'
+  'mbfEpsilon':
+    'prefix': 'mbfEpsilon'
+    'body': '𝚬$1'
+  'longmapsfrom':
+    'prefix': 'longmapsfrom'
+    'body': '⟻$1'
+  '_-':
+    'prefix': '_-'
+    'body': '₋$1'
+  'mbfsanso':
+    'prefix': 'mbfsanso'
+    'body': '𝗼$1'
+  'mbfTheta':
+    'prefix': 'mbfTheta'
+    'body': '𝚯$1'
+  'Elztrnmlr':
+    'prefix': 'Elztrnmlr'
+    'body': 'ɰ$1'
+  'squarehvfill':
+    'prefix': 'squarehvfill'
+    'body': '▦$1'
+  'leftrightharpoonupdown':
+    'prefix': 'leftrightharpoonupdown'
+    'body': '⥊$1'
+  'bigcupdot':
+    'prefix': 'bigcupdot'
+    'body': '⨃$1'
+  'bbsum':
+    'prefix': 'bbsum'
+    'body': '⅀$1'
+  'iiint':
+    'prefix': 'iiint'
+    'body': '∭$1'
+  'threeunderdot':
+    'prefix': 'threeunderdot'
+    'body': '⃨$1'
+  'mbffrakq':
+    'prefix': 'mbffrakq'
+    'body': '𝖖$1'
+  'lvboxline':
+    'prefix': 'lvboxline'
+    'body': '⎸$1'
+  'mitU':
+    'prefix': 'mitU'
+    'body': '𝑈$1'
+  'mbfitH':
+    'prefix': 'mbfitH'
+    'body': '𝑯$1'
+  'mitIota':
+    'prefix': 'mitIota'
+    'body': '𝛪$1'
+  'cancer':
+    'prefix': 'cancer'
+    'body': '♋$1'
+  'midbarwedge':
+    'prefix': 'midbarwedge'
+    'body': '⩜$1'
+  'mbfsansq':
+    'prefix': 'mbfsansq'
+    'body': '𝗾$1'
+  'sqcup':
+    'prefix': 'sqcup'
+    'body': '⊔$1'
+  'lrblacktriangle':
+    'prefix': 'lrblacktriangle'
+    'body': '◢$1'
+  'Longrightarrow':
+    'prefix': 'Longrightarrow'
+    'body': '⟹$1'
+  'mbfX':
+    'prefix': 'mbfX'
+    'body': '𝐗$1'
+  'subsetneq':
+    'prefix': 'subsetneq'
+    'body': '⊊$1'
+  'mfrakv':
+    'prefix': 'mfrakv'
+    'body': '𝔳$1'
+  'ovhook':
+    'prefix': 'ovhook'
+    'body': '̉$1'
+  'equalleftarrow':
+    'prefix': 'equalleftarrow'
+    'body': '⭀$1'
+  'BbbA':
+    'prefix': 'BbbA'
+    'body': '𝔸$1'
+  'mitsansA':
+    'prefix': 'mitsansA'
+    'body': '𝘈$1'
+  'enclosetriangle':
+    'prefix': 'enclosetriangle'
+    'body': '⃤$1'
+  'dagger':
+    'prefix': 'dagger'
+    'body': '†$1'
+  'supsetdot':
+    'prefix': 'supsetdot'
+    'body': '⪾$1'
+  'mbfitF':
+    'prefix': 'mbfitF'
+    'body': '𝑭$1'
+  'mbfitsansvartheta':
+    'prefix': 'mbfitsansvartheta'
+    'body': '𝟅$1'
+  'twoheadmapsfrom':
+    'prefix': 'twoheadmapsfrom'
+    'body': '⬶$1'
+  'mfrako':
+    'prefix': 'mfrako'
+    'body': '𝔬$1'
+  'mbffrakT':
+    'prefix': 'mbffrakT'
+    'body': '𝕿$1'
+  'mbfalpha':
+    'prefix': 'mbfalpha'
+    'body': '𝛂$1'
+  'mitsansy':
+    'prefix': 'mitsansy'
+    'body': '𝘺$1'
+  'textdoublepipe':
+    'prefix': 'textdoublepipe'
+    'body': 'ǂ$1'
+  'msansD':
+    'prefix': 'msansD'
+    'body': '𝖣$1'
+  'textquotedblright':
+    'prefix': 'textquotedblright'
+    'body': '”$1'
+  'mbfscrk':
+    'prefix': 'mbfscrk'
+    'body': '𝓴$1'
+  '^g':
+    'prefix': '^g'
+    'body': 'ᵍ$1'
+  'Sqcup':
+    'prefix': 'Sqcup'
+    'body': '⩏$1'
+  'mbfitsansvarTheta':
+    'prefix': 'mbfitsansvarTheta'
+    'body': '𝞡$1'
+  'notlessgreater':
+    'prefix': 'notlessgreater'
+    'body': '≸$1'
+  'mfrakw':
+    'prefix': 'mfrakw'
+    'body': '𝔴$1'
+  'rightrightarrows':
+    'prefix': 'rightrightarrows'
+    'body': '⇉$1'
+  'DownRightTeeVector':
+    'prefix': 'DownRightTeeVector'
+    'body': '⥟$1'
+  'supsetapprox':
+    'prefix': 'supsetapprox'
+    'body': '⫊$1'
+  'textturnk':
+    'prefix': 'textturnk'
+    'body': 'ʞ$1'
+  'allequal':
+    'prefix': 'allequal'
+    'body': '≌$1'
+  'mbffrakw':
+    'prefix': 'mbffrakw'
+    'body': '𝖜$1'
+  'del':
+    'prefix': 'del'
+    'body': '∇$1'
+  'blackpointerright':
+    'prefix': 'blackpointerright'
+    'body': '►$1'
+  'mbfsansKappa':
+    'prefix': 'mbfsansKappa'
+    'body': '𝝟$1'
+  'mitBbbd':
+    'prefix': 'mitBbbd'
+    'body': 'ⅆ$1'
+  'female':
+    'prefix': 'female'
+    'body': '♀$1'
+  'cdotp':
+    'prefix': 'cdotp'
+    'body': '·$1'
+  '^T':
+    'prefix': '^T'
+    'body': 'ᵀ$1'
+  'msansy':
+    'prefix': 'msansy'
+    'body': '𝗒$1'
+  'Elzcirfb':
+    'prefix': 'Elzcirfb'
+    'body': '◒$1'
+  'capdot':
+    'prefix': 'capdot'
+    'body': '⩀$1'
+  'ntrianglerighteq':
+    'prefix': 'ntrianglerighteq'
+    'body': '⋭$1'
+  'mitsansB':
+    'prefix': 'mitsansB'
+    'body': '𝘉$1'
+  'ElzTimes':
+    'prefix': 'ElzTimes'
+    'body': '⨯$1'
+  'nni':
+    'prefix': 'nni'
+    'body': '∌$1'
+  'mbffraks':
+    'prefix': 'mbffraks'
+    'body': '𝖘$1'
+  'blacktriangle':
+    'prefix': 'blacktriangle'
+    'body': '▴$1'
+  'mdblkcircle':
+    'prefix': 'mdblkcircle'
+    'body': '⚫$1'
+  'saturn':
+    'prefix': 'saturn'
+    'body': '♄$1'
+  'DownLeftRightVector':
+    'prefix': 'DownLeftRightVector'
+    'body': '⥐$1'
+  'Elzverti':
+    'prefix': 'Elzverti'
+    'body': 'ˌ$1'
+  'curlyeqsucc':
+    'prefix': 'curlyeqsucc'
+    'body': '⋟$1'
+  'mtty':
+    'prefix': 'mtty'
+    'body': '𝚢$1'
+  'DownLeftTeeVector':
+    'prefix': 'DownLeftTeeVector'
+    'body': '⥞$1'
+  'mbfSigma':
+    'prefix': 'mbfSigma'
+    'body': '𝚺$1'
+  'mitbeta':
+    'prefix': 'mitbeta'
+    'body': '𝛽$1'
+  'mbfsansvarrho':
+    'prefix': 'mbfsansvarrho'
+    'body': '𝞎$1'
+  'Elzpes':
+    'prefix': 'Elzpes'
+    'body': '₧$1'
+  'rdiagovfdiag':
+    'prefix': 'rdiagovfdiag'
+    'body': '⤫$1'
+  'Elzxl':
+    'prefix': 'Elzxl'
+    'body': '̵$1'
+  'mapsto':
+    'prefix': 'mapsto'
+    'body': '↦$1'
+  '^R':
+    'prefix': '^R'
+    'body': 'ᴿ$1'
+  'veemidvert':
+    'prefix': 'veemidvert'
+    'body': '⩛$1'
+  'maltese':
+    'prefix': 'maltese'
+    'body': '✠$1'
+  'rightarrowdiamond':
+    'prefix': 'rightarrowdiamond'
+    'body': '⤞$1'
+  'hslash':
+    'prefix': 'hslash'
+    'body': 'ℏ$1'
+  'nVleftarrow':
+    'prefix': 'nVleftarrow'
+    'body': '⇺$1'
+  'circleonrightarrow':
+    'prefix': 'circleonrightarrow'
+    'body': '⇴$1'
+  'blockhalfshaded':
+    'prefix': 'blockhalfshaded'
+    'body': '▒$1'
+  'blacksquare':
+    'prefix': 'blacksquare'
+    'body': '■$1'
+  'mdlgblkdiamond':
+    'prefix': 'mdlgblkdiamond'
+    'body': '◆$1'
+  'circlellquad':
+    'prefix': 'circlellquad'
+    'body': '◵$1'
+  'mscrX':
+    'prefix': 'mscrX'
+    'body': '𝒳$1'
+  'mscry':
+    'prefix': 'mscry'
+    'body': '𝓎$1'
+  'upuparrows':
+    'prefix': 'upuparrows'
+    'body': '⇈$1'
+  'mbfsansW':
+    'prefix': 'mbfsansW'
+    'body': '𝗪$1'
+  'taurus':
+    'prefix': 'taurus'
+    'body': '♉$1'
+  'mitvarrho':
+    'prefix': 'mitvarrho'
+    'body': '𝜚$1'
+  'mbfu':
+    'prefix': 'mbfu'
+    'body': '𝐮$1'
+  'vDash':
+    'prefix': 'vDash'
+    'body': '⊨$1'
+  'conjquant':
+    'prefix': 'conjquant'
+    'body': '⨇$1'
+  'mbfitsanstheta':
+    'prefix': 'mbfitsanstheta'
+    'body': '𝞱$1'
+  'varclubsuit':
+    'prefix': 'varclubsuit'
+    'body': '♧$1'
+  'sim':
+    'prefix': 'sim'
+    'body': '∼$1'
+  'mbfvarsigma':
+    'prefix': 'mbfvarsigma'
+    'body': '𝛓$1'
+  'mitAlpha':
+    'prefix': 'mitAlpha'
+    'body': '𝛢$1'
+  'mbfsansvarpi':
+    'prefix': 'mbfsansvarpi'
+    'body': '𝞏$1'
+  '^8':
+    'prefix': '^8'
+    'body': '⁸$1'
+  'mscrF':
+    'prefix': 'mscrF'
+    'body': 'ℱ$1'
+  'mttJ':
+    'prefix': 'mttJ'
+    'body': '𝙹$1'
+  'mbfscrD':
+    'prefix': 'mbfscrD'
+    'body': '𝓓$1'
+  'RuleDelayed':
+    'prefix': 'RuleDelayed'
+    'body': '⧴$1'
+  '^p':
+    'prefix': '^p'
+    'body': 'ᵖ$1'
+  'mbfsansR':
+    'prefix': 'mbfsansR'
+    'body': '𝗥$1'
+  'mbfRho':
+    'prefix': 'mbfRho'
+    'body': '𝚸$1'
+  'sum':
+    'prefix': 'sum'
+    'body': '∑$1'
+  'rightarrowbsimilar':
+    'prefix': 'rightarrowbsimilar'
+    'body': '⭌$1'
+  'aquarius':
+    'prefix': 'aquarius'
+    'body': '♒$1'
+  'BbbS':
+    'prefix': 'BbbS'
+    'body': '𝕊$1'
+  'mitF':
+    'prefix': 'mitF'
+    'body': '𝐹$1'
+  'mbfitsansX':
+    'prefix': 'mbfitsansX'
+    'body': '𝙓$1'
+  'ggg':
+    'prefix': 'ggg'
+    'body': '⋙$1'
+  'uranus':
+    'prefix': 'uranus'
+    'body': '♅$1'
+  'isinvb':
+    'prefix': 'isinvb'
+    'body': '⋸$1'
+  'rightthreetimes':
+    'prefix': 'rightthreetimes'
+    'body': '⋌$1'
+  'mbfeta':
+    'prefix': 'mbfeta'
+    'body': '𝛈$1'
+  'ElzrLarr':
+    'prefix': 'ElzrLarr'
+    'body': '⥄$1'
+  'oturnedcomma':
+    'prefix': 'oturnedcomma'
+    'body': '̒$1'
+  'O':
+    'prefix': 'O'
+    'body': 'Ø$1'
+  'nbumpeq':
+    'prefix': 'nbumpeq'
+    'body': '≏̸$1'
+  'dashv':
+    'prefix': 'dashv'
+    'body': '⊣$1'
+  'mitChi':
+    'prefix': 'mitChi'
+    'body': '𝛸$1'
+  'curlywedge':
+    'prefix': 'curlywedge'
+    'body': '⋏$1'
+  'mbfsansy':
+    'prefix': 'mbfsansy'
+    'body': '𝘆$1'
+  'mitsansF':
+    'prefix': 'mitsansF'
+    'body': '𝘍$1'
+  'mdlgwhtdiamond':
+    'prefix': 'mdlgwhtdiamond'
+    'body': '◇$1'
+  'underleftharpoondown':
+    'prefix': 'underleftharpoondown'
+    'body': '⃭$1'
+  'gg':
+    'prefix': 'gg'
+    'body': '≫$1'
+  'circleulquad':
+    'prefix': 'circleulquad'
+    'body': '◴$1'
+  'ngtrsim':
+    'prefix': 'ngtrsim'
+    'body': '≵$1'
+  '_s':
+    'prefix': '_s'
+    'body': 'ₛ$1'
+  'smwhitestar':
+    'prefix': 'smwhitestar'
+    'body': '⭒$1'
+  'mscrf':
+    'prefix': 'mscrf'
+    'body': '𝒻$1'
+  'mbfsansY':
+    'prefix': 'mbfsansY'
+    'body': '𝗬$1'
+  'glj':
+    'prefix': 'glj'
+    'body': '⪤$1'
+  'sqsupset':
+    'prefix': 'sqsupset'
+    'body': '⊐$1'
+  'nprec':
+    'prefix': 'nprec'
+    'body': '⊀$1'
+  '_n':
+    'prefix': '_n'
+    'body': 'ₙ$1'
+  'diamond':
+    'prefix': 'diamond'
+    'body': '⋄$1'
+  'mscrp':
+    'prefix': 'mscrp'
+    'body': '𝓅$1'
+  'mitalpha':
+    'prefix': 'mitalpha'
+    'body': '𝛼$1'
+  'otimesrhrim':
+    'prefix': 'otimesrhrim'
+    'body': '⨵$1'
+  'leftrightarrows':
+    'prefix': 'leftrightarrows'
+    'body': '⇆$1'
+  'LeftUpTeeVector':
+    'prefix': 'LeftUpTeeVector'
+    'body': '⥠$1'
+  'hexagon':
+    'prefix': 'hexagon'
+    'body': '⎔$1'
+  'eighthnote':
+    'prefix': 'eighthnote'
+    'body': '♪$1'
+  'mitsansa':
+    'prefix': 'mitsansa'
+    'body': '𝘢$1'
+  'risingdotseq':
+    'prefix': 'risingdotseq'
+    'body': '≓$1'
+  'RightUpTeeVector':
+    'prefix': 'RightUpTeeVector'
+    'body': '⥜$1'
+  'bbrktbrk':
+    'prefix': 'bbrktbrk'
+    'body': '⎶$1'
+  '^(':
+    'prefix': '^('
+    'body': '⁽$1'
+  'mbfitsansn':
+    'prefix': 'mbfitsansn'
+    'body': '𝙣$1'
+  'mitvarepsilon':
+    'prefix': 'mitvarepsilon'
+    'body': '𝜖$1'
+  'mbfscrZ':
+    'prefix': 'mbfscrZ'
+    'body': '𝓩$1'
+  'mitupsilon':
+    'prefix': 'mitupsilon'
+    'body': '𝜐$1'
+  'mbfsansOmicron':
+    'prefix': 'mbfsansOmicron'
+    'body': '𝝤$1'
+  'textonequarter':
+    'prefix': 'textonequarter'
+    'body': '¼$1'
+  'mbfscrU':
+    'prefix': 'mbfscrU'
+    'body': '𝓤$1'
+  'mitsansY':
+    'prefix': 'mitsansY'
+    'body': '𝘠$1'
+  'mbfscrR':
+    'prefix': 'mbfscrR'
+    'body': '𝓡$1'
+  'iint':
+    'prefix': 'iint'
+    'body': '∬$1'
+  'nleqslant':
+    'prefix': 'nleqslant'
+    'body': '⩽̸$1'
+  'leftrightarrowtriangle':
+    'prefix': 'leftrightarrowtriangle'
+    'body': '⇿$1'
+  'squarelrquad':
+    'prefix': 'squarelrquad'
+    'body': '◲$1'
+  'measanglerdtose':
+    'prefix': 'measanglerdtose'
+    'body': '⦪$1'
+  'eparsl':
+    'prefix': 'eparsl'
+    'body': '⧣$1'
+  'textexclamdown':
+    'prefix': 'textexclamdown'
+    'body': '¡$1'
+  'nprecsim':
+    'prefix': 'nprecsim'
+    'body': '≾̸$1'
+  'btimes':
+    'prefix': 'btimes'
+    'body': '⨲$1'
+  'mita':
+    'prefix': 'mita'
+    'body': '𝑎$1'
+  'oe':
+    'prefix': 'oe'
+    'body': 'œ$1'
+  'forall':
+    'prefix': 'forall'
+    'body': '∀$1'
+  'textthreequarters':
+    'prefix': 'textthreequarters'
+    'body': '¾$1'
+  'Bbbh':
+    'prefix': 'Bbbh'
+    'body': '𝕙$1'
+  'mbfsansu':
+    'prefix': 'mbfsansu'
+    'body': '𝘂$1'
+  'mbfitsansvarpi':
+    'prefix': 'mbfitsansvarpi'
+    'body': '𝟉$1'
+  'Elztrna':
+    'prefix': 'Elztrna'
+    'body': 'ɐ$1'
+  'rightarrowtriangle':
+    'prefix': 'rightarrowtriangle'
+    'body': '⇾$1'
+  'leftarrowx':
+    'prefix': 'leftarrowx'
+    'body': '⬾$1'
+  'mbfgamma':
+    'prefix': 'mbfgamma'
+    'body': '𝛄$1'
+  'supset':
+    'prefix': 'supset'
+    'body': '⊃$1'
+  'supsim':
+    'prefix': 'supsim'
+    'body': '⫈$1'
+  'mbfith':
+    'prefix': 'mbfith'
+    'body': '𝒉$1'
+  'mbfitsansw':
+    'prefix': 'mbfitsansw'
+    'body': '𝙬$1'
+  'equiv':
+    'prefix': 'equiv'
+    'body': '≡$1'
+  'sharp':
+    'prefix': 'sharp'
+    'body': '♯$1'
+  'mbfscrm':
+    'prefix': 'mbfscrm'
+    'body': '𝓶$1'
+  'mbfitPi':
+    'prefix': 'mbfitPi'
+    'body': '𝜫$1'
+  '_2':
+    'prefix': '_2'
+    'body': '₂$1'
+  'mfrakX':
+    'prefix': 'mfrakX'
+    'body': '𝔛$1'
+  'epsilon':
+    'prefix': 'epsilon'
+    'body': 'ϵ$1'
+  'Nwarrow':
+    'prefix': 'Nwarrow'
+    'body': '⇖$1'
+  'mbfitsansd':
+    'prefix': 'mbfitsansd'
+    'body': '𝙙$1'
+  'mbfscrN':
+    'prefix': 'mbfscrN'
+    'body': '𝓝$1'
+  'ae':
+    'prefix': 'ae'
+    'body': 'æ$1'
+  'mbfKappa':
+    'prefix': 'mbfKappa'
+    'body': '𝚱$1'
+  'msansr':
+    'prefix': 'msansr'
+    'body': '𝗋$1'
+  'mbfscrd':
+    'prefix': 'mbfscrd'
+    'body': '𝓭$1'
+  'infty':
+    'prefix': 'infty'
+    'body': '∞$1'
+  'dualmap':
+    'prefix': 'dualmap'
+    'body': '⧟$1'
+  '_=':
+    'prefix': '_='
+    'body': '₌$1'
+  'eqgtr':
+    'prefix': 'eqgtr'
+    'body': '⋝$1'
+  'mbfscrf':
+    'prefix': 'mbfscrf'
+    'body': '𝓯$1'
+  'msansd':
+    'prefix': 'msansd'
+    'body': '𝖽$1'
+  'bigotimes':
+    'prefix': 'bigotimes'
+    'body': '⨂$1'
+  'mbfitsansupsilon':
+    'prefix': 'mbfitsansupsilon'
+    'body': '𝞾$1'
+  'nvleftarrow':
+    'prefix': 'nvleftarrow'
+    'body': '⇷$1'
+  'mbfitsansH':
+    'prefix': 'mbfitsansH'
+    'body': '𝙃$1'
+  'Swarrow':
+    'prefix': 'Swarrow'
+    'body': '⇙$1'
+  'mbfsansk':
+    'prefix': 'mbfsansk'
+    'body': '𝗸$1'
+  'isinE':
+    'prefix': 'isinE'
+    'body': '⋹$1'
+  'mbfitsanschi':
+    'prefix': 'mbfitsanschi'
+    'body': '𝟀$1'
+  'leftharpoonaccent':
+    'prefix': 'leftharpoonaccent'
+    'body': '⃐$1'
+  'mbfsansOmega':
+    'prefix': 'mbfsansOmega'
+    'body': '𝝮$1'
+  'mbfdigamma':
+    'prefix': 'mbfdigamma'
+    'body': '𝟋$1'
+  'inversewhitecircle':
+    'prefix': 'inversewhitecircle'
+    'body': '◙$1'
+  'commaminus':
+    'prefix': 'commaminus'
+    'body': '⨩$1'
+  'mbfsansNu':
+    'prefix': 'mbfsansNu'
+    'body': '𝝢$1'
+  'mitM':
+    'prefix': 'mitM'
+    'body': '𝑀$1'
+  'mitsansh':
+    'prefix': 'mitsansh'
+    'body': '𝘩$1'
+  'whitearrowupfrombar':
+    'prefix': 'whitearrowupfrombar'
+    'body': '⇪$1'
+  'vrectangleblack':
+    'prefix': 'vrectangleblack'
+    'body': '▮$1'
+  'Bbbc':
+    'prefix': 'Bbbc'
+    'body': '𝕔$1'
+  'mbfDigamma':
+    'prefix': 'mbfDigamma'
+    'body': '𝟊$1'
+  'eqslantgtr':
+    'prefix': 'eqslantgtr'
+    'body': '⪖$1'
+  'mfrakj':
+    'prefix': 'mfrakj'
+    'body': '𝔧$1'
+  'msansF':
+    'prefix': 'msansF'
+    'body': '𝖥$1'
+  'mttG':
+    'prefix': 'mttG'
+    'body': '𝙶$1'
+  'mbfsix':
+    'prefix': 'mbfsix'
+    'body': '𝟔$1'
+  'smblksquare':
+    'prefix': 'smblksquare'
+    'body': '▪$1'
+  'scpolint':
+    'prefix': 'scpolint'
+    'body': '⨓$1'
+  'lrcorner':
+    'prefix': 'lrcorner'
+    'body': '⌟$1'
+  'mbfitJ':
+    'prefix': 'mbfitJ'
+    'body': '𝑱$1'
+  'mbfitsansl':
+    'prefix': 'mbfitsansl'
+    'body': '𝙡$1'
+  'nwarrow':
+    'prefix': 'nwarrow'
+    'body': '↖$1'
+  'mttf':
+    'prefix': 'mttf'
+    'body': '𝚏$1'
+  '^M':
+    'prefix': '^M'
+    'body': 'ᴹ$1'
+  '_p':
+    'prefix': '_p'
+    'body': 'ₚ$1'
+  'simlE':
+    'prefix': 'simlE'
+    'body': '⪟$1'
+  '_8':
+    'prefix': '_8'
+    'body': '₈$1'
+  'mbffrake':
+    'prefix': 'mbffrake'
+    'body': '𝖊$1'
+  'mitTau':
+    'prefix': 'mitTau'
+    'body': '𝛵$1'
+  'leqq':
+    'prefix': 'leqq'
+    'body': '≦$1'
+  'lfloor':
+    'prefix': 'lfloor'
+    'body': '⌊$1'
+  'mitOmega':
+    'prefix': 'mitOmega'
+    'body': '𝛺$1'
+  'Elzdshfnc':
+    'prefix': 'Elzdshfnc'
+    'body': '┆$1'
+  'rightsquigarrow':
+    'prefix': 'rightsquigarrow'
+    'body': '⇝$1'
+  'leftarrow':
+    'prefix': 'leftarrow'
+    'body': '←$1'
+  'sphericalangle':
+    'prefix': 'sphericalangle'
+    'body': '∢$1'
+  'urtriangle':
+    'prefix': 'urtriangle'
+    'body': '◹$1'
+  'revemptyset':
+    'prefix': 'revemptyset'
+    'body': '⦰$1'
+  'nVtwoheadleftarrowtail':
+    'prefix': 'nVtwoheadleftarrowtail'
+    'body': '⬽$1'
+  'mitvarTheta':
+    'prefix': 'mitvarTheta'
+    'body': '𝛳$1'
+  'boxtimes':
+    'prefix': 'boxtimes'
+    'body': '⊠$1'
+  'mbfitzeta':
+    'prefix': 'mbfitzeta'
+    'body': '𝜻$1'
+  '_i':
+    'prefix': '_i'
+    'body': 'ᵢ$1'
+  'dottedcircle':
+    'prefix': 'dottedcircle'
+    'body': '◌$1'
+  'hkswarow':
+    'prefix': 'hkswarow'
+    'body': '⤦$1'
+  'mitsansv':
+    'prefix': 'mitsansv'
+    'body': '𝘷$1'
+  'gtquest':
+    'prefix': 'gtquest'
+    'body': '⩼$1'
+  'mbfitL':
+    'prefix': 'mbfitL'
+    'body': '𝑳$1'
+  '^r':
+    'prefix': '^r'
+    'body': 'ʳ$1'
+  'wedgeodot':
+    'prefix': 'wedgeodot'
+    'body': '⩑$1'
+  'msansH':
+    'prefix': 'msansH'
+    'body': '𝖧$1'
+  'mbfTau':
+    'prefix': 'mbfTau'
+    'body': '𝚻$1'
+  'mitphi':
+    'prefix': 'mitphi'
+    'body': '𝜑$1'
+  'mbfitnabla':
+    'prefix': 'mbfitnabla'
+    'body': '𝜵$1'
+  'ElzOr':
+    'prefix': 'ElzOr'
+    'body': '⩔$1'
+  'msansw':
+    'prefix': 'msansw'
+    'body': '𝗐$1'
+  'interleave':
+    'prefix': 'interleave'
+    'body': '⫴$1'
+  '^B':
+    'prefix': '^B'
+    'body': 'ᴮ$1'
+  'mfraky':
+    'prefix': 'mfraky'
+    'body': '𝔶$1'
+  'doublebarvee':
+    'prefix': 'doublebarvee'
+    'body': '⩢$1'
+  'circledwhitebullet':
+    'prefix': 'circledwhitebullet'
+    'body': '⦾$1'
+  'complement':
+    'prefix': 'complement'
+    'body': '∁$1'
+  'simless':
+    'prefix': 'simless'
+    'body': '⪝$1'
+  'sqsubsetneq':
+    'prefix': 'sqsubsetneq'
+    'body': '⋤$1'
+  'Ddownarrow':
+    'prefix': 'Ddownarrow'
+    'body': '⤋$1'
+  'mbfitsansu':
+    'prefix': 'mbfitsansu'
+    'body': '𝙪$1'
+  'measanglelutonw':
+    'prefix': 'measanglelutonw'
+    'body': '⦩$1'
+  '_rho':
+    'prefix': '_rho'
+    'body': 'ᵨ$1'
+  'neqsim':
+    'prefix': 'neqsim'
+    'body': '≂̸$1'
+  'smwhtsquare':
+    'prefix': 'smwhtsquare'
+    'body': '▫$1'
+  'mbfitxi':
+    'prefix': 'mbfitxi'
+    'body': '𝝃$1'
+  'mbfitsansT':
+    'prefix': 'mbfitsansT'
+    'body': '𝙏$1'
+  'leftarrowapprox':
+    'prefix': 'leftarrowapprox'
+    'body': '⭊$1'
+  'upMu':
+    'prefix': 'upMu'
+    'body': 'Μ$1'
+  'mscrv':
+    'prefix': 'mscrv'
+    'body': '𝓋$1'
+  'mfrakn':
+    'prefix': 'mfrakn'
+    'body': '𝔫$1'
+  'nVrightarrow':
+    'prefix': 'nVrightarrow'
+    'body': '⇻$1'
+  'mbfitO':
+    'prefix': 'mbfitO'
+    'body': '𝑶$1'
+  'mscrR':
+    'prefix': 'mscrR'
+    'body': 'ℛ$1'
+  'mbfsansQ':
+    'prefix': 'mbfsansQ'
+    'body': '𝗤$1'
+  'Koppa':
+    'prefix': 'Koppa'
+    'body': 'Ϟ$1'
+  'minusfdots':
+    'prefix': 'minusfdots'
+    'body': '⨫$1'
+  'gggnest':
+    'prefix': 'gggnest'
+    'body': '⫸$1'
+  'mbfitw':
+    'prefix': 'mbfitw'
+    'body': '𝒘$1'
+  'angle':
+    'prefix': 'angle'
+    'body': '∠$1'
+  'diceiv':
+    'prefix': 'diceiv'
+    'body': '⚃$1'
+  'mbfsansnu':
+    'prefix': 'mbfsansnu'
+    'body': '𝝼$1'
+  'Eta':
+    'prefix': 'Eta'
+    'body': 'Η$1'
+  'll':
+    'prefix': 'll'
+    'body': '≪$1'
+  'underrightarrow':
+    'prefix': 'underrightarrow'
+    'body': '⃯$1'
+  'mbfn':
+    'prefix': 'mbfn'
+    'body': '𝐧$1'
+  'vartriangle':
+    'prefix': 'vartriangle'
+    'body': '▵$1'
+  'mbfsanszeta':
+    'prefix': 'mbfsanszeta'
+    'body': '𝝵$1'
+  'mitsansb':
+    'prefix': 'mitsansb'
+    'body': '𝘣$1'
+  'Leftarrow':
+    'prefix': 'Leftarrow'
+    'body': '⇐$1'
+  'lrtriangleeq':
+    'prefix': 'lrtriangleeq'
+    'body': '⧡$1'
+  'asymp':
+    'prefix': 'asymp'
+    'body': '≍$1'
+  'varointclockwise':
+    'prefix': 'varointclockwise'
+    'body': '∲$1'
+  'times':
+    'prefix': 'times'
+    'body': '×$1'
+  'wr':
+    'prefix': 'wr'
+    'body': '≀$1'
+  'twoheadrightarrowtail':
+    'prefix': 'twoheadrightarrowtail'
+    'body': '⤖$1'
+  'mbfitsansPhi':
+    'prefix': 'mbfitsansPhi'
+    'body': '𝞥$1'
+  'llblacktriangle':
+    'prefix': 'llblacktriangle'
+    'body': '◣$1'
+  '_u':
+    'prefix': '_u'
+    'body': 'ᵤ$1'
+  'ddotseq':
+    'prefix': 'ddotseq'
+    'body': '⩷$1'
+  'lltriangle':
+    'prefix': 'lltriangle'
+    'body': '◺$1'
+  'mbffrakB':
+    'prefix': 'mbffrakB'
+    'body': '𝕭$1'
+  'ss':
+    'prefix': 'ss'
+    'body': 'ß$1'
+  'upOmicron':
+    'prefix': 'upOmicron'
+    'body': 'Ο$1'
+  'mbfitsansAlpha':
+    'prefix': 'mbfitsansAlpha'
+    'body': '𝞐$1'
+  'mttfive':
+    'prefix': 'mttfive'
+    'body': '𝟻$1'
+  'suphsub':
+    'prefix': 'suphsub'
+    'body': '⫗$1'
+  'approxeqq':
+    'prefix': 'approxeqq'
+    'body': '⩰$1'
+  'intcap':
+    'prefix': 'intcap'
+    'body': '⨙$1'
+  '^k':
+    'prefix': '^k'
+    'body': 'ᵏ$1'
+  'openbracketleft':
+    'prefix': 'openbracketleft'
+    'body': '⟦$1'
+  'circleurquad':
+    'prefix': 'circleurquad'
+    'body': '◷$1'
+  'gtcc':
+    'prefix': 'gtcc'
+    'body': '⪧$1'
+  'mitsansc':
+    'prefix': 'mitsansc'
+    'body': '𝘤$1'
+  'mbfP':
+    'prefix': 'mbfP'
+    'body': '𝐏$1'
+  'droang':
+    'prefix': 'droang'
+    'body': '̚$1'
+  'simgtr':
+    'prefix': 'simgtr'
+    'body': '⪞$1'
+  'mitsanst':
+    'prefix': 'mitsanst'
+    'body': '𝘵$1'
+  'leftarrowbackapprox':
+    'prefix': 'leftarrowbackapprox'
+    'body': '⭂$1'
+  'triangleleft':
+    'prefix': 'triangleleft'
+    'body': '◃$1'
+  'barrightarrowdiamond':
+    'prefix': 'barrightarrowdiamond'
+    'body': '⤠$1'
+  'nvdash':
+    'prefix': 'nvdash'
+    'body': '⊬$1'
+  'dotsminusdots':
+    'prefix': 'dotsminusdots'
+    'body': '∺$1'
+  'mscrZ':
+    'prefix': 'mscrZ'
+    'body': '𝒵$1'
+  'oiiint':
+    'prefix': 'oiiint'
+    'body': '∰$1'
+  'mitv':
+    'prefix': 'mitv'
+    'body': '𝑣$1'
+  'BbbU':
+    'prefix': 'BbbU'
+    'body': '𝕌$1'
+  'forkv':
+    'prefix': 'forkv'
+    'body': '⫙$1'
+  'updownarrowbar':
+    'prefix': 'updownarrowbar'
+    'body': '↨$1'
+  'upepsilon':
+    'prefix': 'upepsilon'
+    'body': 'ε$1'
+  'msansh':
+    'prefix': 'msansh'
+    'body': '𝗁$1'
+  'mbfsansS':
+    'prefix': 'mbfsansS'
+    'body': '𝗦$1'
+  'precnsim':
+    'prefix': 'precnsim'
+    'body': '⋨$1'
+  'profline':
+    'prefix': 'profline'
+    'body': '⌒$1'
+  'BbbK':
+    'prefix': 'BbbK'
+    'body': '𝕂$1'
+  'mbfsansrho':
+    'prefix': 'mbfsansrho'
+    'body': '𝞀$1'
+  'succneq':
+    'prefix': 'succneq'
+    'body': '⪲$1'
+  'UpEquilibrium':
+    'prefix': 'UpEquilibrium'
+    'body': '⥮$1'
+  'mbfsansP':
+    'prefix': 'mbfsansP'
+    'body': '𝗣$1'
+  'mbfp':
+    'prefix': 'mbfp'
+    'body': '𝐩$1'
+  'mfrakD':
+    'prefix': 'mfrakD'
+    'body': '𝔇$1'
+  'Elztrnrl':
+    'prefix': 'Elztrnrl'
+    'body': 'ɺ$1'
+  'mbfk':
+    'prefix': 'mbfk'
+    'body': '𝐤$1'
+  'mscrI':
+    'prefix': 'mscrI'
+    'body': 'ℐ$1'
+  'aries':
+    'prefix': 'aries'
+    'body': '♈$1'
+  'intercal':
+    'prefix': 'intercal'
+    'body': '⊺$1'
+  'BbbT':
+    'prefix': 'BbbT'
+    'body': '𝕋$1'
+  'Zbar':
+    'prefix': 'Zbar'
+    'body': 'Ƶ$1'
+  'emptysetoarrl':
+    'prefix': 'emptysetoarrl'
+    'body': '⦴$1'
+  'mbfsansd':
+    'prefix': 'mbfsansd'
+    'body': '𝗱$1'
+  'ntrianglelefteq':
+    'prefix': 'ntrianglelefteq'
+    'body': '⋬$1'
+  'bigvee':
+    'prefix': 'bigvee'
+    'body': '⋁$1'
+  'minus':
+    'prefix': 'minus'
+    'body': '−$1'
+  'nleftarrow':
+    'prefix': 'nleftarrow'
+    'body': '↚$1'
+  'mbfitx':
+    'prefix': 'mbfitx'
+    'body': '𝒙$1'
+  'mho':
+    'prefix': 'mho'
+    'body': '℧$1'
+  'mitnabla':
+    'prefix': 'mitnabla'
+    'body': '𝛻$1'
+  'bigwedge':
+    'prefix': 'bigwedge'
+    'body': '⋀$1'
+  'benzenr':
+    'prefix': 'benzenr'
+    'body': '⏣$1'
+  'submult':
+    'prefix': 'submult'
+    'body': '⫁$1'
+  'mbfsansI':
+    'prefix': 'mbfsansI'
+    'body': '𝗜$1'
+  'Elzdyogh':
+    'prefix': 'Elzdyogh'
+    'body': 'ʤ$1'
+  'sinewave':
+    'prefix': 'sinewave'
+    'body': '∿$1'
+  'mbfitsansLambda':
+    'prefix': 'mbfitsansLambda'
+    'body': '𝞚$1'
+  'leftrightarrowcircle':
+    'prefix': 'leftrightarrowcircle'
+    'body': '⥈$1'
+  'diamondbotblack':
+    'prefix': 'diamondbotblack'
+    'body': '⬙$1'
+  'fourthroot':
+    'prefix': 'fourthroot'
+    'body': '∜$1'
+  'curlyvee':
+    'prefix': 'curlyvee'
+    'body': '⋎$1'
+  'eth':
+    'prefix': 'eth'
+    'body': 'ð$1'
+  'mscrE':
+    'prefix': 'mscrE'
+    'body': 'ℰ$1'
+  'mitvarsigma':
+    'prefix': 'mitvarsigma'
+    'body': '𝜍$1'
+  'bsolhsub':
+    'prefix': 'bsolhsub'
+    'body': '⟈$1'
+  'mitsansI':
+    'prefix': 'mitsansI'
+    'body': '𝘐$1'
+  'lsime':
+    'prefix': 'lsime'
+    'body': '⪍$1'
+  'lesseqqgtr':
+    'prefix': 'lesseqqgtr'
+    'body': '⪋$1'
+  'msansS':
+    'prefix': 'msansS'
+    'body': '𝖲$1'
+  'blackcircledrightdot':
+    'prefix': 'blackcircledrightdot'
+    'body': '⚈$1'
+  'mbfscrz':
+    'prefix': 'mbfscrz'
+    'body': '𝔃$1'
+  'scorpio':
+    'prefix': 'scorpio'
+    'body': '♏$1'
+  'Elzrh':
+    'prefix': 'Elzrh'
+    'body': '̢$1'
+  'upharpoonright':
+    'prefix': 'upharpoonright'
+    'body': '↿$1'
+  'circlelrquad':
+    'prefix': 'circlelrquad'
+    'body': '◶$1'
+  'twocups':
+    'prefix': 'twocups'
+    'body': '⩊$1'
+  'mfrakr':
+    'prefix': 'mfrakr'
+    'body': '𝔯$1'
+  'lessdot':
+    'prefix': 'lessdot'
+    'body': '⋖$1'
+  'mbfits':
+    'prefix': 'mbfits'
+    'body': '𝒔$1'
+  'mfrakM':
+    'prefix': 'mfrakM'
+    'body': '𝔐$1'
+  'mitu':
+    'prefix': 'mitu'
+    'body': '𝑢$1'
+  'subsetplus':
+    'prefix': 'subsetplus'
+    'body': '⪿$1'
+  'msansA':
+    'prefix': 'msansA'
+    'body': '𝖠$1'
+  'blackcircledtwodots':
+    'prefix': 'blackcircledtwodots'
+    'body': '⚉$1'
+  'mbfsanssigma':
+    'prefix': 'mbfsanssigma'
+    'body': '𝞂$1'
+  'rsolbar':
+    'prefix': 'rsolbar'
+    'body': '⧷$1'
+  'mbfitX':
+    'prefix': 'mbfitX'
+    'body': '𝑿$1'
+  'increment':
+    'prefix': 'increment'
+    'body': '∆$1'
+  'mbffrakx':
+    'prefix': 'mbffrakx'
+    'body': '𝖝$1'
+  'mbfsansvartheta':
+    'prefix': 'mbfsansvartheta'
+    'body': '𝞋$1'
+  'leftrightharpoonsup':
+    'prefix': 'leftrightharpoonsup'
+    'body': '⥦$1'
+  'mttB':
+    'prefix': 'mttB'
+    'body': '𝙱$1'
+  'mitomega':
+    'prefix': 'mitomega'
+    'body': '𝜔$1'
+  'nVtwoheadrightarrowtail':
+    'prefix': 'nVtwoheadrightarrowtail'
+    'body': '⤘$1'
+  'otimeshat':
+    'prefix': 'otimeshat'
+    'body': '⨶$1'
+  'mfrakp':
+    'prefix': 'mfrakp'
+    'body': '𝔭$1'
+  'textordfeminine':
+    'prefix': 'textordfeminine'
+    'body': 'ª$1'
+  'ularc':
+    'prefix': 'ularc'
+    'body': '◜$1'
+  '_6':
+    'prefix': '_6'
+    'body': '₆$1'
+  'mfrakk':
+    'prefix': 'mfrakk'
+    'body': '𝔨$1'
+  'coprod':
+    'prefix': 'coprod'
+    'body': '∐$1'
+  'mitsansK':
+    'prefix': 'mitsansK'
+    'body': '𝘒$1'
+  'aa':
+    'prefix': 'aa'
+    'body': 'å$1'
+  'dblarrowupdown':
+    'prefix': 'dblarrowupdown'
+    'body': '⇅$1'
+  '^epsilon':
+    'prefix': '^epsilon'
+    'body': 'ᵋ$1'
+  'cupdot':
+    'prefix': 'cupdot'
+    'body': '⊍$1'
+  'mitKappa':
+    'prefix': 'mitKappa'
+    'body': '𝛫$1'
+  'Lsh':
+    'prefix': 'Lsh'
+    'body': '↰$1'
+  'mbfq':
+    'prefix': 'mbfq'
+    'body': '𝐪$1'
+  'Elzcirfr':
+    'prefix': 'Elzcirfr'
+    'body': '◑$1'
+  'mbffrakh':
+    'prefix': 'mbffrakh'
+    'body': '𝖍$1'
+  'mitsansO':
+    'prefix': 'mitsansO'
+    'body': '𝘖$1'
+  'mbfitIota':
+    'prefix': 'mbfitIota'
+    'body': '𝜤$1'
+  'Elzrtlt':
+    'prefix': 'Elzrtlt'
+    'body': 'ʈ$1'
+  'trianglelefteq':
+    'prefix': 'trianglelefteq'
+    'body': '⊴$1'
+  'scurel':
+    'prefix': 'scurel'
+    'body': '⊱$1'
+  'emptysetoarr':
+    'prefix': 'emptysetoarr'
+    'body': '⦳$1'
+  'mittau':
+    'prefix': 'mittau'
+    'body': '𝜏$1'
+  'degree':
+    'prefix': 'degree'
+    'body': '°$1'
+  'dicevi':
+    'prefix': 'dicevi'
+    'body': '⚅$1'
+  'triangleminus':
+    'prefix': 'triangleminus'
+    'body': '⨺$1'
+  'mbfsansbeta':
+    'prefix': 'mbfsansbeta'
+    'body': '𝝱$1'
+  'ddot':
+    'prefix': 'ddot'
+    'body': '̈$1'
+  'topbot':
+    'prefix': 'topbot'
+    'body': '⌶$1'
+  'updownharpoonleftright':
+    'prefix': 'updownharpoonleftright'
+    'body': '⥍$1'
+  'blacklefthalfcircle':
+    'prefix': 'blacklefthalfcircle'
+    'body': '◖$1'
+  'hexagonblack':
+    'prefix': 'hexagonblack'
+    'body': '⬣$1'
+  'mfrakQ':
+    'prefix': 'mfrakQ'
+    'body': '𝔔$1'
+  'mbffrakt':
+    'prefix': 'mbffrakt'
+    'body': '𝖙$1'
+  'mbfvarTheta':
+    'prefix': 'mbfvarTheta'
+    'body': '𝚹$1'
+  'mitRho':
+    'prefix': 'mitRho'
+    'body': '𝛲$1'
+  'mitkappa':
+    'prefix': 'mitkappa'
+    'body': '𝜅$1'
+  'ddagger':
+    'prefix': 'ddagger'
+    'body': '‡$1'
+  'bigcap':
+    'prefix': 'bigcap'
+    'body': '⋂$1'
+  'mbfitsansF':
+    'prefix': 'mbfitsansF'
+    'body': '𝙁$1'
+  'mscrY':
+    'prefix': 'mscrY'
+    'body': '𝒴$1'
+  'mbfscrP':
+    'prefix': 'mbfscrP'
+    'body': '𝓟$1'
+  'gesles':
+    'prefix': 'gesles'
+    'body': '⪔$1'
+  'mbfitvarepsilon':
+    'prefix': 'mbfitvarepsilon'
+    'body': '𝝐$1'
+  'Elzpbgam':
+    'prefix': 'Elzpbgam'
+    'body': 'ɤ$1'
+  'BbbY':
+    'prefix': 'BbbY'
+    'body': '𝕐$1'
+  'circeq':
+    'prefix': 'circeq'
+    'body': '≗$1'
+  'Phi':
+    'prefix': 'Phi'
+    'body': 'Φ$1'
+  'guilsinglleft':
+    'prefix': 'guilsinglleft'
+    'body': '‹$1'
+  'mitT':
+    'prefix': 'mitT'
+    'body': '𝑇$1'
+  'mbfitu':
+    'prefix': 'mbfitu'
+    'body': '𝒖$1'
+  'mitPhi':
+    'prefix': 'mitPhi'
+    'body': '𝛷$1'
+  'AE':
+    'prefix': 'AE'
+    'body': 'Æ$1'
+  'BbbR':
+    'prefix': 'BbbR'
+    'body': 'ℝ$1'
+  'mfrakh':
+    'prefix': 'mfrakh'
+    'body': '𝔥$1'
+  'check':
+    'prefix': 'check'
+    'body': '̌$1'
+  'intx':
+    'prefix': 'intx'
+    'body': '⨘$1'
+  'mbfittau':
+    'prefix': 'mbfittau'
+    'body': '𝝉$1'
+  'mbfsanstheta':
+    'prefix': 'mbfsanstheta'
+    'body': '𝝷$1'
+  'mbfsanszero':
+    'prefix': 'mbfsanszero'
+    'body': '𝟬$1'
+  'parallelogram':
+    'prefix': 'parallelogram'
+    'body': '▱$1'
+  'Upsilon':
+    'prefix': 'Upsilon'
+    'body': 'Υ$1'
+  'Elzinvw':
+    'prefix': 'Elzinvw'
+    'body': 'ʍ$1'
+  'arceq':
+    'prefix': 'arceq'
+    'body': '≘$1'
+  'mbfscrp':
+    'prefix': 'mbfscrp'
+    'body': '𝓹$1'
+  'LeftUpDownVector':
+    'prefix': 'LeftUpDownVector'
+    'body': '⥑$1'
+  'Elzinvv':
+    'prefix': 'Elzinvv'
+    'body': 'ʌ$1'
+  'Dashv':
+    'prefix': 'Dashv'
+    'body': '⫤$1'
+  'overbracket':
+    'prefix': 'overbracket'
+    'body': '⎴$1'
+  'Elzdefas':
+    'prefix': 'Elzdefas'
+    'body': '⧋$1'
+  'mbfJ':
+    'prefix': 'mbfJ'
+    'body': '𝐉$1'
+  'mbft':
+    'prefix': 'mbft'
+    'body': '𝐭$1'
+  'mfrakU':
+    'prefix': 'mfrakU'
+    'body': '𝔘$1'
+  'mitsansP':
+    'prefix': 'mitsansP'
+    'body': '𝘗$1'
+  'mbfitsansChi':
+    'prefix': 'mbfitsansChi'
+    'body': '𝞦$1'
+  'ltimes':
+    'prefix': 'ltimes'
+    'body': '⋉$1'
+  'mbfitsansgamma':
+    'prefix': 'mbfitsansgamma'
+    'body': '𝞬$1'
+  'leftrightarrow':
+    'prefix': 'leftrightarrow'
+    'body': '↔$1'
+  'mbfitQ':
+    'prefix': 'mbfitQ'
+    'body': '𝑸$1'
+  '^P':
+    'prefix': '^P'
+    'body': 'ᴾ$1'
+  'rightarrowbackapprox':
+    'prefix': 'rightarrowbackapprox'
+    'body': '⭈$1'
+  'mbfGamma':
+    'prefix': 'mbfGamma'
+    'body': '𝚪$1'
+  'Bbbnine':
+    'prefix': 'Bbbnine'
+    'body': '𝟡$1'
+  'varspadesuit':
+    'prefix': 'varspadesuit'
+    'body': '♤$1'
+  'Mapsto':
+    'prefix': 'Mapsto'
+    'body': '⤇$1'
+  'Prec':
+    'prefix': 'Prec'
+    'body': '⪻$1'
+  'mbfitsansvarepsilon':
+    'prefix': 'mbfitsansvarepsilon'
+    'body': '𝟄$1'
+  'mid':
+    'prefix': 'mid'
+    'body': '∣$1'
+  'subsetapprox':
+    'prefix': 'subsetapprox'
+    'body': '⫉$1'
+  'varisinobar':
+    'prefix': 'varisinobar'
+    'body': '⋶$1'
+  'hookleftarrow':
+    'prefix': 'hookleftarrow'
+    'body': '↩$1'
+  'mscra':
+    'prefix': 'mscra'
+    'body': '𝒶$1'
+  'LeftTriangleBar':
+    'prefix': 'LeftTriangleBar'
+    'body': '⧏$1'
+  'mbffrakD':
+    'prefix': 'mbffrakD'
+    'body': '𝕯$1'
+  '^=':
+    'prefix': '^='
+    'body': '⁼$1'
+  'swarrow':
+    'prefix': 'swarrow'
+    'body': '↙$1'
+  'textvisiblespace':
+    'prefix': 'textvisiblespace'
+    'body': '␣$1'
+  'bar':
+    'prefix': 'bar'
+    'body': '̄$1'
+  'wideangleup':
+    'prefix': 'wideangleup'
+    'body': '⦧$1'
+  'mbfiota':
+    'prefix': 'mbfiota'
+    'body': '𝛊$1'
+  'csube':
+    'prefix': 'csube'
+    'body': '⫑$1'
+  'mbfscrl':
+    'prefix': 'mbfscrl'
+    'body': '𝓵$1'
+  'natural':
+    'prefix': 'natural'
+    'body': '♮$1'
+  'niobar':
+    'prefix': 'niobar'
+    'body': '⋾$1'
+  'mp':
+    'prefix': 'mp'
+    'body': '∓$1'
+  'invnot':
+    'prefix': 'invnot'
+    'body': '⌐$1'
+  'mbfl':
+    'prefix': 'mbfl'
+    'body': '𝐥$1'
+  'subseteq':
+    'prefix': 'subseteq'
+    'body': '⊆$1'
+  'squareneswfill':
+    'prefix': 'squareneswfill'
+    'body': '▨$1'
+  'mbfr':
+    'prefix': 'mbfr'
+    'body': '𝐫$1'
+  'postalmark':
+    'prefix': 'postalmark'
+    'body': '〒$1'
+  'NG':
+    'prefix': 'NG'
+    'body': 'Ŋ$1'
+  'mbfitq':
+    'prefix': 'mbfitq'
+    'body': '𝒒$1'
+  'mbfsansvarepsilon':
+    'prefix': 'mbfsansvarepsilon'
+    'body': '𝞊$1'
+  'mbfitsansTheta':
+    'prefix': 'mbfitsansTheta'
+    'body': '𝞗$1'
+  'LeftRightVector':
+    'prefix': 'LeftRightVector'
+    'body': '⥎$1'
+  'mitsansf':
+    'prefix': 'mitsansf'
+    'body': '𝘧$1'
+  'mbfZeta':
+    'prefix': 'mbfZeta'
+    'body': '𝚭$1'
+  'mbfG':
+    'prefix': 'mbfG'
+    'body': '𝐆$1'
+  'msansM':
+    'prefix': 'msansM'
+    'body': '𝖬$1'
+  'gtreqqless':
+    'prefix': 'gtreqqless'
+    'body': '⪌$1'
+  'Longleftrightarrow':
+    'prefix': 'Longleftrightarrow'
+    'body': '⟺$1'
+  'vdots':
+    'prefix': 'vdots'
+    'body': '⋮$1'
+  'dashrightharpoondown':
+    'prefix': 'dashrightharpoondown'
+    'body': '⥭$1'
+  'Elzltln':
+    'prefix': 'Elzltln'
+    'body': 'ɲ$1'
+  '^H':
+    'prefix': '^H'
+    'body': 'ᴴ$1'
+  'bigbot':
+    'prefix': 'bigbot'
+    'body': '⟘$1'
+  'mbfnine':
+    'prefix': 'mbfnine'
+    'body': '𝟗$1'
+  'gimel':
+    'prefix': 'gimel'
+    'body': 'ℷ$1'
+  'mfrakA':
+    'prefix': 'mfrakA'
+    'body': '𝔄$1'
+  'mttsix':
+    'prefix': 'mttsix'
+    'body': '𝟼$1'
+  'iiiint':
+    'prefix': 'iiiint'
+    'body': '⨌$1'
+  'Bbba':
+    'prefix': 'Bbba'
+    'body': '𝕒$1'
+  'msansseven':
+    'prefix': 'msansseven'
+    'body': '𝟩$1'
+  'twoheadleftarrowtail':
+    'prefix': 'twoheadleftarrowtail'
+    'body': '⬻$1'
+  'smte':
+    'prefix': 'smte'
+    'body': '⪬$1'
+  'whitepointerright':
+    'prefix': 'whitepointerright'
+    'body': '▻$1'
+  'nvLeftrightarrow':
+    'prefix': 'nvLeftrightarrow'
+    'body': '⤄$1'
+  'TH':
+    'prefix': 'TH'
+    'body': 'Þ$1'
+  'mapsup':
+    'prefix': 'mapsup'
+    'body': '↥$1'
+  'revangleubar':
+    'prefix': 'revangleubar'
+    'body': '⦥$1'
+  'msansK':
+    'prefix': 'msansK'
+    'body': '𝖪$1'
+  'clwintegral':
+    'prefix': 'clwintegral'
+    'body': '∱$1'
+  'mbfitf':
+    'prefix': 'mbfitf'
+    'body': '𝒇$1'
+  '_9':
+    'prefix': '_9'
+    'body': '₉$1'
+  'circledbullet':
+    'prefix': 'circledbullet'
+    'body': '⦿$1'
+  'mtth':
+    'prefix': 'mtth'
+    'body': '𝚑$1'
+  'mttx':
+    'prefix': 'mttx'
+    'body': '𝚡$1'
+  'Lleftarrow':
+    'prefix': 'Lleftarrow'
+    'body': '⇚$1'
+  'msansnine':
+    'prefix': 'msansnine'
+    'body': '𝟫$1'
+  'hat':
+    'prefix': 'hat'
+    'body': '̂$1'
+  'nearrow':
+    'prefix': 'nearrow'
+    'body': '↗$1'
+  'mfrakd':
+    'prefix': 'mfrakd'
+    'body': '𝔡$1'
+  'vartheta':
+    'prefix': 'vartheta'
+    'body': 'ϑ$1'
+  'mbfitsansbeta':
+    'prefix': 'mbfitsansbeta'
+    'body': '𝞫$1'
+  'varnis':
+    'prefix': 'varnis'
+    'body': '⋻$1'
+  'Iota':
+    'prefix': 'Iota'
+    'body': 'Ι$1'
+  'varlrtriangle':
+    'prefix': 'varlrtriangle'
+    'body': '⊿$1'
+  'mfrakx':
+    'prefix': 'mfrakx'
+    'body': '𝔵$1'
+  'mbfitsanso':
+    'prefix': 'mbfitsanso'
+    'body': '𝙤$1'
+  'backpprime':
+    'prefix': 'backpprime'
+    'body': '‶$1'
+  'th':
+    'prefix': 'th'
+    'body': 'þ$1'
+  'mitj':
+    'prefix': 'mitj'
+    'body': '𝑗$1'
+  'Elzvrecto':
+    'prefix': 'Elzvrecto'
+    'body': '▯$1'
+  'Planckconst':
+    'prefix': 'Planckconst'
+    'body': 'ℎ$1'
+  'Bbbp':
+    'prefix': 'Bbbp'
+    'body': '𝕡$1'
+  'kernelcontraction':
+    'prefix': 'kernelcontraction'
+    'body': '∻$1'
+  'ntriangleright':
+    'prefix': 'ntriangleright'
+    'body': '⋫$1'
+  'mttQ':
+    'prefix': 'mttQ'
+    'body': '𝚀$1'
+  'Searrow':
+    'prefix': 'Searrow'
+    'body': '⇘$1'
+  'mscrO':
+    'prefix': 'mscrO'
+    'body': '𝒪$1'
+  'mbfitsansepsilon':
+    'prefix': 'mbfitsansepsilon'
+    'body': '𝞮$1'
+  'mbfsansA':
+    'prefix': 'mbfsansA'
+    'body': '𝗔$1'
+  'breve':
+    'prefix': 'breve'
+    'body': '̆$1'
+  'angleubar':
+    'prefix': 'angleubar'
+    'body': '⦤$1'
+  'hatapprox':
+    'prefix': 'hatapprox'
+    'body': '⩯$1'
+  'mbfI':
+    'prefix': 'mbfI'
+    'body': '𝐈$1'
+  'mbfitE':
+    'prefix': 'mbfitE'
+    'body': '𝑬$1'
+  'mbfscre':
+    'prefix': 'mbfscre'
+    'body': '𝓮$1'
+  'closedvarcupsmashprod':
+    'prefix': 'closedvarcupsmashprod'
+    'body': '⩐$1'
+  'succeq':
+    'prefix': 'succeq'
+    'body': '⪰$1'
+  'enspace':
+    'prefix': 'enspace'
+    'body': ' $1'
+  'mbfitkappa':
+    'prefix': 'mbfitkappa'
+    'body': '𝜿$1'
+  'nwovnearrow':
+    'prefix': 'nwovnearrow'
+    'body': '⤲$1'
+  'mttK':
+    'prefix': 'mttK'
+    'body': '𝙺$1'
+  'bigcirc':
+    'prefix': 'bigcirc'
+    'body': '○$1'
+  'suphsol':
+    'prefix': 'suphsol'
+    'body': '⟉$1'
+  'mfrakZ':
+    'prefix': 'mfrakZ'
+    'body': 'ℨ$1'
+  'plushat':
+    'prefix': 'plushat'
+    'body': '⨣$1'
+  'mttI':
+    'prefix': 'mttI'
+    'body': '𝙸$1'
+  'sigma':
+    'prefix': 'sigma'
+    'body': 'σ$1'
+  'leftharpoonup':
+    'prefix': 'leftharpoonup'
+    'body': '↼$1'
+  'mbfsansH':
+    'prefix': 'mbfsansH'
+    'body': '𝗛$1'
+  'textasciiacute':
+    'prefix': 'textasciiacute'
+    'body': '´$1'
+  '^L':
+    'prefix': '^L'
+    'body': 'ᴸ$1'
+  '^w':
+    'prefix': '^w'
+    'body': 'ʷ$1'
+  'int':
+    'prefix': 'int'
+    'body': '∫$1'
+  'curlyeqprec':
+    'prefix': 'curlyeqprec'
+    'body': '⋞$1'
+  'Elztdcol':
+    'prefix': 'Elztdcol'
+    'body': '⫶$1'
+  'barleftarrowrightarrowbar':
+    'prefix': 'barleftarrowrightarrowbar'
+    'body': '↹$1'
+  'rightwhitearrow':
+    'prefix': 'rightwhitearrow'
+    'body': '⇨$1'
+  'rightarrowplus':
+    'prefix': 'rightarrowplus'
+    'body': '⥅$1'
+  'mbfscrn':
+    'prefix': 'mbfscrn'
+    'body': '𝓷$1'
+  'mttO':
+    'prefix': 'mttO'
+    'body': '𝙾$1'
+  'sqrtbottom':
+    'prefix': 'sqrtbottom'
+    'body': '⎷$1'
+  'mbfsansXi':
+    'prefix': 'mbfsansXi'
+    'body': '𝝣$1'
+  'nVrightarrowtail':
+    'prefix': 'nVrightarrowtail'
+    'body': '⤕$1'
+  'neovsearrow':
+    'prefix': 'neovsearrow'
+    'body': '⤮$1'
+  'Bbbx':
+    'prefix': 'Bbbx'
+    'body': '𝕩$1'
+  'Leftrightarrow':
+    'prefix': 'Leftrightarrow'
+    'body': '⇔$1'
+  'rightharpoonsupdown':
+    'prefix': 'rightharpoonsupdown'
+    'body': '⥤$1'
+  'mbfsanss':
+    'prefix': 'mbfsanss'
+    'body': '𝘀$1'
+  'mbfitbeta':
+    'prefix': 'mbfitbeta'
+    'body': '𝜷$1'
+  'lceil':
+    'prefix': 'lceil'
+    'body': '⌈$1'
+  'UpArrowBar':
+    'prefix': 'UpArrowBar'
+    'body': '⤒$1'
+  'mbfitEta':
+    'prefix': 'mbfitEta'
+    'body': '𝜢$1'
+  'mbfscrS':
+    'prefix': 'mbfscrS'
+    'body': '𝓢$1'
+  'ne':
+    'prefix': 'ne'
+    'body': '≠$1'
+  'varsubsetneqq':
+    'prefix': 'varsubsetneqq'
+    'body': '⊊︀$1'
+  'mttC':
+    'prefix': 'mttC'
+    'body': '𝙲$1'
+  'bullet':
+    'prefix': 'bullet'
+    'body': '•$1'
+  '^+':
+    'prefix': '^+'
+    'body': '⁺$1'
+  'mbfitz':
+    'prefix': 'mbfitz'
+    'body': '𝒛$1'
+  'mbfsansa':
+    'prefix': 'mbfsansa'
+    'body': '𝗮$1'
+  'mitX':
+    'prefix': 'mitX'
+    'body': '𝑋$1'
+  'mbfitN':
+    'prefix': 'mbfitN'
+    'body': '𝑵$1'
+  'lgE':
+    'prefix': 'lgE'
+    'body': '⪑$1'
+  'mitr':
+    'prefix': 'mitr'
+    'body': '𝑟$1'
+  'mbfvarpi':
+    'prefix': 'mbfvarpi'
+    'body': '𝛡$1'
+  'mbfsansUpsilon':
+    'prefix': 'mbfsansUpsilon'
+    'body': '𝝪$1'
+  'mitXi':
+    'prefix': 'mitXi'
+    'body': '𝛯$1'
+  'equalparallel':
+    'prefix': 'equalparallel'
+    'body': '⋕$1'
+  'boxbslash':
+    'prefix': 'boxbslash'
+    'body': '⧅$1'
+  'mfrakE':
+    'prefix': 'mfrakE'
+    'body': '𝔈$1'
+  'cirfnint':
+    'prefix': 'cirfnint'
+    'body': '⨐$1'
+  'mitsansH':
+    'prefix': 'mitsansH'
+    'body': '𝘏$1'
+  'subedot':
+    'prefix': 'subedot'
+    'body': '⫃$1'
+  'Bbbone':
+    'prefix': 'Bbbone'
+    'body': '𝟙$1'
+  'nLeftrightarrow':
+    'prefix': 'nLeftrightarrow'
+    'body': '⇎$1'
+  'mbfepsilon':
+    'prefix': 'mbfepsilon'
+    'body': '𝛆$1'
+  'dashleftharpoondown':
+    'prefix': 'dashleftharpoondown'
+    'body': '⥫$1'
+  'hrectangle':
+    'prefix': 'hrectangle'
+    'body': '▭$1'
+  'mscrG':
+    'prefix': 'mscrG'
+    'body': '𝒢$1'
+  'mitG':
+    'prefix': 'mitG'
+    'body': '𝐺$1'
+  'precnapprox':
+    'prefix': 'precnapprox'
+    'body': '⪹$1'
+  'mbfrho':
+    'prefix': 'mbfrho'
+    'body': '𝛒$1'
+  'mbfsansomicron':
+    'prefix': 'mbfsansomicron'
+    'body': '𝝾$1'
+  'nsqsupseteq':
+    'prefix': 'nsqsupseteq'
+    'body': '⋣$1'
+  'precapprox':
+    'prefix': 'precapprox'
+    'body': '⪷$1'
+  'pentagonblack':
+    'prefix': 'pentagonblack'
+    'body': '⬟$1'
+  'curvearrowright':
+    'prefix': 'curvearrowright'
+    'body': '↷$1'
+  'mscrt':
+    'prefix': 'mscrt'
+    'body': '𝓉$1'
+  'top':
+    'prefix': 'top'
+    'body': '⊤$1'
+  'mbffrakP':
+    'prefix': 'mbffrakP'
+    'body': '𝕻$1'
+  'mitpsi':
+    'prefix': 'mitpsi'
+    'body': '𝜓$1'
+  'Elztrny':
+    'prefix': 'Elztrny'
+    'body': 'ʎ$1'
+  'Elztrnr':
+    'prefix': 'Elztrnr'
+    'body': 'ɹ$1'
+  'blacktriangledown':
+    'prefix': 'blacktriangledown'
+    'body': '▾$1'
+  'Elzhlmrk':
+    'prefix': 'Elzhlmrk'
+    'body': 'ˑ$1'
+  'squoval':
+    'prefix': 'squoval'
+    'body': '▢$1'
+  'msanso':
+    'prefix': 'msanso'
+    'body': '𝗈$1'
+  'rasp':
+    'prefix': 'rasp'
+    'body': 'ʼ$1'
+  'downharpoonright':
+    'prefix': 'downharpoonright'
+    'body': '⇂$1'
+  'mbfphi':
+    'prefix': 'mbfphi'
+    'body': '𝛟$1'
+  'mbfF':
+    'prefix': 'mbfF'
+    'body': '𝐅$1'
+  'sqsubset':
+    'prefix': 'sqsubset'
+    'body': '⊏$1'
+  'squarellblack':
+    'prefix': 'squarellblack'
+    'body': '⬕$1'
+  'underrightharpoondown':
+    'prefix': 'underrightharpoondown'
+    'body': '⃬$1'
+  'mbfitsansO':
+    'prefix': 'mbfitsansO'
+    'body': '𝙊$1'
+  'succsim':
+    'prefix': 'succsim'
+    'body': '≿$1'
+  'dashV':
+    'prefix': 'dashV'
+    'body': '⫣$1'
+  'mbfs':
+    'prefix': 'mbfs'
+    'body': '𝐬$1'
+  'msansi':
+    'prefix': 'msansi'
+    'body': '𝗂$1'
+  'Elzopeno':
+    'prefix': 'Elzopeno'
+    'body': 'ɔ$1'
+  'emdash':
+    'prefix': 'emdash'
+    'body': '—$1'
+  'mbfsansx':
+    'prefix': 'mbfsansx'
+    'body': '𝘅$1'
+  'mttk':
+    'prefix': 'mttk'
+    'body': '𝚔$1'
+  'mbffive':
+    'prefix': 'mbffive'
+    'body': '𝟓$1'
+  'delta':
+    'prefix': 'delta'
+    'body': 'δ$1'
+  'rfloor':
+    'prefix': 'rfloor'
+    'body': '⌋$1'
+  'eqslantless':
+    'prefix': 'eqslantless'
+    'body': '⪕$1'
+  'twoheaduparrow':
+    'prefix': 'twoheaduparrow'
+    'body': '↟$1'
+  'msansV':
+    'prefix': 'msansV'
+    'body': '𝖵$1'
+  'mitsansg':
+    'prefix': 'mitsansg'
+    'body': '𝘨$1'
+  '^phi':
+    'prefix': '^phi'
+    'body': 'ᵠ$1'
+  'Elzverts':
+    'prefix': 'Elzverts'
+    'body': 'ˈ$1'
+  '^i':
+    'prefix': '^i'
+    'body': 'ⁱ$1'
+  'eqcolon':
+    'prefix': 'eqcolon'
+    'body': '≕$1'
+  'mito':
+    'prefix': 'mito'
+    'body': '𝑜$1'
+  'mbfitP':
+    'prefix': 'mbfitP'
+    'body': '𝑷$1'
+  'mfraka':
+    'prefix': 'mfraka'
+    'body': '𝔞$1'
+  'mbfitvarrho':
+    'prefix': 'mbfitvarrho'
+    'body': '𝝔$1'
+  'nsubseteq':
+    'prefix': 'nsubseteq'
+    'body': '⊈$1'
+  'mbfsansf':
+    'prefix': 'mbfsansf'
+    'body': '𝗳$1'
+  'mitdelta':
+    'prefix': 'mitdelta'
+    'body': '𝛿$1'
+  'wedge':
+    'prefix': 'wedge'
+    'body': '∧$1'
+  '^N':
+    'prefix': '^N'
+    'body': 'ᴺ$1'
+  'cdots':
+    'prefix': 'cdots'
+    'body': '⋯$1'
+  'Bbbpi':
+    'prefix': 'Bbbpi'
+    'body': 'ℼ$1'
+  'mbfV':
+    'prefix': 'mbfV'
+    'body': '𝐕$1'
+  'mbfchi':
+    'prefix': 'mbfchi'
+    'body': '𝛘$1'
+  'smblklozenge':
+    'prefix': 'smblklozenge'
+    'body': '⬪$1'
+  'spadesuit':
+    'prefix': 'spadesuit'
+    'body': '♠$1'
+  'mbffrakA':
+    'prefix': 'mbffrakA'
+    'body': '𝕬$1'
+  'mbfitsansiota':
+    'prefix': 'mbfitsansiota'
+    'body': '𝞲$1'
+  'trapezium':
+    'prefix': 'trapezium'
+    'body': '⏢$1'
+  'bullseye':
+    'prefix': 'bullseye'
+    'body': '◎$1'
+  'Bbbl':
+    'prefix': 'Bbbl'
+    'body': '𝕝$1'
+  'Bbbo':
+    'prefix': 'Bbbo'
+    'body': '𝕠$1'
+  'tildetrpl':
+    'prefix': 'tildetrpl'
+    'body': '≋$1'
+  'leftrightsquigarrow':
+    'prefix': 'leftrightsquigarrow'
+    'body': '↭$1'
+  '^t':
+    'prefix': '^t'
+    'body': 'ᵗ$1'
+  'dbkarow':
+    'prefix': 'dbkarow'
+    'body': '⤏$1'
+  'BbbC':
+    'prefix': 'BbbC'
+    'body': 'ℂ$1'
+  'mbfsansU':
+    'prefix': 'mbfsansU'
+    'body': '𝗨$1'
+  'Sigma':
+    'prefix': 'Sigma'
+    'body': 'Σ$1'
+  'mbfscrh':
+    'prefix': 'mbfscrh'
+    'body': '𝓱$1'
+  'longmapsto':
+    'prefix': 'longmapsto'
+    'body': '⟼$1'
+  'DownArrowUpArrow':
+    'prefix': 'DownArrowUpArrow'
+    'body': '⇵$1'
+  'intbar':
+    'prefix': 'intbar'
+    'body': '⨍$1'
+  'nasymp':
+    'prefix': 'nasymp'
+    'body': '≭$1'
+  'npreceq':
+    'prefix': 'npreceq'
+    'body': '⪯̸$1'
+  'mbfz':
+    'prefix': 'mbfz'
+    'body': '𝐳$1'
+  'mbfitsanss':
+    'prefix': 'mbfitsanss'
+    'body': '𝙨$1'
+  'virgo':
+    'prefix': 'virgo'
+    'body': '♍$1'
+  'mbfitI':
+    'prefix': 'mbfitI'
+    'body': '𝑰$1'
+  'boxast':
+    'prefix': 'boxast'
+    'body': '⧆$1'
+  'csupe':
+    'prefix': 'csupe'
+    'body': '⫒$1'
+  'mbfitK':
+    'prefix': 'mbfitK'
+    'body': '𝑲$1'
+  'Elzsbbrg':
+    'prefix': 'Elzsbbrg'
+    'body': '̪$1'
+  'drbkarrow':
+    'prefix': 'drbkarrow'
+    'body': '⤐$1'
+  'mbfitsansA':
+    'prefix': 'mbfitsansA'
+    'body': '𝘼$1'
+  'ell':
+    'prefix': 'ell'
+    'body': 'ℓ$1'
+  'mbfitMu':
+    'prefix': 'mbfitMu'
+    'body': '𝜧$1'
+  'squaretopblack':
+    'prefix': 'squaretopblack'
+    'body': '⬒$1'
+  'mbfitsigma':
+    'prefix': 'mbfitsigma'
+    'body': '𝝈$1'
+  'tau':
+    'prefix': 'tau'
+    'body': 'τ$1'
+  'Vvert':
+    'prefix': 'Vvert'
+    'body': '⦀$1'
+  'mbfscrM':
+    'prefix': 'mbfscrM'
+    'body': '𝓜$1'
+  'circledS':
+    'prefix': 'circledS'
+    'body': 'Ⓢ$1'
+  'mitN':
+    'prefix': 'mitN'
+    'body': '𝑁$1'
+  'mbfzero':
+    'prefix': 'mbfzero'
+    'body': '𝟎$1'
+  'boxdot':
+    'prefix': 'boxdot'
+    'body': '⊡$1'
+  'mfrakW':
+    'prefix': 'mfrakW'
+    'body': '𝔚$1'
+  'twoheadleftarrow':
+    'prefix': 'twoheadleftarrow'
+    'body': '↞$1'
+  'barovernorthwestarrow':
+    'prefix': 'barovernorthwestarrow'
+    'body': '↸$1'
+  'mdwhtlozenge':
+    'prefix': 'mdwhtlozenge'
+    'body': '⬨$1'
+  'mbfsansF':
+    'prefix': 'mbfsansF'
+    'body': '𝗙$1'
+  'mttW':
+    'prefix': 'mttW'
+    'body': '𝚆$1'
+  'mfrakV':
+    'prefix': 'mfrakV'
+    'body': '𝔙$1'
+  'textpertenthousand':
+    'prefix': 'textpertenthousand'
+    'body': '‱$1'
+  'Uparrow':
+    'prefix': 'Uparrow'
+    'body': '⇑$1'
+  'squarevfill':
+    'prefix': 'squarevfill'
+    'body': '▥$1'
+  'mitvarkappa':
+    'prefix': 'mitvarkappa'
+    'body': '𝜘$1'
+  'LeftVectorBar':
+    'prefix': 'LeftVectorBar'
+    'body': '⥒$1'
+  '_7':
+    'prefix': '_7'
+    'body': '₇$1'
+  'rightdasharrow':
+    'prefix': 'rightdasharrow'
+    'body': '⇢$1'
+  'textasciimacron':
+    'prefix': 'textasciimacron'
+    'body': '¯$1'
+  'msansg':
+    'prefix': 'msansg'
+    'body': '𝗀$1'
+  'mscrz':
+    'prefix': 'mscrz'
+    'body': '𝓏$1'
+  'smwhtcircle':
+    'prefix': 'smwhtcircle'
+    'body': '◦$1'
+  'nolinebreak':
+    'prefix': 'nolinebreak'
+    'body': '⁠$1'
+  'rangle':
+    'prefix': 'rangle'
+    'body': '⟩$1'
+  'rightarrowgtr':
+    'prefix': 'rightarrowgtr'
+    'body': '⭃$1'
+  'msansb':
+    'prefix': 'msansb'
+    'body': '𝖻$1'
+  'mbfitsansnu':
+    'prefix': 'mbfitsansnu'
+    'body': '𝞶$1'
+  'libra':
+    'prefix': 'libra'
+    'body': '♎$1'
+  'msansP':
+    'prefix': 'msansP'
+    'body': '𝖯$1'
+  'Lambda':
+    'prefix': 'Lambda'
+    'body': 'Λ$1'
+  'mbffrakU':
+    'prefix': 'mbffrakU'
+    'body': '𝖀$1'
+  'dsol':
+    'prefix': 'dsol'
+    'body': '⧶$1'
+  'sqsupseteq':
+    'prefix': 'sqsupseteq'
+    'body': '⊒$1'
+  '_r':
+    'prefix': '_r'
+    'body': 'ᵣ$1'
+  'mbfitpsi':
+    'prefix': 'mbfitpsi'
+    'body': '𝝍$1'
+  'tieconcat':
+    'prefix': 'tieconcat'
+    'body': '⁀$1'
+  'mbfitsansN':
+    'prefix': 'mbfitsansN'
+    'body': '𝙉$1'
+  'mbffraka':
+    'prefix': 'mbffraka'
+    'body': '𝖆$1'
+  'mbffrakv':
+    'prefix': 'mbffrakv'
+    'body': '𝖛$1'
+  'mbffrakj':
+    'prefix': 'mbffrakj'
+    'body': '𝖏$1'
+  'odot':
+    'prefix': 'odot'
+    'body': '⊙$1'
+  'supseteqq':
+    'prefix': 'supseteqq'
+    'body': '⫆$1'
+  'csup':
+    'prefix': 'csup'
+    'body': '⫐$1'
+  'msansp':
+    'prefix': 'msansp'
+    'body': '𝗉$1'
+  'mitgamma':
+    'prefix': 'mitgamma'
+    'body': '𝛾$1'
+  'boxminus':
+    'prefix': 'boxminus'
+    'body': '⊟$1'
+  'Rdsh':
+    'prefix': 'Rdsh'
+    'body': '↳$1'
+  'varveebar':
+    'prefix': 'varveebar'
+    'body': '⩡$1'
+  'mbfitsansS':
+    'prefix': 'mbfitsansS'
+    'body': '𝙎$1'
+  'textasciidieresis':
+    'prefix': 'textasciidieresis'
+    'body': '¨$1'
+  'k':
+    'prefix': 'k'
+    'body': '̨$1'
+  'mbfitsansz':
+    'prefix': 'mbfitsansz'
+    'body': '𝙯$1'
+  'textnumero':
+    'prefix': 'textnumero'
+    'body': '№$1'
+  'Pi':
+    'prefix': 'Pi'
+    'body': 'Π$1'
+  '^n':
+    'prefix': '^n'
+    'body': 'ⁿ$1'
+  'Elzpalh':
+    'prefix': 'Elzpalh'
+    'body': '̡$1'
+  'nparallel':
+    'prefix': 'nparallel'
+    'body': '∦$1'
+  '^z':
+    'prefix': '^z'
+    'body': 'ᶻ$1'
+  'Elzsqfse':
+    'prefix': 'Elzsqfse'
+    'body': '◪$1'
+  'conictaper':
+    'prefix': 'conictaper'
+    'body': '⌲$1'
+  'gtrapprox':
+    'prefix': 'gtrapprox'
+    'body': '⪆$1'
+  'lessgtr':
+    'prefix': 'lessgtr'
+    'body': '≶$1'
+  'mbfitsansM':
+    'prefix': 'mbfitsansM'
+    'body': '𝙈$1'
+  'mttM':
+    'prefix': 'mttM'
+    'body': '𝙼$1'
+  'mbflambda':
+    'prefix': 'mbflambda'
+    'body': '𝛌$1'
+  'mitEta':
+    'prefix': 'mitEta'
+    'body': '𝛨$1'
+  'overleftrightarrow':
+    'prefix': 'overleftrightarrow'
+    'body': '⃡$1'
+  'mdwhtcircle':
+    'prefix': 'mdwhtcircle'
+    'body': '⚪$1'
+  'mbfsansb':
+    'prefix': 'mbfsansb'
+    'body': '𝗯$1'
+  'dotsim':
+    'prefix': 'dotsim'
+    'body': '⩪$1'
+  'Elzrl':
+    'prefix': 'Elzrl'
+    'body': 'ɼ$1'
+  'coloneq':
+    'prefix': 'coloneq'
+    'body': '≔$1'
+  'msansm':
+    'prefix': 'msansm'
+    'body': '𝗆$1'
+  'pisces':
+    'prefix': 'pisces'
+    'body': '♓$1'
+  'mbfone':
+    'prefix': 'mbfone'
+    'body': '𝟏$1'
+  'Elzreapos':
+    'prefix': 'Elzreapos'
+    'body': '‛$1'
+  'rightarrowsupset':
+    'prefix': 'rightarrowsupset'
+    'body': '⭄$1'
+  'Elzsqfl':
+    'prefix': 'Elzsqfl'
+    'body': '◧$1'
+  'mbfitsansi':
+    'prefix': 'mbfitsansi'
+    'body': '𝙞$1'
+  'mbfitsanseta':
+    'prefix': 'mbfitsanseta'
+    'body': '𝞰$1'
+  'preceqq':
+    'prefix': 'preceqq'
+    'body': '⪳$1'
+  'eqcirc':
+    'prefix': 'eqcirc'
+    'body': '≖$1'
+  'quarternote':
+    'prefix': 'quarternote'
+    'body': '♩$1'
+  'measangleldtosw':
+    'prefix': 'measangleldtosw'
+    'body': '⦫$1'
+  'RightVectorBar':
+    'prefix': 'RightVectorBar'
+    'body': '⥓$1'
+  'texttrademark':
+    'prefix': 'texttrademark'
+    'body': '™$1'
+  'vysmblksquare':
+    'prefix': 'vysmblksquare'
+    'body': '⬝$1'
+  'lgwhtsquare':
+    'prefix': 'lgwhtsquare'
+    'body': '⬜$1'
+  'mitsansJ':
+    'prefix': 'mitsansJ'
+    'body': '𝘑$1'
+  'upharpoonleft':
+    'prefix': 'upharpoonleft'
+    'body': '↾$1'
+  'mttg':
+    'prefix': 'mttg'
+    'body': '𝚐$1'
+  'wedgeq':
+    'prefix': 'wedgeq'
+    'body': '≙$1'
+  '^U':
+    'prefix': '^U'
+    'body': 'ᵁ$1'
+  'mbfupsilon':
+    'prefix': 'mbfupsilon'
+    'body': '𝛖$1'
+  'Bbbk':
+    'prefix': 'Bbbk'
+    'body': '𝕜$1'
+  'mbfitNu':
+    'prefix': 'mbfitNu'
+    'body': '𝜨$1'
+  'mitsansz':
+    'prefix': 'mitsansz'
+    'body': '𝘻$1'
+  'hrectangleblack':
+    'prefix': 'hrectangleblack'
+    'body': '▬$1'
+  'Bbbm':
+    'prefix': 'Bbbm'
+    'body': '𝕞$1'
+  'hookrightarrow':
+    'prefix': 'hookrightarrow'
+    'body': '↪$1'
+  'supsetneq':
+    'prefix': 'supsetneq'
+    'body': '⊋$1'
+  'nis':
+    'prefix': 'nis'
+    'body': '⋼$1'
+  'mbfsansMu':
+    'prefix': 'mbfsansMu'
+    'body': '𝝡$1'
+  'mbfscrC':
+    'prefix': 'mbfscrC'
+    'body': '𝓒$1'
+  'mbfitomega':
+    'prefix': 'mbfitomega'
+    'body': '𝝎$1'
+  'succneqq':
+    'prefix': 'succneqq'
+    'body': '⪶$1'
+  'precneq':
+    'prefix': 'precneq'
+    'body': '⪱$1'
+  'msansN':
+    'prefix': 'msansN'
+    'body': '𝖭$1'
+  'diamondleftarrow':
+    'prefix': 'diamondleftarrow'
+    'body': '⤝$1'
+  'mfrakf':
+    'prefix': 'mfrakf'
+    'body': '𝔣$1'
+  'Bbbr':
+    'prefix': 'Bbbr'
+    'body': '𝕣$1'
+  'mbfitsansC':
+    'prefix': 'mbfitsansC'
+    'body': '𝘾$1'
+  'mbfitsansW':
+    'prefix': 'mbfitsansW'
+    'body': '𝙒$1'
+  'Elztrnh':
+    'prefix': 'Elztrnh'
+    'body': 'ɥ$1'
+  'mbfH':
+    'prefix': 'mbfH'
+    'body': '𝐇$1'
+  'mitC':
+    'prefix': 'mitC'
+    'body': '𝐶$1'
+  'msansa':
+    'prefix': 'msansa'
+    'body': '𝖺$1'
+  'sout':
+    'prefix': 'sout'
+    'body': '̶$1'
+  'precsim':
+    'prefix': 'precsim'
+    'body': '≾$1'
+  'mbffrakg':
+    'prefix': 'mbffrakg'
+    'body': '𝖌$1'
+  'mttd':
+    'prefix': 'mttd'
+    'body': '𝚍$1'
+  'mbffrakp':
+    'prefix': 'mbffrakp'
+    'body': '𝖕$1'
+  '^E':
+    'prefix': '^E'
+    'body': 'ᴱ$1'
+  'mbfitsansvarphi':
+    'prefix': 'mbfitsansvarphi'
+    'body': '𝟇$1'
+  'upkoppa':
+    'prefix': 'upkoppa'
+    'body': 'ϟ$1'
+  'preceq':
+    'prefix': 'preceq'
+    'body': '⪯$1'
+  '^d':
+    'prefix': '^d'
+    'body': 'ᵈ$1'
+  'Gamma':
+    'prefix': 'Gamma'
+    'body': 'Γ$1'
+  'mbfd':
+    'prefix': 'mbfd'
+    'body': '𝐝$1'
+  'mbfi':
+    'prefix': 'mbfi'
+    'body': '𝐢$1'
+  'mttseven':
+    'prefix': 'mttseven'
+    'body': '𝟽$1'
+  'tosa':
+    'prefix': 'tosa'
+    'body': '⤩$1'
+  'otimeslhrim':
+    'prefix': 'otimeslhrim'
+    'body': '⨴$1'
+  'mbfsanseta':
+    'prefix': 'mbfsanseta'
+    'body': '𝝶$1'
+  'notin':
+    'prefix': 'notin'
+    'body': '∉$1'
+  'mbftwo':
+    'prefix': 'mbftwo'
+    'body': '𝟐$1'
+  'mbfitsansQ':
+    'prefix': 'mbfitsansQ'
+    'body': '𝙌$1'
+  '^u':
+    'prefix': '^u'
+    'body': 'ᵘ$1'
+  'mbfc':
+    'prefix': 'mbfc'
+    'body': '𝐜$1'
+  'ulblacktriangle':
+    'prefix': 'ulblacktriangle'
+    'body': '◤$1'
+  'mbfo':
+    'prefix': 'mbfo'
+    'body': '𝐨$1'
+  '_beta':
+    'prefix': '_beta'
+    'body': 'ᵦ$1'
+  'euro':
+    'prefix': 'euro'
+    'body': '€$1'
+  'circ':
+    'prefix': 'circ'
+    'body': '∘$1'
+  'mfrakg':
+    'prefix': 'mfrakg'
+    'body': '𝔤$1'
+  'mbfitG':
+    'prefix': 'mbfitG'
+    'body': '𝑮$1'
+  'prime':
+    'prefix': 'prime'
+    'body': '′$1'
+  'mdwhtsquare':
+    'prefix': 'mdwhtsquare'
+    'body': '◻$1'
+  'Angstrom':
+    'prefix': 'Angstrom'
+    'body': 'Å$1'
+  'mbfxi':
+    'prefix': 'mbfxi'
+    'body': '𝛏$1'
+  'cdot':
+    'prefix': 'cdot'
+    'body': '⋅$1'
+  'uplus':
+    'prefix': 'uplus'
+    'body': '⊎$1'
+  'blockuphalf':
+    'prefix': 'blockuphalf'
+    'body': '▀$1'
+  'leftthreearrows':
+    'prefix': 'leftthreearrows'
+    'body': '⬱$1'
+  'mbfitb':
+    'prefix': 'mbfitb'
+    'body': '𝒃$1'
+  'leftdbkarrow':
+    'prefix': 'leftdbkarrow'
+    'body': '⤎$1'
+  'rtimes':
+    'prefix': 'rtimes'
+    'body': '⋊$1'
+  'Elzesh':
+    'prefix': 'Elzesh'
+    'body': 'ʃ$1'
+  'carriagereturn':
+    'prefix': 'carriagereturn'
+    'body': '↵$1'
+  'gsiml':
+    'prefix': 'gsiml'
+    'body': '⪐$1'
+  'circledtwodots':
+    'prefix': 'circledtwodots'
+    'body': '⚇$1'
+  'nmid':
+    'prefix': 'nmid'
+    'body': '∤$1'
+  'DJ':
+    'prefix': 'DJ'
+    'body': 'Đ$1'
+  'trianglecdot':
+    'prefix': 'trianglecdot'
+    'body': '◬$1'
+  'BbbB':
+    'prefix': 'BbbB'
+    'body': '𝔹$1'
+  '^3':
+    'prefix': '^3'
+    'body': '³$1'
+  'msansZ':
+    'prefix': 'msansZ'
+    'body': '𝖹$1'
+  '^j':
+    'prefix': '^j'
+    'body': 'ʲ$1'
+  'mbfitsansDelta':
+    'prefix': 'mbfitsansDelta'
+    'body': '𝞓$1'
+  'msansu':
+    'prefix': 'msansu'
+    'body': '𝗎$1'
+  'ElzAnd':
+    'prefix': 'ElzAnd'
+    'body': '⩓$1'
+  'mbfitsansb':
+    'prefix': 'mbfitsansb'
+    'body': '𝙗$1'
+  'DownLeftVectorBar':
+    'prefix': 'DownLeftVectorBar'
+    'body': '⥖$1'
+  'Supset':
+    'prefix': 'Supset'
+    'body': '⋑$1'
+  'mdblklozenge':
+    'prefix': 'mdblklozenge'
+    'body': '⬧$1'
+  'mbfsansvarTheta':
+    'prefix': 'mbfsansvarTheta'
+    'body': '𝝧$1'
+  'barcup':
+    'prefix': 'barcup'
+    'body': '⩂$1'
+  'mbffrako':
+    'prefix': 'mbffrako'
+    'body': '𝖔$1'
+  'mfrakb':
+    'prefix': 'mfrakb'
+    'body': '𝔟$1'
+  'msanseight':
+    'prefix': 'msanseight'
+    'body': '𝟪$1'
+  'mitEpsilon':
+    'prefix': 'mitEpsilon'
+    'body': '𝛦$1'
+  'simrdots':
+    'prefix': 'simrdots'
+    'body': '⩫$1'
+  'mbfitUpsilon':
+    'prefix': 'mbfitUpsilon'
+    'body': '𝜰$1'
+  'mbfsanslambda':
+    'prefix': 'mbfsanslambda'
+    'body': '𝝺$1'
+  'mbfitsansq':
+    'prefix': 'mbfitsansq'
+    'body': '𝙦$1'
+  'mscrw':
+    'prefix': 'mscrw'
+    'body': '𝓌$1'
+  'midbarvee':
+    'prefix': 'midbarvee'
+    'body': '⩝$1'
+  'RightUpDownVector':
+    'prefix': 'RightUpDownVector'
+    'body': '⥏$1'
+  'Bbbg':
+    'prefix': 'Bbbg'
+    'body': '𝕘$1'
+  'enclosediamond':
+    'prefix': 'enclosediamond'
+    'body': '⃟$1'
+  'msansj':
+    'prefix': 'msansj'
+    'body': '𝗃$1'
+  'mttj':
+    'prefix': 'mttj'
+    'body': '𝚓$1'
+  '^5':
+    'prefix': '^5'
+    'body': '⁵$1'
+  'Elzpupsil':
+    'prefix': 'Elzpupsil'
+    'body': 'ʊ$1'
+  'rightleftharpoonsup':
+    'prefix': 'rightleftharpoonsup'
+    'body': '⥨$1'
+  'varhexagonlrbonds':
+    'prefix': 'varhexagonlrbonds'
+    'body': '⌬$1'
+  'upharpoonsleftright':
+    'prefix': 'upharpoonsleftright'
+    'body': '⥣$1'
+  'varpi':
+    'prefix': 'varpi'
+    'body': 'ϖ$1'
+  'ltcir':
+    'prefix': 'ltcir'
+    'body': '⩹$1'
+  'mscrx':
+    'prefix': 'mscrx'
+    'body': '𝓍$1'
+  'circledast':
+    'prefix': 'circledast'
+    'body': '⊛$1'
+  'cap':
+    'prefix': 'cap'
+    'body': '∩$1'
+  'mbfitsanst':
+    'prefix': 'mbfitsanst'
+    'body': '𝙩$1'
+  'mbfitsanspi':
+    'prefix': 'mbfitsanspi'
+    'body': '𝞹$1'
+  'Kappa':
+    'prefix': 'Kappa'
+    'body': 'Κ$1'
+  'vdash':
+    'prefix': 'vdash'
+    'body': '⊢$1'
+  'msansO':
+    'prefix': 'msansO'
+    'body': '𝖮$1'
+  'because':
+    'prefix': 'because'
+    'body': '∵$1'
+  'barcap':
+    'prefix': 'barcap'
+    'body': '⩃$1'
+  '^beta':
+    'prefix': '^beta'
+    'body': 'ᵝ$1'
+  'bigtop':
+    'prefix': 'bigtop'
+    'body': '⟙$1'
+  'elinters':
+    'prefix': 'elinters'
+    'body': '⏧$1'
+  'mitZ':
+    'prefix': 'mitZ'
+    'body': '𝑍$1'
+  'mfrakl':
+    'prefix': 'mfrakl'
+    'body': '𝔩$1'
+  '_chi':
+    'prefix': '_chi'
+    'body': 'ᵪ$1'
+  'mitsansx':
+    'prefix': 'mitsansx'
+    'body': '𝘹$1'
+  'mbfscrv':
+    'prefix': 'mbfscrv'
+    'body': '𝓿$1'
+  'mitTheta':
+    'prefix': 'mitTheta'
+    'body': '𝛩$1'
+  'mitQ':
+    'prefix': 'mitQ'
+    'body': '𝑄$1'
+  'rightharpoonupdash':
+    'prefix': 'rightharpoonupdash'
+    'body': '⥬$1'
+  'varniobar':
+    'prefix': 'varniobar'
+    'body': '⋽$1'
+  '^iota':
+    'prefix': '^iota'
+    'body': 'ᶥ$1'
+  'biguplus':
+    'prefix': 'biguplus'
+    'body': '⨄$1'
+  'textbrokenbar':
+    'prefix': 'textbrokenbar'
+    'body': '¦$1'
+  '^a':
+    'prefix': '^a'
+    'body': 'ᵃ$1'
+  '^v':
+    'prefix': '^v'
+    'body': 'ᵛ$1'
+  'nVleftrightarrow':
+    'prefix': 'nVleftrightarrow'
+    'body': '⇼$1'
+  'mscrj':
+    'prefix': 'mscrj'
+    'body': '𝒿$1'
+  'mitsanse':
+    'prefix': 'mitsanse'
+    'body': '𝘦$1'
+  'mbfsansBeta':
+    'prefix': 'mbfsansBeta'
+    'body': '𝝗$1'
+  'eqsim':
+    'prefix': 'eqsim'
+    'body': '≂$1'
+  'Bbbb':
+    'prefix': 'Bbbb'
+    'body': '𝕓$1'
+  'whiteinwhitetriangle':
+    'prefix': 'whiteinwhitetriangle'
+    'body': '⟁$1'
+  'lrarc':
+    'prefix': 'lrarc'
+    'body': '◞$1'
+  'mbfitvarsigma':
+    'prefix': 'mbfitvarsigma'
+    'body': '𝝇$1'
+  'msanss':
+    'prefix': 'msanss'
+    'body': '𝗌$1'
+  'Elzclomeg':
+    'prefix': 'Elzclomeg'
+    'body': 'ɷ$1'
+  'BbbD':
+    'prefix': 'BbbD'
+    'body': '𝔻$1'
+  'mitsansr':
+    'prefix': 'mitsansr'
+    'body': '𝘳$1'
+  'mbfsansvarkappa':
+    'prefix': 'mbfsansvarkappa'
+    'body': '𝞌$1'
+  'tona':
+    'prefix': 'tona'
+    'body': '⤧$1'
+  'setminus':
+    'prefix': 'setminus'
+    'body': '∖$1'
+  'nsqsubseteq':
+    'prefix': 'nsqsubseteq'
+    'body': '⋢$1'
+  'lesdot':
+    'prefix': 'lesdot'
+    'body': '⩿$1'
+  'mitMu':
+    'prefix': 'mitMu'
+    'body': '𝛭$1'
+  'mits':
+    'prefix': 'mits'
+    'body': '𝑠$1'
+  'therefore':
+    'prefix': 'therefore'
+    'body': '∴$1'
+  'leftarrowtail':
+    'prefix': 'leftarrowtail'
+    'body': '↢$1'
+  'msansL':
+    'prefix': 'msansL'
+    'body': '𝖫$1'
+  'smallni':
+    'prefix': 'smallni'
+    'body': '∍$1'
+  'rightanglearc':
+    'prefix': 'rightanglearc'
+    'body': '⊾$1'
+  'measuredangle':
+    'prefix': 'measuredangle'
+    'body': '∡$1'
+  'LeftTeeVector':
+    'prefix': 'LeftTeeVector'
+    'body': '⥚$1'
+  'blkvertoval':
+    'prefix': 'blkvertoval'
+    'body': '⬮$1'
+  'mttl':
+    'prefix': 'mttl'
+    'body': '𝚕$1'
+  'mbfK':
+    'prefix': 'mbfK'
+    'body': '𝐊$1'
+  'longleftarrow':
+    'prefix': 'longleftarrow'
+    'body': '⟵$1'
+  'mbftau':
+    'prefix': 'mbftau'
+    'body': '𝛕$1'
+  'downzigzagarrow':
+    'prefix': 'downzigzagarrow'
+    'body': '↯$1'
+  'dj':
+    'prefix': 'dj'
+    'body': 'đ$1'
+  'supedot':
+    'prefix': 'supedot'
+    'body': '⫄$1'
+  'mbfj':
+    'prefix': 'mbfj'
+    'body': '𝐣$1'
+  'mbfsansE':
+    'prefix': 'mbfsansE'
+    'body': '𝗘$1'
+  'ppprime':
+    'prefix': 'ppprime'
+    'body': '‴$1'
+  'mbfU':
+    'prefix': 'mbfU'
+    'body': '𝐔$1'
+  'intprod':
+    'prefix': 'intprod'
+    'body': '⨼$1'
+  'notgreaterless':
+    'prefix': 'notgreaterless'
+    'body': '≹$1'
+  'mdsmblksquare':
+    'prefix': 'mdsmblksquare'
+    'body': '◾$1'
+  'whitepointerleft':
+    'prefix': 'whitepointerleft'
+    'body': '◅$1'
+  'mbfscrx':
+    'prefix': 'mbfscrx'
+    'body': '𝔁$1'
+  '^A':
+    'prefix': '^A'
+    'body': 'ᴬ$1'
+  'mbfsansr':
+    'prefix': 'mbfsansr'
+    'body': '𝗿$1'
+  'mbfbeta':
+    'prefix': 'mbfbeta'
+    'body': '𝛃$1'
+  '_5':
+    'prefix': '_5'
+    'body': '₅$1'
+  'measangleurtone':
+    'prefix': 'measangleurtone'
+    'body': '⦬$1'
+  'mitk':
+    'prefix': 'mitk'
+    'body': '𝑘$1'
+  'subsub':
+    'prefix': 'subsub'
+    'body': '⫕$1'
+  'mscrd':
+    'prefix': 'mscrd'
+    'body': '𝒹$1'
+  'ElzLap':
+    'prefix': 'ElzLap'
+    'body': '⧊$1'
+  'strns':
+    'prefix': 'strns'
+    'body': '⏤$1'
+  'gtrsim':
+    'prefix': 'gtrsim'
+    'body': '≳$1'
+  'uparrowbarred':
+    'prefix': 'uparrowbarred'
+    'body': '⤉$1'
+  '^Phi':
+    'prefix': '^Phi'
+    'body': 'ᶲ$1'
+  'mbfx':
+    'prefix': 'mbfx'
+    'body': '𝐱$1'
+  'mfrakm':
+    'prefix': 'mfrakm'
+    'body': '𝔪$1'
+  'adots':
+    'prefix': 'adots'
+    'body': '⋰$1'
+  'downdasharrow':
+    'prefix': 'downdasharrow'
+    'body': '⇣$1'
+  'rho':
+    'prefix': 'rho'
+    'body': 'ρ$1'
+  'mbffrakR':
+    'prefix': 'mbffrakR'
+    'body': '𝕽$1'
+  'mbfsanse':
+    'prefix': 'mbfsanse'
+    'body': '𝗲$1'
+  'APLnotbackslash':
+    'prefix': 'APLnotbackslash'
+    'body': '⍀$1'
+  'mitepsilon':
+    'prefix': 'mitepsilon'
+    'body': '𝜀$1'
+  'mbfitrho':
+    'prefix': 'mbfitrho'
+    'body': '𝝆$1'
+  'mbfitsansJ':
+    'prefix': 'mbfitsansJ'
+    'body': '𝙅$1'
+  'mbfsanssix':
+    'prefix': 'mbfsanssix'
+    'body': '𝟲$1'
+  'mbfscrQ':
+    'prefix': 'mbfscrQ'
+    'body': '𝓠$1'
+  'mbffrakk':
+    'prefix': 'mbffrakk'
+    'body': '𝖐$1'
+  'gla':
+    'prefix': 'gla'
+    'body': '⪥$1'
+  'mitS':
+    'prefix': 'mitS'
+    'body': '𝑆$1'
+  'mbfitsansL':
+    'prefix': 'mbfitsansL'
+    'body': '𝙇$1'
+  'mfrakq':
+    'prefix': 'mfrakq'
+    'body': '𝔮$1'
+  'mbfitsansm':
+    'prefix': 'mbfitsansm'
+    'body': '𝙢$1'
+  'mbfitsansZeta':
+    'prefix': 'mbfitsansZeta'
+    'body': '𝞕$1'
+  'mitt':
+    'prefix': 'mitt'
+    'body': '𝑡$1'
+  'mttA':
+    'prefix': 'mttA'
+    'body': '𝙰$1'
+  'mdsmwhtcircle':
+    'prefix': 'mdsmwhtcircle'
+    'body': '⚬$1'
+  'eqdot':
+    'prefix': 'eqdot'
+    'body': '⩦$1'
+  'emptysetobar':
+    'prefix': 'emptysetobar'
+    'body': '⦱$1'
+  'leftthreetimes':
+    'prefix': 'leftthreetimes'
+    'body': '⋋$1'
+  'mttn':
+    'prefix': 'mttn'
+    'body': '𝚗$1'
+  'jupiter':
+    'prefix': 'jupiter'
+    'body': '♃$1'
+  '_a':
+    'prefix': '_a'
+    'body': 'ₐ$1'
+  'bumpeq':
+    'prefix': 'bumpeq'
+    'body': '≏$1'
+  'oiint':
+    'prefix': 'oiint'
+    'body': '∯$1'
+  'bigblacktriangledown':
+    'prefix': 'bigblacktriangledown'
+    'body': '▼$1'
+  'Elzpgamma':
+    'prefix': 'Elzpgamma'
+    'body': 'ɣ$1'
+  'mbfitm':
+    'prefix': 'mbfitm'
+    'body': '𝒎$1'
+  'dotplus':
+    'prefix': 'dotplus'
+    'body': '∔$1'
+  'mscrJ':
+    'prefix': 'mscrJ'
+    'body': '𝒥$1'
+  'mbfscrs':
+    'prefix': 'mbfscrs'
+    'body': '𝓼$1'
+  'opluslhrim':
+    'prefix': 'opluslhrim'
+    'body': '⨭$1'
+  'mbfscrj':
+    'prefix': 'mbfscrj'
+    'body': '𝓳$1'
+  'mttU':
+    'prefix': 'mttU'
+    'body': '𝚄$1'
+  'searrow':
+    'prefix': 'searrow'
+    'body': '↘$1'
+  'mttnine':
+    'prefix': 'mttnine'
+    'body': '𝟿$1'
+  'mdwhtdiamond':
+    'prefix': 'mdwhtdiamond'
+    'body': '⬦$1'
+  'nvtwoheadrightarrow':
+    'prefix': 'nvtwoheadrightarrow'
+    'body': '⤀$1'
+  'mbffrakV':
+    'prefix': 'mbffrakV'
+    'body': '𝖁$1'
+  'mbfsansi':
+    'prefix': 'mbfsansi'
+    'body': '𝗶$1'
+  'mbfitsansg':
+    'prefix': 'mbfitsansg'
+    'body': '𝙜$1'
+  'mttS':
+    'prefix': 'mttS'
+    'body': '𝚂$1'
+  'msansz':
+    'prefix': 'msansz'
+    'body': '𝗓$1'
+  'diamondtopblack':
+    'prefix': 'diamondtopblack'
+    'body': '⬘$1'
+  'mbfitC':
+    'prefix': 'mbfitC'
+    'body': '𝑪$1'
+  'diceii':
+    'prefix': 'diceii'
+    'body': '⚁$1'
+  'mbfE':
+    'prefix': 'mbfE'
+    'body': '𝐄$1'
+  'mbfsansZ':
+    'prefix': 'mbfsansZ'
+    'body': '𝗭$1'
+  'mscrD':
+    'prefix': 'mscrD'
+    'body': '𝒟$1'
+  'Elzlow':
+    'prefix': 'Elzlow'
+    'body': '˕$1'
+  'msansC':
+    'prefix': 'msansC'
+    'body': '𝖢$1'
+  'mbfsansvarsigma':
+    'prefix': 'mbfsansvarsigma'
+    'body': '𝞁$1'
+  'VDash':
+    'prefix': 'VDash'
+    'body': '⊫$1'
+  'upomicron':
+    'prefix': 'upomicron'
+    'body': 'ο$1'
+  'mscrM':
+    'prefix': 'mscrM'
+    'body': 'ℳ$1'
+  'mbfitOmicron':
+    'prefix': 'mbfitOmicron'
+    'body': '𝜪$1'
+  'rsqhook':
+    'prefix': 'rsqhook'
+    'body': '⫎$1'
+  'longleftsquigarrow':
+    'prefix': 'longleftsquigarrow'
+    'body': '⬳$1'
+  'mitsansZ':
+    'prefix': 'mitsansZ'
+    'body': '𝘡$1'
+  'mitW':
+    'prefix': 'mitW'
+    'body': '𝑊$1'
+  '^6':
+    'prefix': '^6'
+    'body': '⁶$1'
+  'boxdiag':
+    'prefix': 'boxdiag'
+    'body': '⧄$1'
+  'msansn':
+    'prefix': 'msansn'
+    'body': '𝗇$1'
+  'upsampi':
+    'prefix': 'upsampi'
+    'body': 'ϡ$1'
+  'mtto':
+    'prefix': 'mtto'
+    'body': '𝚘$1'
+  'mbfsansomega':
+    'prefix': 'mbfsansomega'
+    'body': '𝞈$1'
+  'mbfpsi':
+    'prefix': 'mbfpsi'
+    'body': '𝛙$1'
+  'linefeed':
+    'prefix': 'linefeed'
+    'body': '↴$1'
+  'APLboxupcaret':
+    'prefix': 'APLboxupcaret'
+    'body': '⍓$1'
+  'mbfitsansPi':
+    'prefix': 'mbfitsansPi'
+    'body': '𝞟$1'
+  'mitsansu':
+    'prefix': 'mitsansu'
+    'body': '𝘶$1'
+  'mbffraki':
+    'prefix': 'mbffraki'
+    'body': '𝖎$1'
+  'mbfsansj':
+    'prefix': 'mbfsansj'
+    'body': '𝗷$1'
+  'geqqslant':
+    'prefix': 'geqqslant'
+    'body': '⫺$1'
+  'varsigma':
+    'prefix': 'varsigma'
+    'body': 'ς$1'
+  'mscrq':
+    'prefix': 'mscrq'
+    'body': '𝓆$1'
+  'mbfitsanssigma':
+    'prefix': 'mbfitsanssigma'
+    'body': '𝞼$1'
+  '^y':
+    'prefix': '^y'
+    'body': 'ʸ$1'
+  'mdblksquare':
+    'prefix': 'mdblksquare'
+    'body': '◼$1'
+  'mitw':
+    'prefix': 'mitw'
+    'body': '𝑤$1'
+  'sqrint':
+    'prefix': 'sqrint'
+    'body': '⨖$1'
+  'nu':
+    'prefix': 'nu'
+    'body': 'ν$1'
+  'textquotedblleft':
+    'prefix': 'textquotedblleft'
+    'body': '“$1'
+  'leftrightharpoons':
+    'prefix': 'leftrightharpoons'
+    'body': '⇋$1'
+  'preccurlyeq':
+    'prefix': 'preccurlyeq'
+    'body': '≼$1'
+  'ddots':
+    'prefix': 'ddots'
+    'body': '⋱$1'
+  'nvrightarrowtail':
+    'prefix': 'nvrightarrowtail'
+    'body': '⤔$1'
+  'mttY':
+    'prefix': 'mttY'
+    'body': '𝚈$1'
+  'flat':
+    'prefix': 'flat'
+    'body': '♭$1'
+  'otimes':
+    'prefix': 'otimes'
+    'body': '⊗$1'
+  'Bbbfive':
+    'prefix': 'Bbbfive'
+    'body': '𝟝$1'
+  'Elzrtll':
+    'prefix': 'Elzrtll'
+    'body': 'ɭ$1'
+  'lnapprox':
+    'prefix': 'lnapprox'
+    'body': '⪉$1'
+  'npolint':
+    'prefix': 'npolint'
+    'body': '⨔$1'
+  'astrosun':
+    'prefix': 'astrosun'
+    'body': '☉$1'
+  '_t':
+    'prefix': '_t'
+    'body': 'ₜ$1'
+  'vartriangleleft':
+    'prefix': 'vartriangleleft'
+    'body': '⊲$1'
+  'mbfitsansY':
+    'prefix': 'mbfitsansY'
+    'body': '𝙔$1'
+  'simplus':
+    'prefix': 'simplus'
+    'body': '⨤$1'
+  'mbfitOmega':
+    'prefix': 'mbfitOmega'
+    'body': '𝜴$1'
+  'NotSquareSuperset':
+    'prefix': 'NotSquareSuperset'
+    'body': '⊐̸$1'
+  'mitxi':
+    'prefix': 'mitxi'
+    'body': '𝜉$1'
+  'mbfNu':
+    'prefix': 'mbfNu'
+    'body': '𝚴$1'
+  'mitPi':
+    'prefix': 'mitPi'
+    'body': '𝛱$1'
+  'Psi':
+    'prefix': 'Psi'
+    'body': 'Ψ$1'
+  'upvarbeta':
+    'prefix': 'upvarbeta'
+    'body': 'ϐ$1'
+  'mbfsanspartial':
+    'prefix': 'mbfsanspartial'
+    'body': '𝞉$1'
+  'squareurblack':
+    'prefix': 'squareurblack'
+    'body': '⬔$1'
+  'mdlgblkcircle':
+    'prefix': 'mdlgblkcircle'
+    'body': '●$1'
+  'RightDownVectorBar':
+    'prefix': 'RightDownVectorBar'
+    'body': '⥕$1'
+  'odiv':
+    'prefix': 'odiv'
+    'body': '⨸$1'
+  'msansc':
+    'prefix': 'msansc'
+    'body': '𝖼$1'
+  'late':
+    'prefix': 'late'
+    'body': '⪭$1'
+  'mbfitv':
+    'prefix': 'mbfitv'
+    'body': '𝒗$1'
+  'ominus':
+    'prefix': 'ominus'
+    'body': '⊖$1'
+  'mbfthree':
+    'prefix': 'mbfthree'
+    'body': '𝟑$1'
+  'grave':
+    'prefix': 'grave'
+    'body': '̀$1'
+  'odotslashdot':
+    'prefix': 'odotslashdot'
+    'body': '⦼$1'
+  'mscrh':
+    'prefix': 'mscrh'
+    'body': '𝒽$1'
+  'msansW':
+    'prefix': 'msansW'
+    'body': '𝖶$1'
+  'rightpentagonblack':
+    'prefix': 'rightpentagonblack'
+    'body': '⭓$1'
+  'isinobar':
+    'prefix': 'isinobar'
+    'body': '⋷$1'
+  'mitsansN':
+    'prefix': 'mitsansN'
+    'body': '𝘕$1'
+  'eqeqeq':
+    'prefix': 'eqeqeq'
+    'body': '⩶$1'
+  'mttv':
+    'prefix': 'mttv'
+    'body': '𝚟$1'
+  'neuter':
+    'prefix': 'neuter'
+    'body': '⚲$1'
+  'lesges':
+    'prefix': 'lesges'
+    'body': '⪓$1'
+  'mbfkappa':
+    'prefix': 'mbfkappa'
+    'body': '𝛋$1'
+  'mbfsanst':
+    'prefix': 'mbfsanst'
+    'body': '𝘁$1'
+  'mbfsansn':
+    'prefix': 'mbfsansn'
+    'body': '𝗻$1'
+  'bowtie':
+    'prefix': 'bowtie'
+    'body': '⋈$1'
+  'squareulblack':
+    'prefix': 'squareulblack'
+    'body': '◩$1'
+  'mbfy':
+    'prefix': 'mbfy'
+    'body': '𝐲$1'
+  'prod':
+    'prefix': 'prod'
+    'body': '∏$1'
+  'leftharpoonsupdown':
+    'prefix': 'leftharpoonsupdown'
+    'body': '⥢$1'
+  'mfrakH':
+    'prefix': 'mfrakH'
+    'body': 'ℌ$1'
+  'lgblksquare':
+    'prefix': 'lgblksquare'
+    'body': '⬛$1'
+  'Bbbseven':
+    'prefix': 'Bbbseven'
+    'body': '𝟟$1'
+  'downwhitearrow':
+    'prefix': 'downwhitearrow'
+    'body': '⇩$1'
+  'mbfscrH':
+    'prefix': 'mbfscrH'
+    'body': '𝓗$1'
+  'mbffrakr':
+    'prefix': 'mbffrakr'
+    'body': '𝖗$1'
+  'msansU':
+    'prefix': 'msansU'
+    'body': '𝖴$1'
+  'succcurlyeq':
+    'prefix': 'succcurlyeq'
+    'body': '≽$1'
+  'geqslant':
+    'prefix': 'geqslant'
+    'body': '⩾$1'
+  '^c':
+    'prefix': '^c'
+    'body': 'ᶜ$1'
+  'mbfitW':
+    'prefix': 'mbfitW'
+    'body': '𝑾$1'
+  'mbfscrA':
+    'prefix': 'mbfscrA'
+    'body': '𝓐$1'
+  'awint':
+    'prefix': 'awint'
+    'body': '⨑$1'
+  'mbfscry':
+    'prefix': 'mbfscry'
+    'body': '𝔂$1'
+  'LeftDownVectorBar':
+    'prefix': 'LeftDownVectorBar'
+    'body': '⥙$1'
+  '_)':
+    'prefix': '_)'
+    'body': '₎$1'
+  'not':
+    'prefix': 'not'
+    'body': '̸$1'
+  'mbfscrc':
+    'prefix': 'mbfscrc'
+    'body': '𝓬$1'
+  'mbfitn':
+    'prefix': 'mbfitn'
+    'body': '𝒏$1'
+  'bigoplus':
+    'prefix': 'bigoplus'
+    'body': '⨁$1'
+  'mbfsansB':
+    'prefix': 'mbfsansB'
+    'body': '𝗕$1'
+  'mbffrakF':
+    'prefix': 'mbffrakF'
+    'body': '𝕱$1'
+  'circledequal':
+    'prefix': 'circledequal'
+    'body': '⊜$1'
+  'veeeq':
+    'prefix': 'veeeq'
+    'body': '≚$1'
+  'rightanglemdot':
+    'prefix': 'rightanglemdot'
+    'body': '⦝$1'
+  'nsucceq':
+    'prefix': 'nsucceq'
+    'body': '⪰̸$1'
+  'obslash':
+    'prefix': 'obslash'
+    'body': '⦸$1'
+  '^K':
+    'prefix': '^K'
+    'body': 'ᴷ$1'
+  'H':
+    'prefix': 'H'
+    'body': '̋$1'
+  'mitBbbi':
+    'prefix': 'mitBbbi'
+    'body': 'ⅈ$1'
+  'squarellquad':
+    'prefix': 'squarellquad'
+    'body': '◱$1'
+  'upstigma':
+    'prefix': 'upstigma'
+    'body': 'ϛ$1'
+  'digamma':
+    'prefix': 'digamma'
+    'body': 'ϝ$1'
+  'mbfscrX':
+    'prefix': 'mbfscrX'
+    'body': '𝓧$1'
+  'msansY':
+    'prefix': 'msansY'
+    'body': '𝖸$1'
+  'mtti':
+    'prefix': 'mtti'
+    'body': '𝚒$1'
+  'vartriangleright':
+    'prefix': 'vartriangleright'
+    'body': '⊳$1'
+  'nsupseteqq':
+    'prefix': 'nsupseteqq'
+    'body': '⫆̸$1'
+  'Elzglst':
+    'prefix': 'Elzglst'
+    'body': 'ʔ$1'
+  'subsup':
+    'prefix': 'subsup'
+    'body': '⫓$1'
+  'mitsansL':
+    'prefix': 'mitsansL'
+    'body': '𝘓$1'
+  'BbbGamma':
+    'prefix': 'BbbGamma'
+    'body': 'ℾ$1'
+  'mscrA':
+    'prefix': 'mscrA'
+    'body': '𝒜$1'
+  'NestedLessLess':
+    'prefix': 'NestedLessLess'
+    'body': '⪡$1'
+  'mbfsansGamma':
+    'prefix': 'mbfsansGamma'
+    'body': '𝝘$1'
+  'mitsansV':
+    'prefix': 'mitsansV'
+    'body': '𝘝$1'
+  'mbffrakO':
+    'prefix': 'mbffrakO'
+    'body': '𝕺$1'
+  'mbfsansIota':
+    'prefix': 'mbfsansIota'
+    'body': '𝝞$1'
+  'o':
+    'prefix': 'o'
+    'body': 'ø$1'
+  'divideontimes':
+    'prefix': 'divideontimes'
+    'body': '⋇$1'
+  'msansv':
+    'prefix': 'msansv'
+    'body': '𝗏$1'
+  'mbfsansC':
+    'prefix': 'mbfsansC'
+    'body': '𝗖$1'
+  'mbfitsansV':
+    'prefix': 'mbfitsansV'
+    'body': '𝙑$1'
+  'triangleright':
+    'prefix': 'triangleright'
+    'body': '▹$1'
+  'mbfLambda':
+    'prefix': 'mbfLambda'
+    'body': '𝚲$1'
+  'mitsigma':
+    'prefix': 'mitsigma'
+    'body': '𝜎$1'
+  'mbfitsanszeta':
+    'prefix': 'mbfitsanszeta'
+    'body': '𝞯$1'
+  'disin':
+    'prefix': 'disin'
+    'body': '⋲$1'
+  'gsime':
+    'prefix': 'gsime'
+    'body': '⪎$1'
+  'NotNestedGreaterGreater':
+    'prefix': 'NotNestedGreaterGreater'
+    'body': '⪢̸$1'
+  'lgwhtcircle':
+    'prefix': 'lgwhtcircle'
+    'body': '◯$1'
+  'mbfito':
+    'prefix': 'mbfito'
+    'body': '𝒐$1'
+  'blackinwhitesquare':
+    'prefix': 'blackinwhitesquare'
+    'body': '▣$1'
+  'mbfsansJ':
+    'prefix': 'mbfsansJ'
+    'body': '𝗝$1'
+  'diagdown':
+    'prefix': 'diagdown'
+    'body': '╲$1'
+  'doteq':
+    'prefix': 'doteq'
+    'body': '≐$1'
+  'mfraki':
+    'prefix': 'mfraki'
+    'body': '𝔦$1'
+  'mttR':
+    'prefix': 'mttR'
+    'body': '𝚁$1'
+  'jmath':
+    'prefix': 'jmath'
+    'body': '𝚥$1'
+  'mbfitChi':
+    'prefix': 'mbfitChi'
+    'body': '𝜲$1'
+  'mbfitlambda':
+    'prefix': 'mbfitlambda'
+    'body': '𝝀$1'
+  'mbfscra':
+    'prefix': 'mbfscra'
+    'body': '𝓪$1'
+  'bigslopedwedge':
+    'prefix': 'bigslopedwedge'
+    'body': '⩘$1'
+  'supsup':
+    'prefix': 'supsup'
+    'body': '⫖$1'
+  'mfrakt':
+    'prefix': 'mfrakt'
+    'body': '𝔱$1'
+  'mbffrakG':
+    'prefix': 'mbffrakG'
+    'body': '𝕲$1'
+  'upint':
+    'prefix': 'upint'
+    'body': '⨛$1'
+  'urarc':
+    'prefix': 'urarc'
+    'body': '◝$1'
+  'mbfitsanstau':
+    'prefix': 'mbfitsanstau'
+    'body': '𝞽$1'
+  'mbffrakz':
+    'prefix': 'mbffrakz'
+    'body': '𝖟$1'
+  'BbbQ':
+    'prefix': 'BbbQ'
+    'body': 'ℚ$1'
+  'bigcup':
+    'prefix': 'bigcup'
+    'body': '⋃$1'
+  'simeq':
+    'prefix': 'simeq'
+    'body': '≃$1'
+  'vysmblkcircle':
+    'prefix': 'vysmblkcircle'
+    'body': '∙$1'
+  'mbfsansone':
+    'prefix': 'mbfsansone'
+    'body': '𝟭$1'
+  'gvertneqq':
+    'prefix': 'gvertneqq'
+    'body': '≩︀$1'
+  'rightarrowtail':
+    'prefix': 'rightarrowtail'
+    'body': '↣$1'
+  'mbfitZ':
+    'prefix': 'mbfitZ'
+    'body': '𝒁$1'
+  'mbfittheta':
+    'prefix': 'mbfittheta'
+    'body': '𝜽$1'
+  'diceiii':
+    'prefix': 'diceiii'
+    'body': '⚂$1'
+  'mbfAlpha':
+    'prefix': 'mbfAlpha'
+    'body': '𝚨$1'
+  '^chi':
+    'prefix': '^chi'
+    'body': 'ᵡ$1'
+  'multimap':
+    'prefix': 'multimap'
+    'body': '⊸$1'
+  'triangleleftblack':
+    'prefix': 'triangleleftblack'
+    'body': '◭$1'
+  'Delta':
+    'prefix': 'Delta'
+    'body': 'Δ$1'
+  'varhexagonblack':
+    'prefix': 'varhexagonblack'
+    'body': '⬢$1'
+  'mbfitsansP':
+    'prefix': 'mbfitsansP'
+    'body': '𝙋$1'
+  'llarc':
+    'prefix': 'llarc'
+    'body': '◟$1'
+  'mbfsansEpsilon':
+    'prefix': 'mbfsansEpsilon'
+    'body': '𝝚$1'
+  'Elzyogh':
+    'prefix': 'Elzyogh'
+    'body': 'ʒ$1'
+  'Rho':
+    'prefix': 'Rho'
+    'body': 'Ρ$1'
+  'leqqslant':
+    'prefix': 'leqqslant'
+    'body': '⫹$1'
+  'lllnest':
+    'prefix': 'lllnest'
+    'body': '⫷$1'
+  'mbfitZeta':
+    'prefix': 'mbfitZeta'
+    'body': '𝜡$1'
+  'backprime':
+    'prefix': 'backprime'
+    'body': '‵$1'
+  'mscrm':
+    'prefix': 'mscrm'
+    'body': '𝓂$1'
+  'msansT':
+    'prefix': 'msansT'
+    'body': '𝖳$1'
+  'topsemicircle':
+    'prefix': 'topsemicircle'
+    'body': '◠$1'
+  'mbfscrG':
+    'prefix': 'mbfscrG'
+    'body': '𝓖$1'
+  'lambda':
+    'prefix': 'lambda'
+    'body': 'λ$1'
+  'Bbbw':
+    'prefix': 'Bbbw'
+    'body': '𝕨$1'
+  'LeftDownTeeVector':
+    'prefix': 'LeftDownTeeVector'
+    'body': '⥡$1'
+  'mitsansU':
+    'prefix': 'mitsansU'
+    'body': '𝘜$1'
+  'mbfm':
+    'prefix': 'mbfm'
+    'body': '𝐦$1'
+  'mitb':
+    'prefix': 'mitb'
+    'body': '𝑏$1'
+  'starequal':
+    'prefix': 'starequal'
+    'body': '≛$1'
+  'blanksymbol':
+    'prefix': 'blanksymbol'
+    'body': '␢$1'
+  'nvLeftarrow':
+    'prefix': 'nvLeftarrow'
+    'body': '⤂$1'
+  'triangledown':
+    'prefix': 'triangledown'
+    'body': '▿$1'
+  'circlearrowright':
+    'prefix': 'circlearrowright'
+    'body': '↻$1'
+  'closedvarcap':
+    'prefix': 'closedvarcap'
+    'body': '⩍$1'
+  'mfrakJ':
+    'prefix': 'mfrakJ'
+    'body': '𝔍$1'
+  'mbfitsansMu':
+    'prefix': 'mbfitsansMu'
+    'body': '𝞛$1'
+  'Hermaphrodite':
+    'prefix': 'Hermaphrodite'
+    'body': '⚥$1'
+  'textquestiondown':
+    'prefix': 'textquestiondown'
+    'body': '¿$1'
+  'isindot':
+    'prefix': 'isindot'
+    'body': '⋵$1'
+  'blacktriangleleft':
+    'prefix': 'blacktriangleleft'
+    'body': '◀$1'
+  'mfrakP':
+    'prefix': 'mfrakP'
+    'body': '𝔓$1'
+  'mbfsansL':
+    'prefix': 'mbfsansL'
+    'body': '𝗟$1'
+  'succnsim':
+    'prefix': 'succnsim'
+    'body': '⋩$1'
+  'eqqless':
+    'prefix': 'eqqless'
+    'body': '⪙$1'
+  'mbfitsansR':
+    'prefix': 'mbfitsansR'
+    'body': '𝙍$1'
+  'mbfM':
+    'prefix': 'mbfM'
+    'body': '𝐌$1'
+  'cong':
+    'prefix': 'cong'
+    'body': '≅$1'
+  'mscrH':
+    'prefix': 'mscrH'
+    'body': 'ℋ$1'
+  'mbfitsansc':
+    'prefix': 'mbfitsansc'
+    'body': '𝙘$1'
+  'BbbI':
+    'prefix': 'BbbI'
+    'body': '𝕀$1'
+  'varsupsetneq':
+    'prefix': 'varsupsetneq'
+    'body': '⊋︀$1'
+  'mitsansR':
+    'prefix': 'mitsansR'
+    'body': '𝘙$1'
+  'mbfitsansp':
+    'prefix': 'mbfitsansp'
+    'body': '𝙥$1'
+  'pppprime':
+    'prefix': 'pppprime'
+    'body': '⁗$1'
+  'mitd':
+    'prefix': 'mitd'
+    'body': '𝑑$1'
+  'mbfiteta':
+    'prefix': 'mbfiteta'
+    'body': '𝜼$1'
+  'mbfsansdelta':
+    'prefix': 'mbfsansdelta'
+    'body': '𝝳$1'
+  'eqvparsl':
+    'prefix': 'eqvparsl'
+    'body': '⧥$1'
+  'medwhitestar':
+    'prefix': 'medwhitestar'
+    'body': '⭐$1'
+  'quad':
+    'prefix': 'quad'
+    'body': ' $1'
+  'eqqgtr':
+    'prefix': 'eqqgtr'
+    'body': '⪚$1'
+  'measangleultonw':
+    'prefix': 'measangleultonw'
+    'body': '⦭$1'
+  'bigsqcap':
+    'prefix': 'bigsqcap'
+    'body': '⨅$1'
+  'supsub':
+    'prefix': 'supsub'
+    'body': '⫔$1'
+  'sun':
+    'prefix': 'sun'
+    'body': '☼$1'
+  'mbfitc':
+    'prefix': 'mbfitc'
+    'body': '𝒄$1'
+  'mbfitsansk':
+    'prefix': 'mbfitsansk'
+    'body': '𝙠$1'
+  'mbfitsansNu':
+    'prefix': 'mbfitsansNu'
+    'body': '𝞜$1'
+  'Bbbj':
+    'prefix': 'Bbbj'
+    'body': '𝕛$1'
+  'lazysinv':
+    'prefix': 'lazysinv'
+    'body': '∾$1'
+  'RightTriangleBar':
+    'prefix': 'RightTriangleBar'
+    'body': '⧐$1'
+  'mbfsansRho':
+    'prefix': 'mbfsansRho'
+    'body': '𝝦$1'
+  'asteq':
+    'prefix': 'asteq'
+    'body': '⩮$1'
+  'Subset':
+    'prefix': 'Subset'
+    'body': '⋐$1'
+  'vysmwhtsquare':
+    'prefix': 'vysmwhtsquare'
+    'body': '⬞$1'
+  'mbfMu':
+    'prefix': 'mbfMu'
+    'body': '𝚳$1'
+  'mbfitalpha':
+    'prefix': 'mbfitalpha'
+    'body': '𝜶$1'
+  'mbfvarrho':
+    'prefix': 'mbfvarrho'
+    'body': '𝛠$1'
+  'miti':
+    'prefix': 'miti'
+    'body': '𝑖$1'
+  '_+':
+    'prefix': '_+'
+    'body': '₊$1'
+  'mbfscrE':
+    'prefix': 'mbfscrE'
+    'body': '𝓔$1'
+  'mitpi':
+    'prefix': 'mitpi'
+    'body': '𝜋$1'
+  'sqcap':
+    'prefix': 'sqcap'
+    'body': '⊓$1'
+  'mbfeight':
+    'prefix': 'mbfeight'
+    'body': '𝟖$1'
+  'succnapprox':
+    'prefix': 'succnapprox'
+    'body': '⪺$1'
+  'mitm':
+    'prefix': 'mitm'
+    'body': '𝑚$1'
+  'mbfdelta':
+    'prefix': 'mbfdelta'
+    'body': '𝛅$1'
+  'nleq':
+    'prefix': 'nleq'
+    'body': '≰$1'
+  'pprime':
+    'prefix': 'pprime'
+    'body': '″$1'
+  'Elzlpargt':
+    'prefix': 'Elzlpargt'
+    'body': '⦠$1'
+  'mitl':
+    'prefix': 'mitl'
+    'body': '𝑙$1'
+  'mfrakN':
+    'prefix': 'mfrakN'
+    'body': '𝔑$1'
+  'vee':
+    'prefix': 'vee'
+    'body': '∨$1'
+  'mbfitsansE':
+    'prefix': 'mbfitsansE'
+    'body': '𝙀$1'
+  'mitLambda':
+    'prefix': 'mitLambda'
+    'body': '𝛬$1'
+  '^s':
+    'prefix': '^s'
+    'body': 'ˢ$1'
+  'mbffraky':
+    'prefix': 'mbffraky'
+    'body': '𝖞$1'
+  'mbfitvarphi':
+    'prefix': 'mbfitvarphi'
+    'body': '𝝓$1'
+  'mbffrakM':
+    'prefix': 'mbffrakM'
+    'body': '𝕸$1'
+  '^9':
+    'prefix': '^9'
+    'body': '⁹$1'
+  'mttX':
+    'prefix': 'mttX'
+    'body': '𝚇$1'
+  'approxeq':
+    'prefix': 'approxeq'
+    'body': '≊$1'
+  'Elzschwa':
+    'prefix': 'Elzschwa'
+    'body': 'ə$1'
+  'RightTeeVector':
+    'prefix': 'RightTeeVector'
+    'body': '⥛$1'
+  '_h':
+    'prefix': '_h'
+    'body': 'ₕ$1'
+  'mbfitPhi':
+    'prefix': 'mbfitPhi'
+    'body': '𝜱$1'
+  'rightharpoonup':
+    'prefix': 'rightharpoonup'
+    'body': '⇀$1'
+  'rightarrowbar':
+    'prefix': 'rightarrowbar'
+    'body': '⇥$1'
+  'hermitconjmatrix':
+    'prefix': 'hermitconjmatrix'
+    'body': '⊹$1'
+  'textordmasculine':
+    'prefix': 'textordmasculine'
+    'body': 'º$1'
+  'rightarrow':
+    'prefix': 'rightarrow'
+    'body': '→$1'
+  'upand':
+    'prefix': 'upand'
+    'body': '⅋$1'
+  'Bbbf':
+    'prefix': 'Bbbf'
+    'body': '𝕗$1'
+  'geqq':
+    'prefix': 'geqq'
+    'body': '≧$1'
+  'rightpentagon':
+    'prefix': 'rightpentagon'
+    'body': '⭔$1'
+  'Mapsfrom':
+    'prefix': 'Mapsfrom'
+    'body': '⤆$1'
+  'circletophalfblack':
+    'prefix': 'circletophalfblack'
+    'body': '◓$1'
+  'mscrK':
+    'prefix': 'mscrK'
+    'body': '𝒦$1'
+  'rmoustache':
+    'prefix': 'rmoustache'
+    'body': '⎱$1'
+  'u':
+    'prefix': 'u'
+    'body': '˘$1'
+  'mitBeta':
+    'prefix': 'mitBeta'
+    'body': '𝛣$1'
+  'intBar':
+    'prefix': 'intBar'
+    'body': '⨎$1'
+  'Epsilon':
+    'prefix': 'Epsilon'
+    'body': 'Ε$1'
+  'mttF':
+    'prefix': 'mttF'
+    'body': '𝙵$1'
+  'mbfitmu':
+    'prefix': 'mbfitmu'
+    'body': '𝝁$1'
+  'mbfitsansOmicron':
+    'prefix': 'mbfitsansOmicron'
+    'body': '𝞞$1'
+  'leftrightharpoondownup':
+    'prefix': 'leftrightharpoondownup'
+    'body': '⥋$1'
+  'rightharpoonaccent':
+    'prefix': 'rightharpoonaccent'
+    'body': '⃑$1'
+  '_l':
+    'prefix': '_l'
+    'body': 'ₗ$1'
+  'RightDownTeeVector':
+    'prefix': 'RightDownTeeVector'
+    'body': '⥝$1'
+  'viewdata':
+    'prefix': 'viewdata'
+    'body': '⌗$1'
+  'overbar':
+    'prefix': 'overbar'
+    'body': '̅$1'
+  'mbfomicron':
+    'prefix': 'mbfomicron'
+    'body': '𝛐$1'
+  'mu':
+    'prefix': 'mu'
+    'body': 'μ$1'
+  'mbfsansp':
+    'prefix': 'mbfsansp'
+    'body': '𝗽$1'
+  'diamondleftarrowbar':
+    'prefix': 'diamondleftarrowbar'
+    'body': '⤟$1'
+  'zeta':
+    'prefix': 'zeta'
+    'body': 'ζ$1'
+  'msansfour':
+    'prefix': 'msansfour'
+    'body': '𝟦$1'
+  'mbfsansfour':
+    'prefix': 'mbfsansfour'
+    'body': '𝟰$1'
+  'msansX':
+    'prefix': 'msansX'
+    'body': '𝖷$1'
+  'mbfXi':
+    'prefix': 'mbfXi'
+    'body': '𝚵$1'
+  'mbfitM':
+    'prefix': 'mbfitM'
+    'body': '𝑴$1'
+  'diamondrightblack':
+    'prefix': 'diamondrightblack'
+    'body': '⬗$1'
+  'mscrB':
+    'prefix': 'mscrB'
+    'body': 'ℬ$1'
+  'mscrC':
+    'prefix': 'mscrC'
+    'body': '𝒞$1'
+  'mitsansd':
+    'prefix': 'mitsansd'
+    'body': '𝘥$1'
+  'mbfzeta':
+    'prefix': 'mbfzeta'
+    'body': '𝛇$1'
+  'mbfitBeta':
+    'prefix': 'mbfitBeta'
+    'body': '𝜝$1'
+  'gneq':
+    'prefix': 'gneq'
+    'body': '⪈$1'
+  'curvearrowleft':
+    'prefix': 'curvearrowleft'
+    'body': '↶$1'
+  'nlesssim':
+    'prefix': 'nlesssim'
+    'body': '≴$1'
+  'mitJ':
+    'prefix': 'mitJ'
+    'body': '𝐽$1'
+  'mfrakY':
+    'prefix': 'mfrakY'
+    'body': '𝔜$1'
+  'mercury':
+    'prefix': 'mercury'
+    'body': '☿$1'
+  '^O':
+    'prefix': '^O'
+    'body': 'ᴼ$1'
+  'le':
+    'prefix': 'le'
+    'body': '≤$1'
+  'leftcurvedarrow':
+    'prefix': 'leftcurvedarrow'
+    'body': '⬿$1'
+  '^7':
+    'prefix': '^7'
+    'body': '⁷$1'
+  'candra':
+    'prefix': 'candra'
+    'body': '̐$1'
+  'triangleplus':
+    'prefix': 'triangleplus'
+    'body': '⨹$1'
+  'ulcorner':
+    'prefix': 'ulcorner'
+    'body': '⌜$1'
+  'mitP':
+    'prefix': 'mitP'
+    'body': '𝑃$1'
+  'hbar':
+    'prefix': 'hbar'
+    'body': 'ħ$1'
+  'mbfitEpsilon':
+    'prefix': 'mbfitEpsilon'
+    'body': '𝜠$1'
+  'varepsilon':
+    'prefix': 'varepsilon'
+    'body': 'ɛ$1'
+  'mbfitR':
+    'prefix': 'mbfitR'
+    'body': '𝑹$1'
+  'mbfsansEta':
+    'prefix': 'mbfsansEta'
+    'body': '𝝜$1'
+  'mbfsansupsilon':
+    'prefix': 'mbfsansupsilon'
+    'body': '𝞄$1'
+  'mttL':
+    'prefix': 'mttL'
+    'body': '𝙻$1'
+  'mbfitdelta':
+    'prefix': 'mbfitdelta'
+    'body': '𝜹$1'
+  'mbfsansthree':
+    'prefix': 'mbfsansthree'
+    'body': '𝟯$1'
+  'Elzrtld':
+    'prefix': 'Elzrtld'
+    'body': 'ɖ$1'
+  'mbfsansz':
+    'prefix': 'mbfsansz'
+    'body': '𝘇$1'
+  'Bbbfour':
+    'prefix': 'Bbbfour'
+    'body': '𝟜$1'
+  'intprodr':
+    'prefix': 'intprodr'
+    'body': '⨽$1'
+  'annuity':
+    'prefix': 'annuity'
+    'body': '⃧$1'
+  'mttone':
+    'prefix': 'mttone'
+    'body': '𝟷$1'
+  'Bbby':
+    'prefix': 'Bbby'
+    'body': '𝕪$1'
+  'bsimilarrightarrow':
+    'prefix': 'bsimilarrightarrow'
+    'body': '⭇$1'
+  'blackrighthalfcircle':
+    'prefix': 'blackrighthalfcircle'
+    'body': '◗$1'
+  'downarrow':
+    'prefix': 'downarrow'
+    'body': '↓$1'
+  'mbfitomicron':
+    'prefix': 'mbfitomicron'
+    'body': '𝝄$1'
+  'mbfitsansEpsilon':
+    'prefix': 'mbfitsansEpsilon'
+    'body': '𝞔$1'
+  'minusdot':
+    'prefix': 'minusdot'
+    'body': '⨪$1'
+  'revangle':
+    'prefix': 'revangle'
+    'body': '⦣$1'
+  'mbfsansalpha':
+    'prefix': 'mbfsansalpha'
+    'body': '𝝰$1'
+  'gtrdot':
+    'prefix': 'gtrdot'
+    'body': '⋗$1'
+  'circledR':
+    'prefix': 'circledR'
+    'body': '®$1'
+  'nVdash':
+    'prefix': 'nVdash'
+    'body': '⊮$1'
+  'downarrowbarred':
+    'prefix': 'downarrowbarred'
+    'body': '⤈$1'
+  'veeodot':
+    'prefix': 'veeodot'
+    'body': '⩒$1'
+  'msansk':
+    'prefix': 'msansk'
+    'body': '𝗄$1'
+  'mbfitD':
+    'prefix': 'mbfitD'
+    'body': '𝑫$1'
+  'mbfitk':
+    'prefix': 'mbfitk'
+    'body': '𝒌$1'
+  'nsime':
+    'prefix': 'nsime'
+    'body': '≄$1'
+  'mbfitsansB':
+    'prefix': 'mbfitsansB'
+    'body': '𝘽$1'
+  'parallel':
+    'prefix': 'parallel'
+    'body': '∥$1'
+  'mbfscrL':
+    'prefix': 'mbfscrL'
+    'body': '𝓛$1'
+  'squarehfill':
+    'prefix': 'squarehfill'
+    'body': '▤$1'
+  'mbffrakc':
+    'prefix': 'mbffrakc'
+    'body': '𝖈$1'
+  'mbfDelta':
+    'prefix': 'mbfDelta'
+    'body': '𝚫$1'
+  'NotRightTriangleBar':
+    'prefix': 'NotRightTriangleBar'
+    'body': '⧐̸$1'
+  'Digamma':
+    'prefix': 'Digamma'
+    'body': 'Ϝ$1'
+  'msansthree':
+    'prefix': 'msansthree'
+    'body': '𝟥$1'
+  'PropertyLine':
+    'prefix': 'PropertyLine'
+    'body': '⅊$1'
+  'leftleftarrows':
+    'prefix': 'leftleftarrows'
+    'body': '⇇$1'
+  'nvDash':
+    'prefix': 'nvDash'
+    'body': '⊭$1'
+  'mtttwo':
+    'prefix': 'mtttwo'
+    'body': '𝟸$1'
+  'mbfT':
+    'prefix': 'mbfT'
+    'body': '𝐓$1'
+  'Rrightarrow':
+    'prefix': 'Rrightarrow'
+    'body': '⇛$1'
+  'eqless':
+    'prefix': 'eqless'
+    'body': '⋜$1'
+  'mbfsansZeta':
+    'prefix': 'mbfsansZeta'
+    'body': '𝝛$1'
+  'toea':
+    'prefix': 'toea'
+    'body': '⤨$1'
+  'mitzeta':
+    'prefix': 'mitzeta'
+    'body': '𝜁$1'
+  'Bbbi':
+    'prefix': 'Bbbi'
+    'body': '𝕚$1'
+  'seovnearrow':
+    'prefix': 'seovnearrow'
+    'body': '⤭$1'
+  'Bbbs':
+    'prefix': 'Bbbs'
+    'body': '𝕤$1'
+  'gneqq':
+    'prefix': 'gneqq'
+    'body': '≩$1'
+  'updasharrow':
+    'prefix': 'updasharrow'
+    'body': '⇡$1'
+  'BbbW':
+    'prefix': 'BbbW'
+    'body': '𝕎$1'
+  'mitUpsilon':
+    'prefix': 'mitUpsilon'
+    'body': '𝛶$1'
+  'BbbV':
+    'prefix': 'BbbV'
+    'body': '𝕍$1'
+  'mbfitnu':
+    'prefix': 'mbfitnu'
+    'body': '𝝂$1'
+  '^-':
+    'prefix': '^-'
+    'body': '⁻$1'
+  'dingasterisk':
+    'prefix': 'dingasterisk'
+    'body': '✽$1'
+  'mbfsansN':
+    'prefix': 'mbfsansN'
+    'body': '𝗡$1'
+  'textonehalf':
+    'prefix': 'textonehalf'
+    'body': '½$1'
+  'ElzRlarr':
+    'prefix': 'ElzRlarr'
+    'body': '⥂$1'
+  'Elzrtlz':
+    'prefix': 'Elzrtlz'
+    'body': 'ʐ$1'
+  'oplus':
+    'prefix': 'oplus'
+    'body': '⊕$1'
+  'rceil':
+    'prefix': 'rceil'
+    'body': '⌉$1'
+  'uminus':
+    'prefix': 'uminus'
+    'body': '⩁$1'
+  'lesdoto':
+    'prefix': 'lesdoto'
+    'body': '⪁$1'
+  'leftarrowonoplus':
+    'prefix': 'leftarrowonoplus'
+    'body': '⬲$1'
+  'mbfitr':
+    'prefix': 'mbfitr'
+    'body': '𝒓$1'
+  'updownarrow':
+    'prefix': 'updownarrow'
+    'body': '↕$1'
+  'mbfv':
+    'prefix': 'mbfv'
+    'body': '𝐯$1'
+  'cup':
+    'prefix': 'cup'
+    'body': '∪$1'
+  'upin':
+    'prefix': 'upin'
+    'body': '⟒$1'
+  'ringplus':
+    'prefix': 'ringplus'
+    'body': '⨢$1'
+  'lsimg':
+    'prefix': 'lsimg'
+    'body': '⪏$1'
+  'mbfitsansa':
+    'prefix': 'mbfitsansa'
+    'body': '𝙖$1'
+  'mbfsansmu':
+    'prefix': 'mbfsansmu'
+    'body': '𝝻$1'
+  'longrightsquigarrow':
+    'prefix': 'longrightsquigarrow'
+    'body': '⟿$1'
+  'gtcir':
+    'prefix': 'gtcir'
+    'body': '⩺$1'
+  'rdiagovsearrow':
+    'prefix': 'rdiagovsearrow'
+    'body': '⤰$1'
+  'lsqhook':
+    'prefix': 'lsqhook'
+    'body': '⫍$1'
+  '_e':
+    'prefix': '_e'
+    'body': 'ₑ$1'
+  'mbfQ':
+    'prefix': 'mbfQ'
+    'body': '𝐐$1'
+  'mbfsansM':
+    'prefix': 'mbfsansM'
+    'body': '𝗠$1'
+  'mscro':
+    'prefix': 'mscro'
+    'body': 'ℴ$1'
+  'varkappa':
+    'prefix': 'varkappa'
+    'body': 'ϰ$1'
+  'mbfitsansx':
+    'prefix': 'mbfitsansx'
+    'body': '𝙭$1'
+  'mbfitvarTheta':
+    'prefix': 'mbfitvarTheta'
+    'body': '𝜭$1'
+  'cbrt':
+    'prefix': 'cbrt'
+    'body': '∛$1'
+  'trianglerighteq':
+    'prefix': 'trianglerighteq'
+    'body': '⊵$1'
+  'emptysetocirc':
+    'prefix': 'emptysetocirc'
+    'body': '⦲$1'
+  'Coloneq':
+    'prefix': 'Coloneq'
+    'body': '⩴$1'
+  'mitsansW':
+    'prefix': 'mitsansW'
+    'body': '𝘞$1'
+  'mttb':
+    'prefix': 'mttb'
+    'body': '𝚋$1'
+  'AA':
+    'prefix': 'AA'
+    'body': 'Å$1'
+  'mitg':
+    'prefix': 'mitg'
+    'body': '𝑔$1'
+  'mbfN':
+    'prefix': 'mbfN'
+    'body': '𝐍$1'
+  'mfrakL':
+    'prefix': 'mfrakL'
+    'body': '𝔏$1'
+  '_(':
+    'prefix': '_('
+    'body': '₍$1'
+  'msanssix':
+    'prefix': 'msanssix'
+    'body': '𝟨$1'
+  'BbbJ':
+    'prefix': 'BbbJ'
+    'body': '𝕁$1'
+  'exists':
+    'prefix': 'exists'
+    'body': '∃$1'
+  'mttu':
+    'prefix': 'mttu'
+    'body': '𝚞$1'
+  'Uuparrow':
+    'prefix': 'Uuparrow'
+    'body': '⤊$1'
+  'mitPsi':
+    'prefix': 'mitPsi'
+    'body': '𝛹$1'
+  'thickspace':
+    'prefix': 'thickspace'
+    'body': ' $1'
+  'endash':
+    'prefix': 'endash'
+    'body': '–$1'
+  'blackcircleulquadwhite':
+    'prefix': 'blackcircleulquadwhite'
+    'body': '◕$1'
+  'mbfR':
+    'prefix': 'mbfR'
+    'body': '𝐑$1'
+  'mbfsansepsilon':
+    'prefix': 'mbfsansepsilon'
+    'body': '𝝴$1'
+  'mbfitAlpha':
+    'prefix': 'mbfitAlpha'
+    'body': '𝜜$1'
+  'gesdoto':
+    'prefix': 'gesdoto'
+    'body': '⪂$1'
+  'oslash':
+    'prefix': 'oslash'
+    'body': '⊘$1'
+  'mitsansS':
+    'prefix': 'mitsansS'
+    'body': '𝘚$1'
+  'mbfpartial':
+    'prefix': 'mbfpartial'
+    'body': '𝛛$1'
+  'mitsansQ':
+    'prefix': 'mitsansQ'
+    'body': '𝘘$1'
+  'mitnu':
+    'prefix': 'mitnu'
+    'body': '𝜈$1'
+  'smt':
+    'prefix': 'smt'
+    'body': '⪪$1'
+  'mbfscri':
+    'prefix': 'mbfscri'
+    'body': '𝓲$1'
+  'Bbbt':
+    'prefix': 'Bbbt'
+    'body': '𝕥$1'
+  'mbfsansl':
+    'prefix': 'mbfsansl'
+    'body': '𝗹$1'
+  'wideangledown':
+    'prefix': 'wideangledown'
+    'body': '⦦$1'
+  'mbfOmega':
+    'prefix': 'mbfOmega'
+    'body': '𝛀$1'
+  'simminussim':
+    'prefix': 'simminussim'
+    'body': '⩬$1'
+  'subsetdot':
+    'prefix': 'subsetdot'
+    'body': '⪽$1'
+  'turnediota':
+    'prefix': 'turnediota'
+    'body': '℩$1'
+  'mbfitsanspsi':
+    'prefix': 'mbfitsanspsi'
+    'body': '𝟁$1'
+  'mitSigma':
+    'prefix': 'mitSigma'
+    'body': '𝛴$1'
+  'bot':
+    'prefix': 'bot'
+    'body': '⊥$1'
+  'mbfsansD':
+    'prefix': 'mbfsansD'
+    'body': '𝗗$1'
+  'mbfitsansalpha':
+    'prefix': 'mbfitsansalpha'
+    'body': '𝞪$1'
+  'gnsim':
+    'prefix': 'gnsim'
+    'body': '⋧$1'
+  'mbfitA':
+    'prefix': 'mbfitA'
+    'body': '𝑨$1'
+  'Chi':
+    'prefix': 'Chi'
+    'body': 'Χ$1'
+  'mbfitsansj':
+    'prefix': 'mbfitsansj'
+    'body': '𝙟$1'
+  'mbfitsansxi':
+    'prefix': 'mbfitsansxi'
+    'body': '𝞷$1'
+  'tripleplus':
+    'prefix': 'tripleplus'
+    'body': '⧻$1'
+  'vertoverlay':
+    'prefix': 'vertoverlay'
+    'body': '⃒$1'
+  'mbfOmicron':
+    'prefix': 'mbfOmicron'
+    'body': '𝚶$1'
+  'nabla':
+    'prefix': 'nabla'
+    'body': '∇$1'
+  '_m':
+    'prefix': '_m'
+    'body': 'ₘ$1'
+  'models':
+    'prefix': 'models'
+    'body': '⊧$1'
+  'lneqq':
+    'prefix': 'lneqq'
+    'body': '≨$1'
+  'mscrT':
+    'prefix': 'mscrT'
+    'body': '𝒯$1'
+  'mbfsansSigma':
+    'prefix': 'mbfsansSigma'
+    'body': '𝝨$1'
+  'Cup':
+    'prefix': 'Cup'
+    'body': '⋓$1'
+  'propto':
+    'prefix': 'propto'
+    'body': '∝$1'
+  'mttt':
+    'prefix': 'mttt'
+    'body': '𝚝$1'
+  'mbfitsansPsi':
+    'prefix': 'mbfitsansPsi'
+    'body': '𝞧$1'
+  'mitL':
+    'prefix': 'mitL'
+    'body': '𝐿$1'
+  'rq':
+    'prefix': 'rq'
+    'body': '’$1'
+  'mlcp':
+    'prefix': 'mlcp'
+    'body': '⫛$1'
+  'leftsquigarrow':
+    'prefix': 'leftsquigarrow'
+    'body': '⇜$1'
+  'mitD':
+    'prefix': 'mitD'
+    'body': '𝐷$1'
